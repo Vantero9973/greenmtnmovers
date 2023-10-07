@@ -1,0 +1,110 @@
+"use client";
+import { Footer } from "flowbite-react";
+import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { cities } from "../app/data/cities";
+
+export default function FooterComponent() {
+  const formattedCityName = (city) => city.toLowerCase().replace(/\s+/g, "-");
+
+  return (
+    <Footer>
+      <div className="w-full">
+        <div className="flex justify-center items-center">
+          <div className="max-w-screen-xl grid w-full grid-cols-2 gap-8 px-6 pt-8 pb-16 md:grid-cols-5">
+            <div>
+              <Footer.Title title="Company" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="/about">About</Footer.Link>
+                <Footer.Link href="/contact">Contact</Footer.Link>
+                <Footer.Link href="/careers">Careers</Footer.Link>
+                <Footer.Link href="/blog">Blog</Footer.Link>
+                <Footer.Link href="/moving-checklist">
+                  Moving Checklist
+                </Footer.Link>
+                <Footer.Link href="/faq">FAQ</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Services" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="/local-moving">Local Moving</Footer.Link>
+                <Footer.Link href="/long-distance-moving">
+                  Long-Distance Moving
+                </Footer.Link>
+                <Footer.Link href="/furniture-assembly">
+                  Furniture Assembly
+                </Footer.Link>
+                <Footer.Link href="/junk-hauling">Junk Hauling</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Service Areas" />
+              <Footer.LinkGroup col>
+                {cities.slice(0, 16).map((city) => {
+                  return (
+                    <Footer.Link
+                      href={`/service-areas/${formattedCityName(city)}`}
+                      key={city}
+                    >
+                      {city}
+                    </Footer.Link>
+                  );
+                })}
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title
+                title="Service Areas"
+                className="text-[transparent]"
+              />
+              <Footer.LinkGroup col>
+                {cities.slice(16, 32).map((city) => {
+                  return (
+                    <Footer.Link
+                      href={`/service-areas/${formattedCityName(city)}`}
+                      key={city}
+                    >
+                      {city}
+                    </Footer.Link>
+                  );
+                })}
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title
+                title="Service Areas"
+                className="text-[transparent]"
+              />
+              <Footer.LinkGroup col>
+                {cities.slice(32, 48).map((city) => {
+                  return (
+                    <Footer.Link
+                      href={`/service-areas/${formattedCityName(city)}`}
+                      key={city}
+                    >
+                      {city}
+                    </Footer.Link>
+                  );
+                })}
+              </Footer.LinkGroup>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center items-center bg-[#f7f7f7]">
+          <div className="max-w-screen-xl w-full px-4 py-6 sm:flex sm:items-center sm:justify-between">
+            <Footer.Copyright
+              by="Green Mountain Movers™"
+              href="#"
+              year={2021}
+            />
+            <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+              <Footer.Icon href="#" icon={BsFacebook} />
+              <Footer.Icon href="#" icon={BsInstagram} />
+              <Footer.Icon href="#" icon={BsGithub} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Footer>
+  );
+}
