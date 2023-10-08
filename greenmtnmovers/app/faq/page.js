@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import Navbar from "../../components/Navbar";
 
 export default function Example() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -124,6 +125,7 @@ export default function Example() {
 
   return (
     <>
+      <Navbar />
       <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
         <header

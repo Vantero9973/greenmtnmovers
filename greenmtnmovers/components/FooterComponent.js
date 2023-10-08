@@ -1,13 +1,13 @@
 "use client";
 import { Footer } from "flowbite-react";
-import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsInstagram } from "react-icons/bs";
 import { cities } from "../app/data/cities";
 
 export default function FooterComponent() {
   const formattedCityName = (city) => city.toLowerCase().replace(/\s+/g, "-");
 
   return (
-    <Footer>
+    <Footer className="bg-[#f7f7f7]">
       <div className="w-full">
         <div className="flex justify-center items-center">
           <div className="max-w-screen-xl grid w-full grid-cols-2 gap-8 px-6 pt-8 pb-16 md:grid-cols-5">
@@ -37,7 +37,7 @@ export default function FooterComponent() {
                 <Footer.Link href="/junk-hauling">Junk Hauling</Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div>
+            <div className="max-md:hidden">
               <Footer.Title title="Service Areas" />
               <Footer.LinkGroup col>
                 {cities.slice(0, 16).map((city) => {
@@ -52,7 +52,7 @@ export default function FooterComponent() {
                 })}
               </Footer.LinkGroup>
             </div>
-            <div>
+            <div className="max-md:hidden">
               <Footer.Title
                 title="Service Areas"
                 className="text-[transparent]"
@@ -70,7 +70,7 @@ export default function FooterComponent() {
                 })}
               </Footer.LinkGroup>
             </div>
-            <div>
+            <div className="max-md:hidden">
               <Footer.Title
                 title="Service Areas"
                 className="text-[transparent]"
@@ -88,9 +88,42 @@ export default function FooterComponent() {
                 })}
               </Footer.LinkGroup>
             </div>
+            <div className="md:hidden">
+              <Footer.Title title="Service Areas" />
+              <Footer.LinkGroup col>
+                {cities.slice(0, 24).map((city) => {
+                  return (
+                    <Footer.Link
+                      href={`/service-areas/${formattedCityName(city)}`}
+                      key={city}
+                    >
+                      {city}
+                    </Footer.Link>
+                  );
+                })}
+              </Footer.LinkGroup>
+            </div>
+            <div className="md:hidden">
+              <Footer.Title
+                title="Service Areas"
+                className="text-[transparent]"
+              />
+              <Footer.LinkGroup col>
+                {cities.slice(24, 48).map((city) => {
+                  return (
+                    <Footer.Link
+                      href={`/service-areas/${formattedCityName(city)}`}
+                      key={city}
+                    >
+                      {city}
+                    </Footer.Link>
+                  );
+                })}
+              </Footer.LinkGroup>
+            </div>
           </div>
         </div>
-        <div className="flex justify-center items-center bg-[#f7f7f7]">
+        <div className="flex justify-center items-center bg-white">
           <div className="max-w-screen-xl w-full px-4 py-6 sm:flex sm:items-center sm:justify-between">
             <Footer.Copyright
               by="Green Mountain Movers™"

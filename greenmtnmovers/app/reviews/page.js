@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { reviewsData } from "../../data/reviewsData.js";
 import stars from "../../public/media/google_stars.png";
+import Navbar from "../../components/Navbar";
 
 export default function Reviews() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -21,6 +22,7 @@ export default function Reviews() {
 
   return (
     <>
+      <Navbar />
       <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
         <header

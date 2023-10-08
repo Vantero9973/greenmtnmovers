@@ -4,6 +4,7 @@ import Image from "next/image";
 import ContactForm from "../../components/ContactForm";
 import assemblyImage from "../../public/media/movers.jpg";
 import BookingProcess from "../../components/BookingProcess";
+import Navbar from "../../components/Navbar";
 
 export default function FurnitureAssembly() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -22,6 +23,7 @@ export default function FurnitureAssembly() {
 
   return (
     <>
+      <Navbar />
       <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
         <header

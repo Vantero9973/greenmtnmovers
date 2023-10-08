@@ -1,7 +1,12 @@
+import Navbar from "../../components/Navbar";
+
 export default function Careers() {
   return (
-    <div>
-      <p>CAREERS</p>
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <p>CAREERS</p>
+      </div>
+    </>
   );
 }

@@ -11,30 +11,16 @@ import trashWhite from "../public/media/trash_white.png";
 export default function Cards() {
   return (
     <div className="flex justify-center items-center">
-      <div className="max-w-screen-xl relative px-5 md:px-10" id="services">
-        <div className="testimonialsContainer">
-          <div className="cardsTitleDesktop">
-            <h2
-              className="testimonialsTitle"
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
-            >
-              No job is too big, or too small
-            </h2>
-          </div>
-          <div className="cardsTitleMobile">
-            <h2 className="testimonialsTitle">
-              No job is too big, or too small
-            </h2>
-          </div>
-          <h3 className="testimonialsBody">
-            Whether you have an entire household or a studio apartment, we are
-            here to help with a courteous, trustworthy and reliable team.
-          </h3>
+      <div className="max-w-screen-xl relative isolate bg-white py-10 mt-10">
+        <div className="mx-auto max-w-xl text-center">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
+            Services
+          </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            No job too big, or too small
+          </p>
         </div>
-        <div className="cards">
+        <div className="cards mt-10">
           <div className="cardContainer">
             <div className="cardsTextContainer">
               <div className="cardsAccent" />

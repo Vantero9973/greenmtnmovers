@@ -3,22 +3,21 @@ import Cards from "../components/Cards";
 import Testimonials from "../components/Testimonials";
 import FaqComponent from "../components/FaqComponent";
 import Stats from "../components/Stats";
-import Contact from "../components/Contact";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// AOS.init();
+import ContactForm from "../components/ContactForm";
+import NavbarAbsolute from "../components/NavbarAbsolute";
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <NavbarAbsolute />
       <Header />
       <div className="responsive-padding">
         <Cards />
         <Testimonials />
         <FaqComponent />
         <Stats />
-        <Contact />
+        <ContactForm />
       </div>
-    </div>
+    </>
   );
 }

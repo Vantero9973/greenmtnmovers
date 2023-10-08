@@ -158,62 +158,41 @@ export default function FaqComponent() {
 
   return (
     <div className="flex justify-center items-center">
-      <div
-        className="py-10 mx-auto max-w-7xl px-6 lg:px-8"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "2vh",
-        }}
-      >
-        <div className="faqDesktop">
+      <div className="max-w-screen-xl relative isolate bg-white py-10">
+        <div
+          className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+          aria-hidden="true"
+        >
           <div
+            className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-white to-[#0e5933]"
             style={{
-              fontSize: "16px",
-              display: "flex",
-              alignItems: "center",
-              gap: "1vw",
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="1000"
-          >
-            <span
-              style={{
-                position: "relative",
-                fontSize: "32px",
-                fontWeight: "bold",
-              }}
-            >
-              <p className="underline">FAQ</p>
-            </span>
-            (Frequently Asked Questions)
-          </div>
-        </div>
-        <div className="faqMobile">
-          <div
-            style={{
-              fontSize: "20px",
-              display: "flex",
-              alignItems: "center",
-              gap: "1vw",
-            }}
-          >
-            <span
-              style={{
-                position: "relative",
-                fontSize: "32px",
-                fontWeight: "bold",
-              }}
-            >
-              <p className="underline">FAQ</p>
-            </span>
-            (Frequently Asked Questions)
-          </div>
+          />
         </div>
         <div
-          className="z-index"
+          className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+          aria-hidden="true"
+        >
+          <div
+            className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-white to-[#0e5933] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+            style={{
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            }}
+          />
+        </div>
+        <div className="mx-auto max-w-xl text-center">
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
+            Frequently Asked Questions (FAQ)
+          </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Your Questions, Answered
+          </p>
+        </div>
+        <div
+          className="z-index mt-10"
           style={{
             borderTop: "1px solid #ccc",
           }}
