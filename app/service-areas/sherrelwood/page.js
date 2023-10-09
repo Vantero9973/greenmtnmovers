@@ -2,8 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import sherrelwoodImage from "../../../public/media/movers.jpg";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { BsFillEnvelopeFill } from "react-icons/bs";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import MovingTips from "../../../components/MovingTips";
@@ -219,15 +218,26 @@ export default function Sherrelwood() {
               on this page to request your free moving quote. We look forward to
               ensuring a successful move for you!
             </p>
-            <div className="flex flex-wrap items-center gap-5">
-              <div className="flex items-center gap-2 text-gray-700 text-lg">
-                <BsFillTelephoneFill />
-                <a href="tel:720-555-1234">(720) 555-1234</a>
+            <div className="flex flex-wrap items-center gap-x-10 gap-y-3 text-base leading-7 text-gray-700">
+              <div className="flex gap-x-4">
+                <PhoneIcon
+                  className="h-7 w-6 text-gray-700"
+                  aria-hidden="true"
+                />
+                <a className="hover:text-gray-900" href="tel:7196801538">
+                  (719) 680-1538
+                </a>
               </div>
-              <div className="flex items-center gap-2 text-gray-700 text-lg">
-                <BsFillEnvelopeFill />
-                <a href="mailto:info@sherrelwoodmovers.com">
-                  info@sherrelwoodmovers.com
+              <div className="flex gap-x-4">
+                <EnvelopeIcon
+                  className="h-7 w-6 text-gray-700"
+                  aria-hidden="true"
+                />
+                <a
+                  className="hover:text-gray-900"
+                  href="mailto:greenmtnmovers@gmail.com"
+                >
+                  greenmtnmovers@gmail.com
                 </a>
               </div>
             </div>
