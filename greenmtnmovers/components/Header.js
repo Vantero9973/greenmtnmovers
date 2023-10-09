@@ -89,7 +89,7 @@ export default function Example() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <Image
-                        src={headerImg2}
+                        src={headerImg4}
                         alt="Two movers moving a couch"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -107,7 +107,7 @@ export default function Example() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <Image
-                        src={headerImg4}
+                        src={headerImg2}
                         alt="Other mover moving a couch"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />

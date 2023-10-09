@@ -41,7 +41,7 @@ export default function Navbar() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 h-[70px]">
           <a
             href="#"
             className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
@@ -132,7 +132,7 @@ export default function Navbar() {
                 <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1 max-h-[66vh] overflow-scroll">
                     {cities.map((city) => (
-                      <Menu.Item>
+                      <Menu.Item key={city}>
                         <a
                           href={`/service-areas/${formattedCityName(city)}`}
                           className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
@@ -196,14 +196,14 @@ export default function Navbar() {
                         Blog
                       </a>
                     </Menu.Item>
-                    <Menu.Item>
+                    {/* <Menu.Item>
                       <a
                         href="/careers"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Careers
                       </a>
-                    </Menu.Item>
+                    </Menu.Item> */}
                     <Menu.Item>
                       <a
                         href="/moving-checklist"
@@ -338,7 +338,7 @@ export default function Navbar() {
                           </Disclosure.Button>
                           <Disclosure.Panel as="ul" className="mt-1 px-2">
                             {cities.map((city) => (
-                              <li>
+                              <li key={city}>
                                 <Disclosure.Button
                                   as="a"
                                   href={`/service-areas/${formattedCityName(
@@ -381,7 +381,7 @@ export default function Navbar() {
                                 Blog
                               </Disclosure.Button>
                             </li>
-                            <li>
+                            {/* <li>
                               <Disclosure.Button
                                 as="a"
                                 href="/careers"
@@ -389,7 +389,7 @@ export default function Navbar() {
                               >
                                 Careers
                               </Disclosure.Button>
-                            </li>
+                            </li> */}
                             <li>
                               <Disclosure.Button
                                 as="a"

@@ -138,7 +138,7 @@ export default function Example() {
         </header>
       </div>
       <div className="flex justify-center items-center">
-        <div className="max-w-screen-xl w-full mx-auto px-6 py-16 lg:px-8">
+        <div className="max-w-screen-xl w-full mx-auto px-6 pt-16 pb-32 lg:px-8">
           <div className="mx-auto divide-y divide-gray-900/10">
             <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
               {faqs.map((faq) => (

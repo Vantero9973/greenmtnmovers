@@ -196,14 +196,14 @@ export default function Navbar() {
                         Blog
                       </a>
                     </Menu.Item>
-                    <Menu.Item>
+                    {/* <Menu.Item>
                       <a
                         href="/careers"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Careers
                       </a>
-                    </Menu.Item>
+                    </Menu.Item> */}
                     <Menu.Item>
                       <a
                         href="/moving-checklist"
@@ -381,7 +381,7 @@ export default function Navbar() {
                                 Blog
                               </Disclosure.Button>
                             </li>
-                            <li>
+                            {/* <li>
                               <Disclosure.Button
                                 as="a"
                                 href="/careers"
@@ -389,7 +389,7 @@ export default function Navbar() {
                               >
                                 Careers
                               </Disclosure.Button>
-                            </li>
+                            </li> */}
                             <li>
                               <Disclosure.Button
                                 as="a"

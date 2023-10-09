@@ -3,7 +3,7 @@ import Cards from "../components/Cards";
 import Testimonials from "../components/Testimonials";
 import FaqComponent from "../components/FaqComponent";
 import Stats from "../components/Stats";
-import ContactForm from "../components/ContactForm";
+import Contact from "../components/Contact";
 import NavbarAbsolute from "../components/NavbarAbsolute";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         <Testimonials />
         <FaqComponent />
         <Stats />
-        <ContactForm />
+        <Contact />
       </div>
     </>
   );

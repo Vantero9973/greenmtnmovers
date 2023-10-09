@@ -36,10 +36,10 @@ export default function LocalMoving() {
   return (
     <>
       <Navbar />
-      <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
+      <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px]">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
         <header
-          className="text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white"
+          className="text-3xl md:text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white"
           style={{
             transform: `translateY(${scrollPosition * 0.4}px)`,
           }}
@@ -258,7 +258,7 @@ export default function LocalMoving() {
               <h2 className="text-2xl font-semibold mb-2">
                 Why Choose Green Mountain Movers?
               </h2>
-              <ul className="list-disc list-inside text-gray-700">
+              <ul className="list-disc text-gray-700">
                 <li>
                   Flat rate pricing available for transparent and predictable
                   costs.
