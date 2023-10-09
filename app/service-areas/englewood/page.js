@@ -38,7 +38,7 @@ export default function Englewood() {
           Englewood Moving Services
         </header>
       </div>
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative bg-[#f7f7f7]">
+      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
         <div className="flex flex-col items-center justify-center max-w-screen-xl">
           <section id="englewood" className="my-10">
             <h2 className="text-2xl font-semibold md:hidden">
@@ -199,7 +199,7 @@ export default function Englewood() {
       </div>
       <BookingProcess />
       <MovingTips />
-      <div className="flex justify-center items-center pt-10 pb-20 px-5 md:px-10 z-1 relative bg-[#f7f7f7]">
+      <div className="flex justify-center items-center pt-10 pb-20 px-5 md:px-10 z-1 relative">
         <div className="flex flex-col items-center justify-center max-w-screen-xl">
           <div className="flex flex-col justify-center gap-3">
             <h3 className="text-2xl font-semibold mt-8">
