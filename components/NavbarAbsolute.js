@@ -283,7 +283,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/local-moving"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Local Moving
                               </Disclosure.Button>
@@ -292,7 +292,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/long-distance-moving"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Long Distance Moving
                               </Disclosure.Button>
@@ -301,7 +301,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/furniture-assembly"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Furniture Assembly
                               </Disclosure.Button>
@@ -310,7 +310,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/junk-hauling"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Junk Hauling
                               </Disclosure.Button>
@@ -344,7 +344,7 @@ export default function Navbar() {
                                   href={`/service-areas/${formattedCityName(
                                     city
                                   )}`}
-                                  className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
+                                  className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                                 >
                                   {city}
                                 </Disclosure.Button>
@@ -376,7 +376,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/blog"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Blog
                               </Disclosure.Button>
@@ -394,7 +394,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/faq"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 FAQ
                               </Disclosure.Button>
@@ -403,7 +403,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/moving-checklist"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Moving Checklist
                               </Disclosure.Button>
@@ -412,7 +412,7 @@ export default function Navbar() {
                               <Disclosure.Button
                                 as="a"
                                 href="/reviews"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
+                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
                               >
                                 Reviews
                               </Disclosure.Button>

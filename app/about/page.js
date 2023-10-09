@@ -48,8 +48,8 @@ export default function Example() {
                 Our customers love us
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
-                Take a moment to look over the reviews from our past
-                collaborations with different platforms
+                Take a moment to look over the reviews from our collaborations
+                with different platforms
               </p>
               <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">
                 <a
@@ -70,7 +70,7 @@ export default function Example() {
                   href="www.thumbtack.com"
                   className="flex items-center gap-3 text-white text-xl"
                 >
-                  <SiThumbtack />
+                  <SiThumbtack className="w-[40px] h-[40px]" />
                   Thumbtack
                 </a>
                 <Image
