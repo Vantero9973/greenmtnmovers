@@ -217,12 +217,12 @@ export default function Navbar() {
               </Transition>
             </Menu>
           </a>
-          <a
+          {/* <a
             href="/about"
             className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
           >
             <button className="px-1 lg:px-3 py-2">About</button>
-          </a>
+          </a> */}
           <a
             href="/contact"
             className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
@@ -422,14 +422,14 @@ export default function Navbar() {
                       )}
                     </Disclosure>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="/about"
                       className="block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-700"
                     >
                       About
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="/contact"

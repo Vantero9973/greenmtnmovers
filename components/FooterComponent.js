@@ -1,6 +1,7 @@
 "use client";
 import { Footer } from "flowbite-react";
-import { BsFacebook, BsGithub, BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsYelp } from "react-icons/bs";
+import { SiThumbtack } from "react-icons/si";
 import { cities } from "../app/data/cities";
 
 export default function FooterComponent() {
@@ -14,7 +15,7 @@ export default function FooterComponent() {
             <div>
               <Footer.Title title="Company" />
               <Footer.LinkGroup col>
-                <Footer.Link href="/about">About</Footer.Link>
+                {/* <Footer.Link href="/about">About</Footer.Link> */}
                 <Footer.Link href="/contact">Contact</Footer.Link>
                 <Footer.Link href="/careers">Careers</Footer.Link>
                 <Footer.Link href="/blog">Blog</Footer.Link>
@@ -127,13 +128,22 @@ export default function FooterComponent() {
           <div className="max-w-screen-xl w-full px-4 py-6 sm:flex sm:items-center sm:justify-between">
             <Footer.Copyright
               by="Green Mountain Movers™"
-              href="#"
+              href="/"
               year={2021}
             />
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-              <Footer.Icon href="#" icon={BsFacebook} />
-              <Footer.Icon href="#" icon={BsInstagram} />
-              <Footer.Icon href="#" icon={BsGithub} />
+              <Footer.Icon
+                href="https://www.facebook.com/people/Green-Mountain-Movers/61550499921728/"
+                icon={BsFacebook}
+              />
+              <Footer.Icon
+                href="https://www.yelp.com/biz/green-mountain-movers-lakewood"
+                icon={BsYelp}
+              />
+              <Footer.Icon
+                href="https://www.thumbtack.com/co/denver/movers/green-mountain-movers/service/420816093781598234"
+                icon={SiThumbtack}
+              />
             </div>
           </div>
         </div>
