@@ -16,16 +16,16 @@ export default function ContactForm() {
     phone: "",
   });
 
-  console.log(process.env);
+  console.log(process.env.NEXT_PUBLIC_USER_ID);
 
   const { register, handleSubmit } = useForm();
 
   const onSubmit = () => {
     send(
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
       toSend,
-      process.env.USER_ID
+      process.env.NEXT_PUBLIC_USER_ID
     )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
