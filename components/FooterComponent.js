@@ -134,14 +134,20 @@ export default function FooterComponent() {
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon
                 href="https://www.facebook.com/people/Green-Mountain-Movers/61550499921728/"
+                target="_blank"
+                rel="noopener noreferrer"
                 icon={BsFacebook}
               />
               <Footer.Icon
                 href="https://www.yelp.com/biz/green-mountain-movers-lakewood"
+                target="_blank"
+                rel="noopener noreferrer"
                 icon={BsYelp}
               />
               <Footer.Icon
                 href="https://www.thumbtack.com/co/denver/movers/green-mountain-movers/service/420816093781598234"
+                target="_blank"
+                rel="noopener noreferrer"
                 icon={SiThumbtack}
               />
             </div>
