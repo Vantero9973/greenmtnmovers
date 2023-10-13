@@ -16,7 +16,7 @@ export default function ContactForm() {
     phone: "",
   });
 
-  console.log(process.env.NEXT_PUBLIC_USER_ID);
+  console.log(`ENV: ${process.env.NEXT_PUBLIC_USER_ID}`);
 
   const { register, handleSubmit } = useForm();
 
