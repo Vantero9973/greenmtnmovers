@@ -216,7 +216,7 @@ export default function ContactForm() {
           <div className="mt-10">
             <button
               type="submit"
-              className="rounded-md bg-[#0e5933] bg-opacity-90 px-10 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-[#0e5933] bg-opacity-90 px-10 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-opacity-100"
             >
               Submit
             </button>
