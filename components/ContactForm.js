@@ -22,10 +22,10 @@ export default function ContactForm() {
 
   const onSubmit = () => {
     send(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      process.env.SERVICE_ID,
+      process.env.TEMPLATE_ID,
       toSend,
-      process.env.NEXT_PUBLIC_USER_ID
+      process.env.USER_ID
     )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
