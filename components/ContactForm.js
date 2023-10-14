@@ -16,7 +16,7 @@ export default function ContactForm() {
     phone: "",
   });
 
-  const { register, handleSubmit } = useForm();
+  const { handleSubmit } = useForm();
 
   const onSubmit = () => {
     send(
