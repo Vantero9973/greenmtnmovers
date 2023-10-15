@@ -20,9 +20,9 @@ export default function Contact() {
 
   const { handleSubmit } = useForm();
 
-  const NEXT_PUBLIC_SERVICE_ID = "service_rxsmi4b";
-  const NEXT_PUBLIC_TEMPLATE_ID = "template_wylxjes";
-  const NEXT_PUBLIC_USER_ID = "GSu7c8HKQQ1CYrr6c";
+  const NEXT_PUBLIC_SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const NEXT_PUBLIC_TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const NEXT_PUBLIC_USER_ID = process.env.NEXT_PUBLIC_USER_ID;
 
   const onSubmit = () => {
     send(
