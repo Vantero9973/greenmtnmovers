@@ -18,17 +18,10 @@ export default function Contact() {
     phone: "",
   });
 
-  console.log(process.env);
-
-  const { register, handleSubmit } = useForm();
+  const { handleSubmit } = useForm();
 
   const onSubmit = () => {
-    send(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-      toSend,
-      process.env.NEXT_PUBLIC_USER_ID
-    )
+    send(service_rxsmi4b, template_wylxjes, toSend, GSu7c8HKQQ1CYrr6c)
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
