@@ -29,8 +29,8 @@ export default function HeaderServicesInfo() {
           >
             moving services
           </Link>{" "}
-          are not one-size-fits-all, which is why our moving service is
-          ***customized*** to the individual requirements of each client. From
+          are not one-size-fits-all, which is why our moving service is{" "}
+          <i>customized</i> to the individual requirements of each client. From
           packing to transporting and unpacking, our service moving solutions
           cater to all your moving needs. Our reputation as one of the leading
           moving companies in Denver is built on our commitment to providing
