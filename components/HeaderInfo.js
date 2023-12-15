@@ -1,7 +1,7 @@
 export default function HeaderInfo() {
   return (
     <>
-      <div className="flex flex-col gap-10 mx-auto max-w-screen-xl px-6 lg:px-8">
+      <div className="flex flex-col gap-10 mx-auto max-w-screen-xl px-6 lg:px-8 mt-10">
         <div className="flex flex-col gap-5">
           <div>
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
