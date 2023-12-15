@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import HeaderServicesInfo from "../components/HeaderServicesInfo";
+import HeaderInfo from "../components/HeaderInfo";
 import Cards from "../components/Cards";
 import Testimonials from "../components/Testimonials";
 import FaqComponent from "../components/FaqComponent";
@@ -12,11 +14,13 @@ export default function Home() {
       <NavbarAbsolute />
       <Header />
       <div className="responsive-padding">
+        <HeaderServicesInfo />
         <Cards />
         <Testimonials />
         <FaqComponent />
         <Stats />
         <Contact />
+        <HeaderInfo />
       </div>
     </>
   );

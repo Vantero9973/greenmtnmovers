@@ -11,15 +11,7 @@ import trashWhite from "../public/media/trash_white.png";
 export default function Cards() {
   return (
     <div className="flex justify-center items-center">
-      <div className="max-w-screen-xl relative isolate bg-white py-10 px-6 lg:px-8 mt-10">
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
-            Services
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            No job too big, or too small
-          </p>
-        </div>
+      <div className="max-w-screen-xl relative isolate bg-white py-10 px-6 lg:px-8">
         <div className="cards mt-10">
           <div className="cardContainer">
             <div className="cardsTextContainer">

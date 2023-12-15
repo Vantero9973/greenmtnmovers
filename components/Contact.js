@@ -74,12 +74,32 @@ export default function ContactForm() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
-            Contact
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Get a Quote
+        <div className="flex flex-col gap-5">
+          <div>
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
+              Contact
+            </h2>
+            <h3 className="text-4xl font-bold">
+              Get Your Free Moving Quote Today from Our Moving Specialists
+            </h3>
+          </div>
+          <p>
+            Embarking on a move can be a monumental task, but with Green
+            Mountain Movers, you'll have Denver's leading moving specialists
+            assisting you at every turn. Our comprehensive moving services are
+            tailored to meet your individual relocation needs, ensuring a
+            seamless move. Whether you're considering local movers or need
+            reliable movers for a long-distance move, our free moving quote will
+            set the foundation for a smooth transition. As a premier
+            full-service moving company, we pride ourselves on efficiency and
+            meticulous attention to detail. Green Mountain Movers stands out
+            among moving companies with our professional furniture assembly and
+            junk hauling services, added to make your move as straightforward as
+            possible. Contact us today for your moving quote, and let us
+            demonstrate why we are the mover of choice for Denver's community.
+            Experience stress-free moving when you choose to move with us,
+            because at Green Mountain Movers, we're more than just a moving
+            company—we're your partners in relocation.
           </p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className="mx-auto mt-12">

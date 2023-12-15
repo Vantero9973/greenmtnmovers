@@ -5,7 +5,7 @@ import headerImg3 from "../public/media/header-img3.jpg";
 import headerImg4 from "../public/media/header-img4.jpg";
 import headerImg5 from "../public/media/header-img5.jpg";
 
-export default function Example() {
+export default function Header() {
   return (
     <div className="bg-white">
       <main>
@@ -55,10 +55,10 @@ export default function Example() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="OPTIBank text-[28px] font-semibold text-gray-900 sm:text-4xl xl:text-5xl">
+                  <h2 className="OPTIBank text-[28px] font-semibold text-gray-900 sm:text-4xl xl:text-5xl">
                     A <span className="OPTIBank text-[#0e5933]">Seamless</span>{" "}
                     Moving Experience
-                  </h1>
+                  </h2>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Green Mountain Movers is locally owned and operated. We're
                     here to help make your move as stress-free as possible and

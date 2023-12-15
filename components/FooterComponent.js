@@ -12,6 +12,12 @@ export default function FooterComponent() {
       <div className="w-full">
         <div className="flex justify-center items-center">
           <div className="max-w-screen-xl grid w-full grid-cols-2 gap-8 px-6 pt-8 pb-16 md:grid-cols-5">
+            <div className="max-md:col-span-2 text-[#6b7280] text-sm leading-5">
+              <Footer.Title title="Contact" />
+              <h3>Green Mountain Movers</h3>
+              <p>Lakewood, CO</p>
+              <a href="tel:7196801538">(719) 680-1538</a>
+            </div>
             <div>
               <Footer.Title title="Company" />
               <Footer.LinkGroup col>
@@ -38,58 +44,7 @@ export default function FooterComponent() {
                 <Footer.Link href="/junk-hauling">Junk Hauling</Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div className="max-md:hidden">
-              <Footer.Title title="Service Areas" />
-              <Footer.LinkGroup col>
-                {cities.slice(0, 16).map((city) => {
-                  return (
-                    <Footer.Link
-                      href={`/service-areas/${formattedCityName(city)}`}
-                      key={city}
-                    >
-                      {city}
-                    </Footer.Link>
-                  );
-                })}
-              </Footer.LinkGroup>
-            </div>
-            <div className="max-md:hidden">
-              <Footer.Title
-                title="Service Areas"
-                className="text-[transparent]"
-              />
-              <Footer.LinkGroup col>
-                {cities.slice(16, 32).map((city) => {
-                  return (
-                    <Footer.Link
-                      href={`/service-areas/${formattedCityName(city)}`}
-                      key={city}
-                    >
-                      {city}
-                    </Footer.Link>
-                  );
-                })}
-              </Footer.LinkGroup>
-            </div>
-            <div className="max-md:hidden">
-              <Footer.Title
-                title="Service Areas"
-                className="text-[transparent]"
-              />
-              <Footer.LinkGroup col>
-                {cities.slice(32, 48).map((city) => {
-                  return (
-                    <Footer.Link
-                      href={`/service-areas/${formattedCityName(city)}`}
-                      key={city}
-                    >
-                      {city}
-                    </Footer.Link>
-                  );
-                })}
-              </Footer.LinkGroup>
-            </div>
-            <div className="md:hidden">
+            <div>
               <Footer.Title title="Service Areas" />
               <Footer.LinkGroup col>
                 {cities.slice(0, 24).map((city) => {
@@ -104,7 +59,7 @@ export default function FooterComponent() {
                 })}
               </Footer.LinkGroup>
             </div>
-            <div className="md:hidden">
+            <div>
               <Footer.Title
                 title="Service Areas"
                 className="text-[transparent]"
