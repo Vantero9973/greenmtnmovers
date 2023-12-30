@@ -7,9 +7,9 @@ export default function HeaderInfo() {
             <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
               Moving Services
             </h2>
-            <h1 className="text-4xl font-bold">
+            <h2 className="text-4xl font-bold">
               Premier Full Service Moving Company in Denver
-            </h1>
+            </h2>
           </div>
           <p>
             As Denver's leading full service moving company, Green Mountain
