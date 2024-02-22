@@ -495,3 +495,12 @@ html {
   font-size: 16px !important;
   font-weight: 500 !important;
 }
+
+.custom-link {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+.custom-link:visited {
+  color: #551a8b;
+}
