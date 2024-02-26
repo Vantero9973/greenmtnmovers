@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ContactForm from "../../components/ContactForm";
 import truckBlack from "../../public/media/truck_black.png";
-import truckWhite from "../../public/media/truck_white.png";
 import junkHauling from "../../public/media/movers.jpg";
 import BookingProcess from "../../components/BookingProcess";
 import Navbar from "../../components/Navbar";
@@ -40,7 +39,6 @@ export default function JunkHauling() {
       <div className="flex justify-center items-center">
         <div className="max-w-screen-xl py-20 px-5">
           <div className="mx-auto">
-            {/* Introduction */}
             <div className="mb-8">
               <h2 className="text-2xl font-semibold mb-2">
                 Welcome to Green Mountain Movers
@@ -58,7 +56,6 @@ export default function JunkHauling() {
 
             <div className="py-5 md:pt-5 md:pb-10">
               <div className="cards">
-                {/* Card 1 - Furniture Hauling */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -66,11 +63,6 @@ export default function JunkHauling() {
                       src={truckBlack}
                       alt="black sofa junk hauling icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white sofa junk hauling icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">FURNITURE HAULING</h2>
                   </div>
@@ -86,8 +78,6 @@ export default function JunkHauling() {
                     simplify your life.
                   </p>
                 </div>
-
-                {/* Card 2 - Appliance Removal */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -95,11 +85,6 @@ export default function JunkHauling() {
                       src={truckBlack}
                       alt="black fridge junk hauling icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white fridge junk hauling icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">APPLIANCE REMOVAL</h2>
                   </div>
@@ -114,8 +99,6 @@ export default function JunkHauling() {
                     to worry about a thing.
                   </p>
                 </div>
-
-                {/* Card 3 - Mattress Disposal */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -123,11 +106,6 @@ export default function JunkHauling() {
                       src={truckBlack}
                       alt="black mattress junk hauling icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white mattress junk hauling icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">MATTRESS DISPOSAL</h2>
                   </div>
@@ -141,8 +119,6 @@ export default function JunkHauling() {
                     you with a peaceful night's sleep.
                   </p>
                 </div>
-
-                {/* Card 4 - Electronics Recycling */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -150,11 +126,6 @@ export default function JunkHauling() {
                       src={truckBlack}
                       alt="black electronics recycling icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white electronics recycling icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">ELECTRONICS RECYCLING</h2>
                   </div>
@@ -168,8 +139,6 @@ export default function JunkHauling() {
                     conscience.
                   </p>
                 </div>
-
-                {/* Card 5 - Debris Removal */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -177,11 +146,6 @@ export default function JunkHauling() {
                       src={truckBlack}
                       alt="black debris removal icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white debris removal icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">DEBRIS REMOVAL</h2>
                   </div>
@@ -195,8 +159,6 @@ export default function JunkHauling() {
                     mess so you can enjoy your space again.
                   </p>
                 </div>
-
-                {/* Card 6 - Junk Hauling Booking */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -204,11 +166,6 @@ export default function JunkHauling() {
                       src={truckBlack}
                       alt="black junk hauling truck icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white junk hauling truck icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">SCHEDULE A PICKUP</h2>
                   </div>
@@ -232,7 +189,6 @@ export default function JunkHauling() {
 
       <div className="flex justify-center items-center">
         <div className="max-w-screen-xl py-20 px-5">
-          {/* Request a Quote */}
           <div className="mb-8">
             <h2 className="text-2xl font-semibold mb-2">
               Get a Quote for Junk Hauling Services
@@ -248,7 +204,6 @@ export default function JunkHauling() {
             </div>
           </div>
 
-          {/* Why Choose Us */}
           <div className="flex max-md:flex-col justify-start items-stretch md:gap-20">
             <div className="mb-8 w-full md:w-2/4">
               <h2 className="text-2xl font-semibold mb-2">
@@ -292,7 +247,6 @@ export default function JunkHauling() {
         </div>
       </div>
 
-      {/* Junk Hauling Information */}
       <div className="service-areas-clippath-bg flex justify-center items-center">
         <div className="max-w-screen-xl flex flex-col justify-center items-center py-20 px-5 text-white text-center">
           <h2 className="text-2xl font-semibold mb-2">

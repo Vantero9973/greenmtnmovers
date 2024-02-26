@@ -3,16 +3,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ContactForm from "../../components/ContactForm";
 import truckBlack from "../../public/media/truck_black.png";
-import truckWhite from "../../public/media/truck_white.png";
 import boxBlack from "../../public/media/box_black.png";
-import boxWhite from "../../public/media/box_white.png";
 import officeBlack from "../../public/media/office-black.png";
-import officeWhite from "../../public/media/office-white.png";
 import apartmentBlack from "../../public/media/apartment-black.png";
-import apartmentWhite from "../../public/media/apartment-white.png";
-import muscleWhite from "../../public/media/muscle_white.png";
 import muscleBlack from "../../public/media/muscle_black.png";
-import deliveryWhite from "../../public/media/delivery-white.png";
 import deliveryBlack from "../../public/media/delivery-black.png";
 import movers from "../../public/media/movers.jpg";
 import BookingProcess from "../../components/BookingProcess";
@@ -68,7 +62,6 @@ export default function LongDistanceMoving() {
 
             <div className="py-5 md:pt-5 md:pb-10">
               <div className="cards">
-                {/* Card 1 - Household Moving */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -76,11 +69,6 @@ export default function LongDistanceMoving() {
                       src={truckBlack}
                       alt="black long-distance moving truck icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={truckWhite}
-                      alt="white long-distance moving truck icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">
                       LONG-DISTANCE HOUSEHOLD MOVING SERVICES
@@ -97,8 +85,6 @@ export default function LongDistanceMoving() {
                     hassle-free and memorable.
                   </p>
                 </div>
-
-                {/* Card 2 - Apartment Moving */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -106,11 +92,6 @@ export default function LongDistanceMoving() {
                       src={apartmentBlack}
                       alt="black moving box long-distance moving icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={apartmentWhite}
-                      alt="white moving box long-distance moving icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">
                       LONG-DISTANCE APARTMENT MOVING SERVICES
@@ -126,8 +107,6 @@ export default function LongDistanceMoving() {
                     regardless of the distance.
                   </div>
                 </div>
-
-                {/* Card 3 - Office Moving */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -135,11 +114,6 @@ export default function LongDistanceMoving() {
                       src={officeBlack}
                       alt="black office moving icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={officeWhite}
-                      alt="white office moving icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">
                       LONG-DISTANCE OFFICE MOVING SERVICES
@@ -156,8 +130,6 @@ export default function LongDistanceMoving() {
                     we take care of your office move across the United States.
                   </p>
                 </div>
-
-                {/* Card 4 - Packing Services */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -165,11 +137,6 @@ export default function LongDistanceMoving() {
                       src={boxBlack}
                       alt="black packing services icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={boxWhite}
-                      alt="white packing services icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">PACKING SERVICES</h2>
                   </div>
@@ -183,8 +150,6 @@ export default function LongDistanceMoving() {
                     organizing boxes, making unpacking a breeze.
                   </p>
                 </div>
-
-                {/* Card 5 - Labor-Only Moving Help */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -192,11 +157,6 @@ export default function LongDistanceMoving() {
                       src={muscleBlack}
                       alt="black labor-only moving help icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={muscleWhite}
-                      alt="white labor-only moving icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">LABOR-ONLY MOVING HELP</h2>
                   </div>
@@ -209,8 +169,6 @@ export default function LongDistanceMoving() {
                     your long-distance move a stress-free experience.
                   </p>
                 </div>
-
-                {/* Card 6 - Delivery Services */}
                 <div className="services-card-container">
                   <div className="cardsTextContainer">
                     <div className="cardsAccent" />
@@ -218,11 +176,6 @@ export default function LongDistanceMoving() {
                       src={deliveryBlack}
                       alt="black long-distance delivery icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={deliveryWhite}
-                      alt="white long-distance delivery icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">
                       LONG-DISTANCE DELIVERY SERVICES

@@ -3,16 +3,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ContactForm from "../../components/ContactForm";
 import truckBlack from "../../public/media/truck_black.png";
-import truckWhite from "../../public/media/truck_white.png";
 import boxBlack from "../../public/media/box_black.png";
-import boxWhite from "../../public/media/box_white.png";
 import officeBlack from "../../public/media/office-black.png";
-import officeWhite from "../../public/media/office-white.png";
 import apartmentBlack from "../../public/media/apartment-black.png";
-import apartmentWhite from "../../public/media/apartment-white.png";
-import muscleWhite from "../../public/media/muscle_white.png";
 import muscleBlack from "../../public/media/muscle_black.png";
-import deliveryWhite from "../../public/media/delivery-white.png";
 import deliveryBlack from "../../public/media/delivery-black.png";
 import movers from "../../public/media/movers.jpg";
 import BookingProcess from "../../components/BookingProcess";
@@ -75,11 +69,6 @@ export default function LocalMoving() {
                       alt="black local moving truck icon"
                       className="cardsImage"
                     />
-                    <Image
-                      src={truckWhite}
-                      alt="white local moving truck icon"
-                      className="cardsImageHover"
-                    />
                     <h2 className="card-title">HOUSEHOLD MOVING SERVICES</h2>
                   </div>
                   <p className="card-body">
@@ -99,11 +88,6 @@ export default function LocalMoving() {
                       src={apartmentBlack}
                       alt="black moving box long distance moving icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={apartmentWhite}
-                      alt="white moving box long distance moving icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">
                       LOCAL APARTMENT MOVING SERVICES
@@ -127,11 +111,6 @@ export default function LocalMoving() {
                       alt="black furniture assembly icon"
                       className="cardsImage"
                     />
-                    <Image
-                      src={officeWhite}
-                      alt="white furniture assembly icon"
-                      className="cardsImageHover"
-                    />
                     <h2 className="card-title">LOCAL OFFICE MOVING SERVICES</h2>
                   </div>
                   <p className="card-body">
@@ -153,11 +132,6 @@ export default function LocalMoving() {
                       alt="black moving box long distance moving icon"
                       className="cardsImage"
                     />
-                    <Image
-                      src={boxWhite}
-                      alt="white moving box long distance moving icon"
-                      className="cardsImageHover"
-                    />
                     <h2 className="card-title">LOCAL PACKING SERVICES</h2>
                   </div>
                   <p className="card-body">
@@ -178,11 +152,6 @@ export default function LocalMoving() {
                       alt="black labor only moving help icon"
                       className="cardsImage"
                     />
-                    <Image
-                      src={muscleWhite}
-                      alt="white labor only moving icon"
-                      className="cardsImageHover"
-                    />
                     <h2 className="card-title">LOCAL LABOR-ONLY MOVING HELP</h2>
                   </div>
                   <p className="card-body">
@@ -201,11 +170,6 @@ export default function LocalMoving() {
                       src={deliveryBlack}
                       alt="black heavy furniture moving icon"
                       className="cardsImage"
-                    />
-                    <Image
-                      src={deliveryWhite}
-                      alt="white heavy furniture moving icon"
-                      className="cardsImageHover"
                     />
                     <h2 className="card-title">LOCAL DELIVERY SERVICES</h2>
                   </div>

@@ -1,15 +1,9 @@
 import Image from "next/image";
 import truckBlack from "../public/media/truck_black.png";
-import truckWhite from "../public/media/truck_white.png";
 import boxBlack from "../public/media/box_black.png";
-import boxWhite from "../public/media/box_white.png";
 import furnitureBlack from "../public/media/furniture_black.png";
-import furnitureWhite from "../public/media/furniture_white.png";
 import trashBlack from "../public/media/trash_black.png";
-import trashWhite from "../public/media/trash_white.png";
-import muscleWhite from "../public/media/muscle_white.png";
 import muscleBlack from "../public/media/muscle_black.png";
-import weightWhite from "../public/media/weight_white.png";
 import weightBlack from "../public/media/weight_black.png";
 
 export default function ServiceAreasCards() {
@@ -23,11 +17,6 @@ export default function ServiceAreasCards() {
               src={truckBlack}
               alt="black local moving truck icon"
               className="cardsImage"
-            />
-            <Image
-              src={truckWhite}
-              alt="white local moving truck icon"
-              className="cardsImageHover"
             />
             <h2 className="card-title">LOCAL MOVING</h2>
           </div>
@@ -45,11 +34,6 @@ export default function ServiceAreasCards() {
               alt="black moving box long distance moving icon"
               className="cardsImage"
             />
-            <Image
-              src={boxWhite}
-              alt="white moving box long distance moving icon"
-              className="cardsImageHover"
-            />
             <h2 className="card-title">LONG-DISTANCE MOVING</h2>
           </div>
           <p className="card-body">
@@ -65,11 +49,6 @@ export default function ServiceAreasCards() {
               src={furnitureBlack}
               alt="black furniture assembly icon"
               className="cardsImage"
-            />
-            <Image
-              src={furnitureWhite}
-              alt="white furniture assembly icon"
-              className="cardsImageHover"
             />
             <h2 className="card-title">FURNITURE ASSEMBLY</h2>
           </div>
@@ -87,11 +66,6 @@ export default function ServiceAreasCards() {
               alt="black junk removal and hauling icon"
               className="cardsImage"
             />
-            <Image
-              src={trashWhite}
-              alt="white junk removal and hauling icon"
-              className="cardsImageHover"
-            />
             <h2 className="card-title">JUNK HAULING</h2>
           </div>
           <p className="card-body">
@@ -108,11 +82,6 @@ export default function ServiceAreasCards() {
               alt="black labor only moving help icon"
               className="cardsImage"
             />
-            <Image
-              src={muscleWhite}
-              alt="white labor only moving icon"
-              className="cardsImageHover"
-            />
             <h2 className="card-title">LABOR ONLY MOVING HELP</h2>
           </div>
           <p className="card-body">
@@ -128,11 +97,6 @@ export default function ServiceAreasCards() {
               src={weightBlack}
               alt="black heavy furniture moving icon"
               className="cardsImage"
-            />
-            <Image
-              src={weightWhite}
-              alt="white heavy furniture moving icon"
-              className="cardsImageHover"
             />
             <h2 className="card-title">HEAVY FURNITURE MOVING</h2>
           </div>
