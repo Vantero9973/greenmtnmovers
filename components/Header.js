@@ -67,12 +67,12 @@ export default function Header() {
                     surrounding areas.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
-                    <a
-                      href="#"
+                    <Link
+                      href="/contact"
                       className="rounded-md bg-[#0e5933] bg-opacity-90 px-5 py-3 font-semibold text-white shadow-sm hover:[#0e5933] hover:bg-opacity-100 transition"
                     >
                       Get a Quote
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
