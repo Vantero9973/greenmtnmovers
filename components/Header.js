@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import headerImg from "../public/media/header-img.jpg";
 import headerImg2 from "../public/media/header-img2.jpg";
 import headerImg3 from "../public/media/header-img3.jpg";
