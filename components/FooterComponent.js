@@ -29,6 +29,8 @@ export default function FooterComponent() {
                   Moving Checklist
                 </Footer.Link>
                 <Footer.Link href="/faq">FAQ</Footer.Link>
+                <Footer.Link href="/privacy">Privacy Policy</Footer.Link>
+                <Footer.Link href="/terms">Terms & Conditions</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
