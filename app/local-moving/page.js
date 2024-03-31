@@ -399,7 +399,7 @@ export default function LocalMoving() {
             </div>
           </div>
 
-          <div className="divide-y divide-zinc-900/10">
+          <div className="divide-y divide-zinc-900/10 pb-10">
             <h2 className="text-2xl font-semibold leading-10 tracking-tight text-zinc-900">
               Frequently asked questions
             </h2>
