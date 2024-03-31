@@ -227,8 +227,6 @@ html {
 
 @media (min-width: 1300px) {
   .card-body {
-    display: flex;
-    align-items: center;
     font-size: 1em;
     color: #4d4d4d;
     transition: 0.3s ease-in-out;
@@ -238,8 +236,6 @@ html {
 
 @media (max-width: 1300px) {
   .card-body {
-    display: flex;
-    align-items: center;
     font-size: 15px;
     color: #4d4d4d;
     transition: 0.3s ease-in-out;

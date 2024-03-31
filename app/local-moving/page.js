@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ContactForm from "../../components/ContactForm";
 import truckBlack from "../../public/media/truck_black.png";
 import boxBlack from "../../public/media/box_black.png";
@@ -11,6 +12,31 @@ import deliveryBlack from "../../public/media/delivery-black.png";
 import movers from "../../public/media/movers.jpg";
 import BookingProcess from "../../components/BookingProcess";
 import Navbar from "../../components/Navbar";
+import { Disclosure } from "@headlessui/react";
+import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+
+const faqs = [
+  {
+    question: "What is considered local moving?",
+    answer:
+      "Local moving typically refers to a move within the same city or county. For example, moving from Denver to Colorado Springs would be considered a local move in Colorado.",
+  },
+  {
+    question: "How Much Does a Denver Local Move Cost?",
+    answer:
+      "The cost of a local move in Denver can vary depending on several factors, including the distance of your move, the size of your home or office, and any additional services you may need. Green Mountain Movers offers competitive prices and customized quotes to fit your budget.",
+  },
+  {
+    question: "What Makes Green Mountain Movers Stand Out?",
+    answer:
+      "At Green Mountain Movers, we pride ourselves on our exceptional customer service, attention to detail, and efficient moving process. Our team is highly trained and experienced in handling all types of moves within Colorado.",
+  },
+  {
+    question: "Are My Belongings Safe During the Move?",
+    answer:
+      "Yes, at Green Mountain Movers, we take great care in handling your belongings during the entire moving process. We use high-quality packing materials and secure loading techniques to ensure the safety of your items.",
+  },
+];
 
 export default function LocalMoving() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -46,16 +72,72 @@ export default function LocalMoving() {
           <div className="mx-auto">
             {/* Introduction */}
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold mb-2">
-                Welcome to Green Mountain Movers
+              <h2 className="text-3xl font-semibold mb-10">
+                Denver Local Movers | Trusted Local Moving Services & Company
               </h2>
-              <p className="text-gray-700">
+              <h4 className="text-xl font-semibold mb-2">
+                Welcome to Green Mountain Movers
+              </h4>
+              <p className="text-zinc-700">
                 As your trusted partner for local moves in Colorado, Green
                 Mountain Movers is dedicated to providing seamless and
                 stress-free relocation experiences. With a deep understanding of
                 Colorado's diverse landscapes and cities, we offer a wide range
                 of services tailored to your specific needs. Let's explore how
                 we can make your Colorado move an unforgettable journey.
+              </p>
+              <h4 className="text-xl font-semibold mb-2 mt-10">
+                Your Trusted Local Moving Company in Denver
+              </h4>
+              <p className="text-zinc-700">
+                Amidst Denver's bustling life, you'll find Green Mountain
+                Movers, a beacon of reliability in the world of home moving. As
+                premier Denver local movers,{" "}
+                <strong>we've built a foundation of trust </strong>
+                with our community through dedicated local moving services that
+                prioritize your peace of mind. Whether you're transitioning to a
+                new neighborhood or relocating your residence within the city's
+                vibrant borders, our movers are equipped to handle every aspect
+                of your moving experience.
+                <br />
+                <br />
+                At Green Mountain Movers, we understand that every move is
+                unique, which is why our mover specialists craft personalized
+                plans tailored to your specific needs. Our local moving company
+                stands out for our meticulous attention to detail and commitment
+                to making your moving process seamless and stress-free.
+                <br />
+                <br />
+                When the time comes for you to embark on your local moving
+                journey, let us help elevate the experience. You deserve a local
+                moving company that's as invested in your new beginnings as you
+                are. With Green Mountain Movers by your side, your local move is
+                in the hands of trusted professionals every step of the way.
+              </p>
+              <h4 className="text-xl font-semibold mb-2 mt-10">
+                Why Hire a Denver Professional Local Mover
+              </h4>
+              <p className="text-zinc-700">
+                Hiring a professional local mover like Green Mountain Movers can
+                make all the difference when it comes to local home or
+                residential moving in Denver. Moving to a new local apartment or
+                house can be overwhelming, but with our team of dedicated mover
+                specialists, you can rest assured that your move will be handled
+                with care and precision. From packing to transport and
+                unpacking, we offer tailored services to meet your specific
+                needs, ensuring a seamless and stress-free moving experience.
+                <br />
+                <br />
+                Heavy lifting is always difficult and can result in injury or
+                damage if not done properly. Our professional movers are trained
+                and equipped to easily handle all types of furniture,
+                appliances, and boxes, making sure your belongings are safe and
+                secure throughout the process.
+                <br />
+                <br />
+                <strong>Trust Green Mountain Movers</strong> to be your partner
+                in this journey of new beginnings. Let us take the lead so you
+                can easily focus on settling into your new local space.
               </p>
             </div>
 
@@ -69,7 +151,7 @@ export default function LocalMoving() {
                       alt="black local moving truck icon"
                       className="cardsImage"
                     />
-                    <h2 className="card-title">HOUSEHOLD MOVING SERVICES</h2>
+                    <h2 className="card-title">RESIDENTIAL MOVING SERVICES</h2>
                   </div>
                   <p className="card-body">
                     Moving your household within Colorado is a significant
@@ -99,8 +181,8 @@ export default function LocalMoving() {
                     narrow hallways are common. Our specialized apartment movers
                     are skilled at maneuvering through these challenges
                     efficiently. We provide the necessary equipment, including
-                    dollies, furniture sliders, and lifting straps, to ensure a
-                    smooth apartment move.
+                    dollies, furniture sliders, and lifting straps, to{" "}
+                    <i>ensure a smooth apartment move</i>.
                   </div>
                 </div>
                 <div className="services-card-container">
@@ -120,7 +202,7 @@ export default function LocalMoving() {
                     office move. Our experienced team works closely with your
                     organization to create a tailored moving plan that
                     accommodates your schedule and minimizes disruption. With
-                    Green Mountain Movers, you can focus on your business, while
+                    Green Mountain Movers, you can focus on your business while
                     we take care of your office move in Colorado.
                   </p>
                 </div>
@@ -137,8 +219,16 @@ export default function LocalMoving() {
                   <p className="card-body">
                     Proper packing is the foundation of a successful move in
                     Colorado. Our professional packers are experts in protecting
-                    your belongings. We provide high-quality packing materials,
-                    including sturdy boxes, shrink wrap, bubble wrap, and
+                    your belongings. We provide high-quality{" "}
+                    <Link
+                      href="https://www.nytimes.com/wirecutter/reviews/make-moving-less-miserable/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link w-fit"
+                    >
+                      packing materials
+                    </Link>
+                    , including sturdy boxes, shrink wrap, bubble wrap, and
                     packing tape, to ensure everything is secure during
                     transport. Our meticulous approach includes labeling and
                     organizing boxes, making unpacking a breeze.
@@ -192,37 +282,13 @@ export default function LocalMoving() {
 
       <div className="flex justify-center items-center">
         <div className="max-w-screen-xl py-20 px-5">
-          {/* Local Moving Quotes */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-2">
-              Get a Quote for Local Moving Services
-            </h2>
-            <p className="text-gray-700">
-              Planning your local move in Colorado starts with gathering quotes
-              from reputable moving companies. Green Mountain Movers offers
-              complimentary estimates tailored to your unique needs. Our
-              detailed quotes provide a breakdown of every aspect of your move,
-              ensuring transparency and clarity throughout the process.
-            </p>
-            <p className="text-gray-700">
-              Colorado's diverse terrain and cities require customized moving
-              solutions. Our team considers factors such as distance, location,
-              and the size of your move when providing quotes. Contact Green
-              Mountain Movers today to receive your free quote and, if needed,
-              an on-site estimate for your Colorado move.
-            </p>
-            <div className="pt-5 pb-10">
-              <ContactForm />
-            </div>
-          </div>
-
           {/* Why Choose Us */}
           <div className="flex max-md:flex-col justify-start items-stretch md:gap-20">
             <div className="mb-8 w-full md:w-2/4">
               <h2 className="text-2xl font-semibold mb-2">
                 Why Choose Green Mountain Movers?
               </h2>
-              <ul className="list-disc text-gray-700">
+              <ul className="list-disc text-zinc-700">
                 <li>
                   Flat rate pricing available for transparent and predictable
                   costs.
@@ -285,13 +351,188 @@ export default function LocalMoving() {
             Colorado offers a unique backdrop for your move, whether you're
             exploring the majestic mountains or the vibrant cities. Various
             factors, including your level of preparedness, packing, and
-            proximity to the truck, influence the final cost of your move. Green
-            Mountain Movers is your trusted partner for a seamless and
+            proximity to the truck, influence the final cost of your move. If
+            your searching for “
+            <Link
+              href="https://greenmtnmovers.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="custom-link w-fit"
+            >
+              moving services near me
+            </Link>
+            ” in Colorado, look no further than our reliable and trusted team.
+            <br />
+            <br />
+            Green Mountain Movers is your trusted partner for a seamless and
             stress-free local move in beautiful Colorado. We have a deep
             understanding of the state's geography and are committed to
             providing you with a memorable moving experience in this stunning
             part of the country.
           </p>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center">
+        <div className="max-w-screen-xl py-20 px-5">
+          {/* Local Moving Quotes */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-2">
+              Get a Quote for Local Moving Services
+            </h2>
+            <p className="text-zinc-700">
+              Planning your local move in Colorado starts with gathering quotes
+              from reputable moving companies. Green Mountain Movers offers{" "}
+              <i>complimentary estimates</i> tailored to your unique needs. Our
+              detailed quotes provide a breakdown of every aspect of your move,
+              ensuring transparency and clarity throughout the process.
+            </p>
+            <p className="text-zinc-700">
+              Colorado's diverse terrain and cities require customized moving
+              solutions. Our team considers factors such as distance, location,
+              and the size of your move when providing quotes. Contact Green
+              Mountain Movers today to receive your free quote and, if needed,
+              an on-site estimate for your Colorado move.
+            </p>
+            <div className="pt-5 pb-10">
+              <ContactForm />
+            </div>
+          </div>
+
+          <div className="divide-y divide-zinc-900/10">
+            <h2 className="text-2xl font-semibold leading-10 tracking-tight text-zinc-900">
+              Frequently asked questions
+            </h2>
+            <dl className="mt-5 space-y-6 divide-y divide-zinc-900/10">
+              <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
+                        <span className="text-base font-semibold leading-7">
+                          What is considered local moving?
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                          ) : (
+                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-zinc-600">
+                        Local moving typically refers to a move within the same
+                        city or county. For example, moving from Denver to
+                        Colorado Springs would be considered a local move in
+                        Colorado.
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+
+              <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
+                        <span className="text-base font-semibold leading-7">
+                          How Much Does a Denver Local Move Cost?
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                          ) : (
+                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-zinc-600">
+                        The cost of a local move in Denver can vary depending on
+                        several factors, including the distance of your move,
+                        the size of your home or office, and any additional
+                        services you may need. Green Mountain Movers offers
+                        competitive prices and customized quotes to fit your
+                        budget.
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+
+              <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
+                        <span className="text-base font-semibold leading-7">
+                          What Makes Green Mountain Movers Stand Out?
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                          ) : (
+                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-zinc-600">
+                        At Green Mountain Movers, we pride ourselves on our
+                        exceptional customer service, attention to detail, and
+                        efficient moving process. Our team is highly trained and
+                        experienced in handling all{" "}
+                        <Link
+                          href="https://www.military.com/pcs/types-of-moves.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="custom-link w-fit"
+                        >
+                          types of moves
+                        </Link>{" "}
+                        within Colorado.
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+
+              <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
+                        <span className="text-base font-semibold leading-7">
+                          Are My Belongings Safe During the Move?
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
+                          ) : (
+                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-zinc-600">
+                        Yes, at Green Mountain Movers, we take great care in
+                        handling your belongings during the entire moving
+                        process. We use high-quality packing materials and
+                        secure loading techniques to ensure the safety of your
+                        items.
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            </dl>
+          </div>
         </div>
       </div>
     </>
