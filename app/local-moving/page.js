@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../../components/ContactForm";
@@ -14,29 +15,7 @@ import BookingProcess from "../../components/BookingProcess";
 import Navbar from "../../components/Navbar";
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
-
-const faqs = [
-  {
-    question: "What is considered local moving?",
-    answer:
-      "Local moving typically refers to a move within the same city or county. For example, moving from Denver to Colorado Springs would be considered a local move in Colorado.",
-  },
-  {
-    question: "How Much Does a Denver Local Move Cost?",
-    answer:
-      "The cost of a local move in Denver can vary depending on several factors, including the distance of your move, the size of your home or office, and any additional services you may need. Green Mountain Movers offers competitive prices and customized quotes to fit your budget.",
-  },
-  {
-    question: "What Makes Green Mountain Movers Stand Out?",
-    answer:
-      "At Green Mountain Movers, we pride ourselves on our exceptional customer service, attention to detail, and efficient moving process. Our team is highly trained and experienced in handling all types of moves within Colorado.",
-  },
-  {
-    question: "Are My Belongings Safe During the Move?",
-    answer:
-      "Yes, at Green Mountain Movers, we take great care in handling your belongings during the entire moving process. We use high-quality packing materials and secure loading techniques to ensure the safety of your items.",
-  },
-];
+import movingStock from "../../public/media/moving-stock-photo.jpg";
 
 export default function LocalMoving() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -55,6 +34,16 @@ export default function LocalMoving() {
 
   return (
     <>
+      <Head>
+        <title>
+          Denver Local Movers | Trusted Local Moving Services & Company
+        </title>
+        <meta
+          name="description"
+          content="Green Mountain Movers: Your premier Denver local moving company. Trust our reliable and professional moving services for a stress-free relocation experience. Expert handling of your belongings guaranteed."
+        />
+      </Head>
+
       <Navbar />
       <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px]">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
@@ -72,9 +61,14 @@ export default function LocalMoving() {
           <div className="mx-auto">
             {/* Introduction */}
             <div className="mb-8">
-              <h2 className="text-3xl font-semibold mb-10">
+              <h1 className="text-3xl font-semibold mb-10">
                 Denver Local Movers | Trusted Local Moving Services & Company
-              </h2>
+              </h1>
+              <Image
+                src={movingStock}
+                alt="Movers Packing Boxes"
+                className="max-h-[450px] object-cover rounded-xl mb-10"
+              />
               <h4 className="text-xl font-semibold mb-2">
                 Welcome to Green Mountain Movers
               </h4>
@@ -355,8 +349,6 @@ export default function LocalMoving() {
             your searching for “
             <Link
               href="https://greenmtnmovers.com/"
-              target="_blank"
-              rel="noopener noreferrer"
               className="custom-link w-fit"
             >
               moving services near me
