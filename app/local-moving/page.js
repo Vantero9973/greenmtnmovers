@@ -338,14 +338,14 @@ export default function LocalMoving() {
           <p>
             Still unsure{" "}
             <Link
-              href="http://localhost:3000/how-do-you-plan-a-local-move"
+              href="https://greenmtnmovers.com/how-do-you-plan-a-local-move"
               className="underline hover:text-[#0000ee]"
             >
               how do you plan a local move
             </Link>
             ? or{" "}
             <Link
-              href="http://localhost:3000/how-do-i-find-the-best-local-movers"
+              href="https://greenmtnmovers.com/how-do-i-find-the-best-local-movers"
               className="underline hover:text-[#0000ee]"
             >
               how do I find the best local movers
