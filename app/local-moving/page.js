@@ -1,6 +1,3 @@
-"use client";
-import { useState, useEffect } from "react";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "../../components/ContactForm";
@@ -13,46 +10,22 @@ import deliveryBlack from "../../public/media/delivery-black.png";
 import movers from "../../public/media/movers.jpg";
 import BookingProcess from "../../components/BookingProcess";
 import Navbar from "../../components/Navbar";
-import { Disclosure } from "@headlessui/react";
-import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
+import LocalMovingFAQ from "@/components/LocalMovingFAQ";
 import movingStock from "../../public/media/moving-stock-photo.jpg";
 
+export const metadata = {
+  title: "Denver Local Movers | Trusted Local Moving Services & Company",
+  description:
+    "Green Mountain Movers: Your premier Denver local moving company. Trust our reliable and professional moving services for a stress-free relocation experience. Expert handling of your belongings guaranteed.",
+};
+
 export default function LocalMoving() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
-      <Head>
-        <title>
-          Denver Local Movers | Trusted Local Moving Services & Company
-        </title>
-        <meta
-          name="description"
-          content="Green Mountain Movers: Your premier Denver local moving company. Trust our reliable and professional moving services for a stress-free relocation experience. Expert handling of your belongings guaranteed."
-        />
-      </Head>
-
       <Navbar />
       <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px]">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
-        <header
-          className="text-3xl md:text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white"
-          style={{
-            transform: `translateY(${scrollPosition * 0.4}px)`,
-          }}
-        >
+        <header className="text-3xl md:text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white">
           Local Moving Services
         </header>
       </div>
@@ -349,7 +322,7 @@ export default function LocalMoving() {
             your searching for “
             <Link
               href="https://greenmtnmovers.com/"
-              className="custom-link w-fit"
+              className="underline hover:text-[#0000ee]"
             >
               moving services near me
             </Link>
@@ -361,6 +334,24 @@ export default function LocalMoving() {
             understanding of the state's geography and are committed to
             providing you with a memorable moving experience in this stunning
             part of the country.
+          </p>
+          <p>
+            Still unsure{" "}
+            <Link
+              href="http://localhost:3000/how-do-you-plan-a-local-move"
+              className="underline hover:text-[#0000ee]"
+            >
+              how do you plan a local move
+            </Link>
+            ? or{" "}
+            <Link
+              href="http://localhost:3000/how-do-i-find-the-best-local-movers"
+              className="underline hover:text-[#0000ee]"
+            >
+              how do I find the best local movers
+            </Link>
+            ? Check out our blog posts for expert tips and advice on local move
+            preparation.
           </p>
         </div>
       </div>
@@ -391,140 +382,7 @@ export default function LocalMoving() {
             </div>
           </div>
 
-          <div className="divide-y divide-zinc-900/10 pb-10">
-            <h2 className="text-2xl font-semibold leading-10 tracking-tight text-zinc-900">
-              Frequently asked questions
-            </h2>
-            <dl className="mt-5 space-y-6 divide-y divide-zinc-900/10">
-              <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
-                        <span className="text-base font-semibold leading-7">
-                          What is considered local moving?
-                        </span>
-                        <span className="ml-6 flex h-7 items-center">
-                          {open ? (
-                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                          ) : (
-                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                          )}
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-zinc-600">
-                        Local moving typically refers to a move within the same
-                        city or county. For example, moving from Denver to
-                        Colorado Springs would be considered a local move in
-                        Colorado.
-                      </p>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
-
-              <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
-                        <span className="text-base font-semibold leading-7">
-                          How Much Does a Denver Local Move Cost?
-                        </span>
-                        <span className="ml-6 flex h-7 items-center">
-                          {open ? (
-                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                          ) : (
-                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                          )}
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-zinc-600">
-                        The cost of a local move in Denver can vary depending on
-                        several factors, including the distance of your move,
-                        the size of your home or office, and any additional
-                        services you may need. Green Mountain Movers offers
-                        competitive prices and customized quotes to fit your
-                        budget.
-                      </p>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
-
-              <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
-                        <span className="text-base font-semibold leading-7">
-                          What Makes Green Mountain Movers Stand Out?
-                        </span>
-                        <span className="ml-6 flex h-7 items-center">
-                          {open ? (
-                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                          ) : (
-                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                          )}
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-zinc-600">
-                        At Green Mountain Movers, we pride ourselves on our
-                        exceptional customer service, attention to detail, and
-                        efficient moving process. Our team is highly trained and
-                        experienced in handling all{" "}
-                        <Link
-                          href="https://www.military.com/pcs/types-of-moves.html"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="custom-link w-fit"
-                        >
-                          types of moves
-                        </Link>{" "}
-                        within Colorado.
-                      </p>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
-
-              <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-zinc-900">
-                        <span className="text-base font-semibold leading-7">
-                          Are My Belongings Safe During the Move?
-                        </span>
-                        <span className="ml-6 flex h-7 items-center">
-                          {open ? (
-                            <MinusIcon className="h-6 w-6" aria-hidden="true" />
-                          ) : (
-                            <PlusIcon className="h-6 w-6" aria-hidden="true" />
-                          )}
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-zinc-600">
-                        Yes, at Green Mountain Movers, we take great care in
-                        handling your belongings during the entire moving
-                        process. We use high-quality packing materials and
-                        secure loading techniques to ensure the safety of your
-                        items.
-                      </p>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
-            </dl>
-          </div>
+          <LocalMovingFAQ />
         </div>
       </div>
     </>
