@@ -68,7 +68,13 @@ export default function HeaderServicesInfo() {
           When faced with the complexities of a long-distance move, you need a
           moving company that's well-versed in the nuances of interstate
           transitions. Green Mountain Movers offers excellence in moving
-          services that extend well beyond Denver's borders. Our skilled movers
+          services that extend well beyond Denver's borders. Our skilled{" "}
+          <Link
+            href="https://greenmtnmovers.com/long-distance-moving"
+            className="custom-link"
+          >
+            long distance movers
+          </Link>{" "}
           understand that your possessions aren't just 'things' – they are the
           threads of your life's tapestry. As a premier moving company, we're
           committed to providing seamless service moving experiences. Whether
