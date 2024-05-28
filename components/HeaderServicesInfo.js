@@ -45,19 +45,25 @@ export default function HeaderServicesInfo() {
           Efficient Local Moving Services by Denver's Top Movers
         </h3>
         <p>
-          When it comes to local moving services, Green Mountain Movers is
-          Denver's top choice for providing seamless relocation experiences. Our
-          team of expert movers understands that a local move is more than just
-          a change of address; it's the transition of your home and everything
-          in it to a new beginning. We prioritize efficient, reliable moving
-          services designed to make your local move as smooth as possible. As a
-          seasoned moving company, we've mastered the art of home relocation,
-          ensuring each move is tailored to meet your specific needs. Let our
-          company's meticulous attention to detail and unparalleled commitment
-          to customer satisfaction lift the weight of moving off your shoulders.
-          Whether you're moving across the street or across the city, you can
-          count on our local services to get you settled into your new home with
-          ease.
+          When it comes to{" "}
+          <Link
+            href="https://greenmtnmovers.com/local-moving"
+            className="custom-link"
+          >
+            local moving services
+          </Link>
+          , Green Mountain Movers is Denver's top choice for providing seamless
+          relocation experiences. Our team of expert movers understands that a
+          local move is more than just a change of address; it's the transition
+          of your home and everything in it to a new beginning. We prioritize
+          efficient, reliable moving services designed to make your local move
+          as smooth as possible. As a seasoned moving company, we've mastered
+          the art of home relocation, ensuring each move is tailored to meet
+          your specific needs. Let our company's meticulous attention to detail
+          and unparalleled commitment to customer satisfaction lift the weight
+          of moving off your shoulders. Whether you're moving across the street
+          or across the city, you can count on our local services to get you
+          settled into your new home with ease.
         </p>
       </div>
       <div className="flex flex-col gap-3">

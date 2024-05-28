@@ -8,6 +8,7 @@ import apartmentBlack from "../../public/media/apartment-black.png";
 import muscleBlack from "../../public/media/muscle_black.png";
 import deliveryBlack from "../../public/media/delivery-black.png";
 import movers from "../../public/media/movers.jpg";
+import longDistanceMovers from "../../public/media/long-distance-move.jpg";
 import BookingProcess from "../../components/BookingProcess";
 import Navbar from "../../components/Navbar";
 
@@ -37,6 +38,13 @@ export default function LongDistanceMoving() {
                 Long Distance Moving Companies | Best Long-Distance Movers
                 Service in Denver
               </h1>
+
+              <Image
+                src={longDistanceMovers}
+                alt="Long Distance Movers"
+                className="w-full h-full max-h-[400px] object-cover mt-10 rounded-lg object-[center_75%]"
+              />
+
               <h4 className="text-2xl font-semibold mt-10">
                 Trusted Long Distance Moving Services in Denver
               </h4>

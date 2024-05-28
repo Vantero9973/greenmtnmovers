@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import truckBlack from "../public/media/truck_black.png";
 import boxBlack from "../public/media/box_black.png";
 import furnitureBlack from "../public/media/furniture_black.png";
@@ -9,7 +10,10 @@ export default function Cards() {
     <div className="flex justify-center items-center">
       <div className="max-w-screen-xl relative isolate bg-white py-10 px-6 lg:px-8">
         <div className="cards mt-10">
-          <div className="cardContainer">
+          <Link
+            href="https://greenmtnmovers.com/local-moving"
+            className="cardContainer cursor-pointer"
+          >
             <div className="cardsTextContainer">
               <div className="cardsAccent" />
               <Image
@@ -24,8 +28,11 @@ export default function Cards() {
               handles the logistics while you settle in. Stress-free and
               efficient. Trust us with your local move.
             </p>
-          </div>
-          <div className="cardContainer">
+          </Link>
+          <Link
+            href="https://greenmtnmovers.com/long-distance-moving"
+            className="cardContainer cursor-pointer"
+          >
             <div className="cardsTextContainer">
               <div className="cardsAccent" />
               <Image
@@ -40,8 +47,11 @@ export default function Cards() {
               seamless long-distance move. Timely and secure delivery of your
               belongings. Start your new chapter worry-free.
             </p>
-          </div>
-          <div className="cardContainer">
+          </Link>
+          <Link
+            href="https://greenmtnmovers.com/furniture-assembly"
+            className="cardContainer cursor-pointer"
+          >
             <div className="cardsTextContainer">
               <div className="cardsAccent" />
               <Image
@@ -56,8 +66,11 @@ export default function Cards() {
               effort. Let us handle the nuts and bolts. Enjoy a fully furnished
               space hassle-free. Your furniture, perfectly assembled.
             </p>
-          </div>
-          <div className="cardContainer">
+          </Link>
+          <div
+            href="https://greenmtnmovers.com/junk-hauling"
+            className="cardContainer cursor-pointer"
+          >
             <div className="cardsTextContainer">
               <div className="cardsAccent" />
               <Image

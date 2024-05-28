@@ -40,7 +40,7 @@ export default function LocalMoving() {
               <Image
                 src={movingStock}
                 alt="Movers Packing Boxes"
-                className="max-h-[450px] object-cover rounded-xl mb-10"
+                className="max-h-[400px] object-cover rounded-xl mb-10"
               />
               <h4 className="text-xl font-semibold mb-2">
                 Welcome to Green Mountain Movers
