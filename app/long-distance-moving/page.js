@@ -45,9 +45,9 @@ export default function LongDistanceMoving() {
                 className="w-full h-full max-h-[400px] object-cover mt-10 rounded-lg object-[center_75%]"
               />
 
-              <h4 className="text-2xl font-semibold mt-10">
+              <h2 className="text-2xl font-semibold mt-10">
                 Trusted Long Distance Moving Services in Denver
-              </h4>
+              </h2>
               <p className="text-gray-700 mt-2">
                 Welcome to Green Mountain Movers, your premier choice for long
                 distance moving services in Denver. At our company, we
@@ -69,9 +69,9 @@ export default function LongDistanceMoving() {
             </div>
 
             <div className="py-5 md:pt-5 md:pb-10">
-              <h4 className="text-2xl font-semibold">
+              <h2 className="text-2xl font-semibold">
                 Comprehensive Long-Distance Moving Services
-              </h4>
+              </h2>
               <p className="text-gray-700 mt-2 mb-10">
                 At Green Mountain Movers, we're renowned for our comprehensive
                 long-distance moving services that cater to all your interstate
@@ -215,9 +215,9 @@ export default function LongDistanceMoving() {
               </div>
             </div>
             <div className="my-5">
-              <h4 className="text-2xl font-semibold">
+              <h2 className="text-2xl font-semibold">
                 Expert Packing and Unloading Services for Long-Distance Moves
-              </h4>
+              </h2>
               <p className="text-gray-700 mt-2">
                 As premier{" "}
                 <Link
@@ -250,9 +250,9 @@ export default function LongDistanceMoving() {
             </div>
 
             <div className="flex flex-col gap-5 mt-10">
-              <h4 className="font-semibold text-2xl">
+              <h2 className="font-semibold text-2xl">
                 Why Choose Us for Your Long Distance Move?
-              </h4>
+              </h2>
               <p>
                 Choosing Green Mountain Movers for your long distance move means
                 opting for peace of mind, unparalleled service, and a commitment
@@ -335,9 +335,9 @@ export default function LongDistanceMoving() {
       <div className="flex justify-center items-center">
         <div className="max-w-screen-xl py-20 px-5">
           <div className="mb-8">
-            <h4 className="text-2xl font-semibold">
+            <h2 className="text-2xl font-semibold">
               Experienced Long Distance Mover Dedicated to You
-            </h4>
+            </h2>
             <p className="text-gray-700 mt-2">
               Moving can be a daunting task, and we understand that finding a
               reliable long distance mover is crucial to ensuring a successful
@@ -369,12 +369,12 @@ export default function LongDistanceMoving() {
           </div>
 
           <div className="flex flex-col gap-5 my-10">
-            <h4 className="font-semibold text-2xl">
+            <h2 className="font-semibold text-2xl">
               Preparing for Your Interstate Move
-            </h4>
-            <h5 className="text-lg font-semibold">
+            </h2>
+            <h3 className="text-lg font-semibold">
               Checklist and Tips for Efficient Moving Long Distance
-            </h5>
+            </h3>
             <p>
               Moving across states requires meticulous planning and
               organization. To help you streamline the process and ensure a
