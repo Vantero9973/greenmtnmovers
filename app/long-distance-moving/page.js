@@ -492,6 +492,27 @@ export default function LongDistanceMoving() {
                   stress-free moving experience.
                 </li>
               </ul>
+              <h2 className="text-2xl font-semibold mb-2 mt-5">
+                Related Articles
+              </h2>
+              <ul>
+                <li>
+                  <Link
+                    href="https://greenmtnmovers.com/how-to-stay-organized-during-a-long-distance-move"
+                    className="custom-link"
+                  >
+                    How to Stay Organized During a Long Distance Move
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://greenmtnmovers.com/avoiding-pitfalls-in-long-distance-moving"
+                    className="custom-link"
+                  >
+                    Avoiding Common Pitfalls in Long Distance Moving
+                  </Link>
+                </li>
+              </ul>
             </div>
             <div className="w-full md:w-2/4">
               <Image
