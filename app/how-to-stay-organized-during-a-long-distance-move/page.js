@@ -2,9 +2,9 @@ import Navbar from "../../components/NavbarAbsolute";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
-import image from "../../public/media/header-img2.jpg";
-import imageTwo from "../../public/media/header-img3.jpg";
-import imageThree from "../../public/media/header-img5.jpg";
+import image from "../../public/media/moving-4.jpg";
+import imageTwo from "../../public/media/moving-5.jpg";
+import imageThree from "../../public/media/moving-6.jpg";
 
 export const metadata = {
   title:
@@ -25,18 +25,18 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
           <Image
             src={image}
-            alt="movers moving couch"
-            className="object-cover w-full max-h-[400px] rounded-lg"
+            alt="movers labeling and packing boxes"
+            className="object-cover w-full max-h-[400px] rounded-lg h-full"
           />
           <Image
             src={imageTwo}
-            alt="one mover moving couch"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            alt="movers walking with boxes"
+            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
           <Image
             src={imageThree}
-            alt="movers carrying boxes"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            alt="satisfied client moved in"
+            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
         </div>
         <div className="mt-10">
@@ -53,9 +53,9 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
           </p>
         </div>
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Preparation Before the Move: Organize Your Items and Packing Plan
-          </h3>
+          </h2>
           <p>
             Effective preparation is key to a successful long-distance move.
             Start by decluttering your home and sorting through your belongings.
@@ -242,15 +242,15 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
         <div className="mt-10">
           <Image
             src={imageTwo}
-            alt="one mover moving couch"
+            alt="movers walking with boxes"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
 
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Stay Organized During a Cross-Country Move
-          </h3>
+          </h2>
           <p>
             Moving across the country can pose numerous challenges, but staying
             organized is crucial to ensure a smooth transition. As you get ready
@@ -267,9 +267,9 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
           </p>
         </div>
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Staying Organized With Kids and Pets
-          </h3>
+          </h2>
           <p>
             <Link
               href="https://www.forbes.com/home-improvement/moving-services/tips-for-moving-with-kids/"
@@ -296,14 +296,14 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
         <div className="mt-10">
           <Image
             src={imageThree}
-            alt="movers carrying boxes"
+            alt="satisfied client moved in"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Post-Move Organization and Settling in at Your New Home
-          </h3>
+          </h2>
           <p>
             Once you arrive, the real task begins. Carefully unpacking items
             within a set timeframe can help you settle in without feeling

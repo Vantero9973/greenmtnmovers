@@ -13,15 +13,14 @@ export default function FooterComponent() {
         <div className="flex justify-center items-center">
           <div className="max-w-screen-xl grid w-full grid-cols-2 gap-8 px-6 pt-8 pb-16 md:grid-cols-5">
             <div className="max-md:col-span-2 text-[#6b7280] text-sm leading-5">
-              <Footer.Title title="Contact" />
+              <Footer.Title title="Contact" as="h4" />
               <h3>Green Mountain Movers</h3>
               <p>Lakewood, CO</p>
               <a href="tel:7196801538">(719) 680-1538</a>
             </div>
             <div>
-              <Footer.Title title="Company" />
+              <Footer.Title title="Company" as="h4" />
               <Footer.LinkGroup col>
-                {/* <Footer.Link href="/about">About</Footer.Link> */}
                 <Footer.Link href="/contact">Contact</Footer.Link>
                 <Footer.Link href="/careers">Careers</Footer.Link>
                 <Footer.Link href="/blog">Blog</Footer.Link>
@@ -34,7 +33,7 @@ export default function FooterComponent() {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Services" />
+              <Footer.Title title="Services" as="h4" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/local-moving">Local Moving</Footer.Link>
                 <Footer.Link href="/long-distance-moving">
@@ -47,7 +46,7 @@ export default function FooterComponent() {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Service Areas" />
+              <Footer.Title title="Service Areas" as="h4" />
               <Footer.LinkGroup col>
                 {cities.slice(0, 24).map((city) => {
                   return (
@@ -65,6 +64,7 @@ export default function FooterComponent() {
               <Footer.Title
                 title="Service Areas"
                 className="text-[transparent]"
+                as="h4"
               />
               <Footer.LinkGroup col>
                 {cities.slice(24, 48).map((city) => {

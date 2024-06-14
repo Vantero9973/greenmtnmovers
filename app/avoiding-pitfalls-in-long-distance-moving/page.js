@@ -2,9 +2,9 @@ import Navbar from "../../components/NavbarAbsolute";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
-import image from "../../public/media/header-img2.jpg";
-import imageTwo from "../../public/media/header-img3.jpg";
-import imageThree from "../../public/media/header-img5.jpg";
+import image from "../../public/media/moving-1.jpg";
+import imageTwo from "../../public/media/moving-2.jpg";
+import imageThree from "../../public/media/moving-3.jpg";
 
 export const metadata = {
   title:
@@ -25,18 +25,18 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
           <Image
             src={image}
-            alt="movers moving couch"
-            className="object-cover w-full max-h-[400px] rounded-lg"
+            alt="movers carrying bins"
+            className="object-cover w-full max-h-[400px] rounded-lg h-full"
           />
           <Image
             src={imageTwo}
-            alt="one mover moving couch"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            alt="movers lifting box"
+            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
           <Image
             src={imageThree}
-            alt="movers carrying boxes"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            alt="mover taping box closed"
+            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
         </div>
         <div className="mt-10">
@@ -52,9 +52,9 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
           </p>
         </div>
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Long-Distance Moving Mistakes: Avoiding Common Pitfalls
-          </h3>
+          </h2>
           <p>
             Planning and preparation are crucial when it comes to long-distance
             moving. Below are some common mistakes that movers make, along with
@@ -62,7 +62,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
           </p>
           <ul className="space-y-5">
             <li className="font-bold">
-              1. Lack of Planning in Long Distance Moving
+              <h3>1. Lack of Planning in Long Distance Moving</h3>
               <p className="flex flex-col gap-y-2 font-normal mt-2">
                 <span>
                   Moving, especially a long-distance move, requires meticulous
@@ -84,7 +84,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
               </p>
             </li>
             <li className="font-bold">
-              2. Insufficient Packing Supplies
+              <h3>2. Insufficient Packing Supplies</h3>
               <p className="flex flex-col gap-y-2 font-normal mt-2">
                 <span>
                   One of the most mistakes in moving is{" "}
@@ -108,7 +108,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
               </p>
             </li>
             <li className="font-bold">
-              3. Failing to Create a Moving Inventory
+              <h3>3. Failing to Create a Moving Inventory</h3>
               <p className="flex flex-col gap-y-2 font-normal mt-2">
                 <span>
                   A common mistake during long-distance moves is{" "}
@@ -134,7 +134,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
               </p>
             </li>
             <li className="font-bold">
-              4. Inadequate Research on Movers Relocation Services
+              <h3>4. Inadequate Research on Movers Relocation Services</h3>
               <p className="flex flex-col gap-y-2 font-normal mt-2">
                 <span>
                   Choosing the right moving company is crucial for a successful
@@ -161,7 +161,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
               </p>
             </li>
             <li className="font-bold">
-              5. Underestimating the Time Needed to Move
+              <h3>5. Underestimating the Time Needed to Move</h3>
               <p className="flex flex-col gap-y-2 font-normal mt-2">
                 <span>
                   Many people make a significant mistake when moving long
@@ -190,14 +190,14 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
         <div className="mt-10">
           <Image
             src={imageThree}
-            alt="movers carrying boxes"
+            alt="mover taping box shut"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Moving Long-distance Tips and Tricks
-          </h3>
+          </h2>
           <p>
             Moving long-distance can be an intricate process that requires
             thorough preparation and strategic planning. To ensure a smooth
@@ -206,6 +206,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
             mistakes, reduce stress, and ensure your move is highly efficient
             and organized.
           </p>
+          <h3 className="font-semibold text-lg">Key Tips and Tricks:</h3>
           <ul className="space-y-2 list-disc list-inside">
             <li>
               <strong>Start Early:</strong> Begin preparing for your move as
@@ -306,14 +307,14 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
         <div className="mt-10">
           <Image
             src={imageTwo}
-            alt="one mover moving couch"
+            alt="movers lifting box"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
         <div className="flex flex-col gap-5 mt-10">
-          <h3 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl">
             Questions to Ask Your Moving Company
-          </h3>
+          </h2>
           <p>
             When researching and comparing long-distance moving companies,
             asking the right questions is crucial. Here are some key inquiries
