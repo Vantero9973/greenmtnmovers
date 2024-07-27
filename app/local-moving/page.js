@@ -14,9 +14,9 @@ import LocalMovingFAQ from "@/components/LocalMovingFAQ";
 import movingStock from "../../public/media/moving-stock-photo.jpg";
 
 export const metadata = {
-  title: "Denver Local Movers | Trusted Local Moving Services & Company",
+  title: "Top-Rated Local Movers in Lakewood, CO | Green Mountain Movers",
   description:
-    "Green Mountain Movers: Your premier Denver local moving company. Trust our reliable and professional moving services for a stress-free relocation experience. Expert handling of your belongings guaranteed.",
+    "Looking for reliable local movers in Lakewood, CO? Green Mountain Movers offers top-rated, affordable local moving services. Serving Lakewood and the greater Denver area, our experienced team ensures a smooth and stress-free move. Contact us today for a free quote!",
 };
 
 export default function LocalMoving() {
@@ -32,10 +32,9 @@ export default function LocalMoving() {
       <div className="flex justify-center items-center">
         <div className="max-w-screen-xl py-20 px-5">
           <div className="mx-auto">
-            {/* Introduction */}
             <div className="mb-8">
               <h1 className="text-3xl font-semibold mb-10">
-                Denver Local Movers | Trusted Local Moving Services & Company
+                Top-Rated Local Movers in Lakewood, CO | Green Mountain Movers
               </h1>
               <Image
                 src={movingStock}

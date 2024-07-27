@@ -13,10 +13,9 @@ import BookingProcess from "../../components/BookingProcess";
 import Navbar from "../../components/Navbar";
 
 export const metadata = {
-  title:
-    "Long Distance Moving Companies | Best Long-Distance Movers Service in Denver",
+  title: "Trusted Long Distance Movers in Lakewood, CO | Green Mountain Movers",
   description:
-    "Discover Green Mountain Movers, your trusted choice among long-distance moving companies in Denver. Offering reliable, efficient moving services tailored to meet your needs. Get a stress-free move with the best long-distance movers today!",
+    "Planning a long-distance move near Lakewood, CO? Green Mountain Movers offers top-rated, affordable long-distance moving services. Serving Lakewood and the greater Denver area, our expert team ensures a seamless and stress-free relocation. Contact us today for a free quote!",
 };
 
 export default function LongDistanceMoving() {
@@ -32,11 +31,10 @@ export default function LongDistanceMoving() {
       <div className="flex justify-center items-center">
         <div className="max-w-screen-xl py-20 px-5">
           <div className="mx-auto">
-            {/* Introduction */}
             <div className="mb-8">
               <h1 className="text-3xl font-semibold">
-                Long Distance Moving Companies | Best Long-Distance Movers
-                Service in Denver
+                Trusted Long Distance Movers in Lakewood, CO | Green Mountain
+                Movers
               </h1>
 
               <Image

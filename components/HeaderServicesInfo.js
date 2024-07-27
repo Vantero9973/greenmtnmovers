@@ -8,8 +8,8 @@ export default function HeaderServicesInfo() {
           Moving Services
         </h2>
         <h1 className="text-4xl font-bold">
-          Denver's Premier Moving Services & Company - Expert Movers for
-          Seamless Relocation
+          Lakewood Movers | Top-Rated Moving Company in Lakewood, CO | Green
+          Mountain Movers
         </h1>
       </div>
       <div className="flex flex-col gap-3">
