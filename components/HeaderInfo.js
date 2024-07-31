@@ -87,34 +87,23 @@ export default function HeaderInfo() {
         </div>
         <div className="flex flex-col gap-3">
           {" "}
-          <h2 className="text-2xl font-semibold">
-            Premier Full Service Moving Company in Denver
-          </h2>
+          <h2 className="text-2xl font-semibold">Lakewood's Trusted Movers</h2>
           <p>
-            When planning your upcoming relocation, selecting the right moving
-            service is crucial, and here’s why choosing Green Mountain Movers
-            stands above the rest. Our moving services are tailored to meet the
-            unique needs of each move. We provide a seamless moving process,
-            ensuring that everything from packing to transportation is handled
-            with the utmost care. Our movers are experts in the industry,
-            demonstrating efficiency and reliability, whether it’s a local move
-            or a long-distance one. As a{" "}
-            <a
-              href="https://www.google.com/maps?cid=2461178987750739680"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 visited:text-purple-900 cursor-pointer underline"
-            >
-              Denver
-            </a>
-            , we pride ourselves on our ability to facilitate a stress-free
-            relocation, offering comprehensive services to cover every aspect of
-            your move. From professional furniture assembly to responsible junk
-            hauling, our services are designed to make your move as smooth as
-            possible. Don’t hesitate to get in touch with us, Denver's top
-            movers, for a free moving quote from our moving specialists, and
-            make your next move with a company that excels in every facet of
-            relocation.
+            When planning your upcoming relocation, choosing the right movers is
+            crucial, and Green Mountain Movers is your best choice in Lakewood.
+            Our services are customized to meet the unique needs of each move,
+            providing a seamless process from packing to transportation. Our
+            experienced movers handle every aspect with the highest level of
+            care, whether you're moving locally or long-distance. We take pride
+            in offering a stress-free relocation experience, with comprehensive
+            services that include professional furniture assembly and
+            responsible junk hauling. For more information about the specific
+            areas we serve, visit our{" "}
+            <a href="/areas-served" className="custom-link">
+              Areas Served
+            </a>{" "}
+            page. Contact us today for a free moving quote and see why we're
+            Lakewood's top choice for moving services.
           </p>
         </div>
         <div className="flex flex-col gap-3">
