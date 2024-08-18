@@ -136,8 +136,9 @@ export default function Arvada() {
             <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
               <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <Image
-                  alt=""
+                  alt="movers"
                   src={arvadaImage}
+                  placeholder="blur"
                   className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 />
               </div>
@@ -308,8 +309,9 @@ export default function Arvada() {
                   </div>
                   <div className="flex items-start justify-end lg:order-first">
                     <Image
-                      alt=""
+                      alt="movers moving things"
                       src={moving3}
+                      placeholder="blur"
                       width={2432}
                       height={1442}
                       className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
@@ -339,8 +341,9 @@ export default function Arvada() {
             <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
               <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <Image
-                  alt=""
+                  alt="movers moving boxes"
                   src={moving1}
+                  placeholder="blur"
                   className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 />
               </div>
@@ -406,8 +409,9 @@ export default function Arvada() {
               <div className="lg:pr-4">
                 <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                   <Image
-                    alt=""
+                    alt="movers doing moving things"
                     src={moving2}
+                    placeholder="blur"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gray-900/80 mix-blend-multiply" />
