@@ -13,7 +13,7 @@ const faqs = [
 export default function Example() {
   return (
     <div className="mt-20">
-      <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         Frequently asked questions
       </h2>
       <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 border-y border-gray-900/10">
@@ -35,7 +35,7 @@ export default function Example() {
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+          <Disclosure.Panel as="dd" className="mt-5 sm:pr-12">
             <p className="text-sm leading-6 text-gray-600">
               The cost of hiring movers in Colorado can vary based on several
               factors, including the size of the move and the distance. Here's a
@@ -89,7 +89,7 @@ export default function Example() {
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+          <Disclosure.Panel as="dd" className="mt-5 sm:pr-12">
             <p className="text-sm leading-6 text-gray-600">
               Moving can be expensive, but there are ways to cut costs:
             </p>
@@ -143,7 +143,7 @@ export default function Example() {
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+          <Disclosure.Panel as="dd" className="mt-5 sm:pr-12">
             <p className="text-sm leading-6 text-gray-600">
               Yes, you can negotiate with moving companies. Here are some tips:
             </p>
@@ -197,7 +197,7 @@ export default function Example() {
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+          <Disclosure.Panel as="dd" className="mt-5 sm:pr-12">
             <p className="text-sm leading-6 text-gray-600">
               Preparation is key to a smooth move. Here’s a checklist:
             </p>
@@ -252,7 +252,7 @@ export default function Example() {
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+          <Disclosure.Panel as="dd" className="mt-5 sm:pr-12">
             <p className="text-sm leading-6 text-gray-600">
               Generally, movers do not expect help from the customer. However,
               small gestures like offering water or guiding them to the correct

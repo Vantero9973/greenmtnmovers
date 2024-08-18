@@ -169,7 +169,7 @@ export default function Arvada() {
                 </div>
                 <div className="mt-6 border-t border-gray-100">
                   <dl className="divide-y divide-gray-100">
-                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                       <dt className="text-sm font-medium leading-6 text-gray-900">
                         Professionalism
                       </dt>
@@ -178,7 +178,7 @@ export default function Arvada() {
                         providing excellent service.
                       </dd>
                     </div>
-                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                       <dt className="text-sm font-medium leading-6 text-gray-900">
                         Experience
                       </dt>
@@ -187,7 +187,7 @@ export default function Arvada() {
                         handle all aspects of the move professionally.
                       </dd>
                     </div>
-                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                       <dt className="text-sm font-medium leading-6 text-gray-900">
                         Customer-Centric Approach
                       </dt>
@@ -219,7 +219,7 @@ export default function Arvada() {
                 </div>
                 <div className="mt-6 border-t border-gray-100">
                   <dl className="divide-y divide-gray-100">
-                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                       <dt className="text-sm font-medium leading-6 text-gray-900">
                         Check Reviews and References
                       </dt>
@@ -228,7 +228,7 @@ export default function Arvada() {
                         praises.
                       </dd>
                     </div>
-                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                       <dt className="text-sm font-medium leading-6 text-gray-900">
                         Verify Licenses and Insurance
                       </dt>
@@ -237,7 +237,7 @@ export default function Arvada() {
                         mind.
                       </dd>
                     </div>
-                    <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                       <dt className="text-sm font-medium leading-6 text-gray-900">
                         Get Detailed Estimates
                       </dt>
@@ -450,7 +450,7 @@ export default function Arvada() {
             </div>
             <div className="mt-6 border-t border-gray-100">
               <dl className="divide-y divide-gray-100">
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Olde Town Arvada
                   </dt>
@@ -460,7 +460,7 @@ export default function Arvada() {
                     a leisurely stroll or a day of shopping.
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Arvada Center for the Arts and Humanities
                   </dt>
@@ -479,7 +479,7 @@ export default function Arvada() {
                     today!
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Apex Center
                   </dt>
@@ -498,7 +498,7 @@ export default function Arvada() {
                     fitness enthusiasts.
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Majestic View Nature Center & Park
                   </dt>
@@ -515,7 +515,7 @@ export default function Arvada() {
                     programs about local wildlife and conservation efforts.
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Cussler Museum
                   </dt>
@@ -534,7 +534,7 @@ export default function Arvada() {
                     today!
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Ralston Central Park
                   </dt>
@@ -551,7 +551,7 @@ export default function Arvada() {
                     paths. Great for families and outdoor activities.
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Indian Tree Golf Club
                   </dt>
@@ -569,7 +569,7 @@ export default function Arvada() {
                     soon!
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Red Rocks Community College
                   </dt>
@@ -587,7 +587,7 @@ export default function Arvada() {
                     education courses.
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     The Bluegrass Lounge
                   </dt>
@@ -605,7 +605,7 @@ export default function Arvada() {
                     . Perfect for a relaxed night out.
                   </dd>
                 </div>
-                <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
                   <dt className="text-sm font-medium leading-6 text-gray-900">
                     Two Ponds National Wildlife Refuge
                   </dt>
