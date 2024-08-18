@@ -528,7 +528,7 @@ export default function Arvada() {
       </div>
       <BookingProcess />
 
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
+      <div className="flex justify-center items-center pb-5 px-5 md:px-10 z-1 relative">
         <div className="mx-auto max-w-7xl">
           <div className="mt-10 sm:mt-20">
             <div>
