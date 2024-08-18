@@ -3,7 +3,6 @@ import Link from "next/link";
 import arvadaImage from "../../../public/media/movers.jpg";
 import moving1 from "../../../public/media/moving-4.jpg";
 import moving2 from "../../../public/media/moving-2.jpg";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
