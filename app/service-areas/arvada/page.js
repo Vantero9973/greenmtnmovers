@@ -272,50 +272,48 @@ export default function Arvada() {
               </div>
 
               <div className="overflow-hidden bg-white mt-10 sm:mt-20">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                  <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-                      <div className="lg:max-w-lg">
-                        <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                          Finding The Best Mover In Arvada, Colorado: Tips and
-                          Tricks
-                        </h3>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
-                          Finding the right{" "}
-                          <Link
-                            href="https://greenmtnmovers.com/areas-served"
-                            className="custom-link"
-                          >
-                            Arvada movers
-                          </Link>{" "}
-                          can be daunting, but these tips can help you make an
-                          informed decision:
-                        </p>
-                        <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                          {featuresTwo.map((feature) => (
-                            <div key={feature.name} className="relative pl-9">
-                              <dt className="inline font-semibold text-gray-900">
-                                <feature.icon
-                                  aria-hidden="true"
-                                  className="absolute left-1 top-1 h-5 w-5 text-[#0e5933]/80"
-                                />
-                                {feature.name}
-                              </dt>{" "}
-                              <dd className="inline">{feature.description}</dd>
-                            </div>
-                          ))}
-                        </dl>
-                      </div>
+                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                  <div className="lg:ml-auto lg:pl-4 lg:pt-4">
+                    <div className="lg:max-w-lg">
+                      <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Finding The Best Mover In Arvada, Colorado: Tips and
+                        Tricks
+                      </h3>
+                      <p className="mt-6 text-lg leading-8 text-gray-600">
+                        Finding the right{" "}
+                        <Link
+                          href="https://greenmtnmovers.com/areas-served"
+                          className="custom-link"
+                        >
+                          Arvada movers
+                        </Link>{" "}
+                        can be daunting, but these tips can help you make an
+                        informed decision:
+                      </p>
+                      <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                        {featuresTwo.map((feature) => (
+                          <div key={feature.name} className="relative pl-9">
+                            <dt className="inline font-semibold text-gray-900">
+                              <feature.icon
+                                aria-hidden="true"
+                                className="absolute left-1 top-1 h-5 w-5 text-[#0e5933]/80"
+                              />
+                              {feature.name}
+                            </dt>{" "}
+                            <dd className="inline">{feature.description}</dd>
+                          </div>
+                        ))}
+                      </dl>
                     </div>
-                    <div className="flex items-start justify-end lg:order-first">
-                      <Image
-                        alt=""
-                        src={moving3}
-                        width={2432}
-                        height={1442}
-                        className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                      />
-                    </div>
+                  </div>
+                  <div className="flex items-start justify-end lg:order-first">
+                    <Image
+                      alt=""
+                      src={moving3}
+                      width={2432}
+                      height={1442}
+                      className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                    />
                   </div>
                 </div>
               </div>
