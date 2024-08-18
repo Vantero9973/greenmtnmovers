@@ -35,7 +35,7 @@ const actions = [
   {
     title: "Commercial Moves",
     description: "Efficient relocation of office equipment and furniture.",
-    image: trash,
+    image: muscle,
     iconForeground: "text-yellow-700",
     iconBackground: "bg-yellow-50",
   },
@@ -43,7 +43,7 @@ const actions = [
     title: "Packing and Unpacking Services",
     description:
       "Professional packing to ensure the safety of your belongings.",
-    image: muscle,
+    image: trash,
     iconForeground: "text-rose-700",
     iconBackground: "bg-rose-50",
   },

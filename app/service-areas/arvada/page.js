@@ -460,15 +460,6 @@ export default function Arvada() {
                     </div>
                   ))}
                 </dl>
-                <div className="mt-10 flex">
-                  <a
-                    href="#"
-                    className="text-base font-semibold leading-7 text-[#0e5933]"
-                  >
-                    Learn more about our company{" "}
-                    <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div>
               </div>
               <div>
                 <div className="text-base leading-7 text-gray-700">
