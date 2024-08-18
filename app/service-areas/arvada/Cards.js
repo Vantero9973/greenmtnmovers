@@ -63,7 +63,7 @@ export default function Cards() {
       {actions.map((action) => (
         <div
           key={action.title}
-          className="group relative bg-white p-6 ring-1 ring-inset ring-zinc-100 shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out rounded-lg"
+          className="group relative bg-white p-6 ring-1 ring-inset ring-zinc-100 shadow-xl sm:transition-transform sm:transform sm:hover:scale-105 sm:duration-300 sm:ease-in-out rounded-lg"
         >
           <div>
             <div className="bg-[rgba(14,89,51,0.6)] h-20 w-20 rounded-full absolute transition ease-in-out duration-500" />
