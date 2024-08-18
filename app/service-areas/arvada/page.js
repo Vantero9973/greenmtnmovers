@@ -20,7 +20,7 @@ export default function Arvada() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
+      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative overflow-x-hidden">
         <div className="mx-auto max-w-7xl">
           <section id="arvada" className="my-10">
             <div className="mx-auto max-w-4xl lg:mx-0">
@@ -76,7 +76,7 @@ export default function Arvada() {
             </div>
 
             <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
-              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 overflow-hidden">
+              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <Image
                   alt=""
                   src={arvadaImage}
@@ -253,7 +253,7 @@ export default function Arvada() {
             </div>
 
             <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
-              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 overflow-hidden">
+              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <Image
                   alt=""
                   src={moving1}
@@ -319,7 +319,7 @@ export default function Arvada() {
             <FAQ />
 
             <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
-              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 overflow-hidden">
+              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <Image
                   alt=""
                   src={moving2}
