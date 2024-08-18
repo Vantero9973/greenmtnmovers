@@ -62,8 +62,8 @@ export default function ContactForm() {
   return (
     <div className="flex justify-center items-center">
       <div className="max-w-screen-xl w-full relative isolate bg-white">
-        <form onSubmit={handleSubmit(onSubmit)} className="mx-auto my-12">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="mx-auto mt-5 mb-10">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <label
                 htmlFor="sender_name"
@@ -173,7 +173,7 @@ export default function ContactForm() {
               </div>
             </div>
 
-            <div className="sm:col-span-2">
+            <div className="sm:col-span-2 lg:col-span-3">
               <label
                 htmlFor="description"
                 className="block text-sm font-semibold leading-6 text-gray-900"
