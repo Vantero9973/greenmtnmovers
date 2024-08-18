@@ -20,7 +20,7 @@ export default function Arvada() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative overflow-x-hidden">
+      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
         <div className="mx-auto max-w-7xl">
           <section id="arvada" className="mt-5 sm:mt-10 mb-10">
             <div className="mx-auto max-w-4xl lg:mx-0">
