@@ -454,11 +454,14 @@ export default function Arvada() {
                 </div>
                 <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
                   {stats.map((stat, statIdx) => (
-                    <div key={statIdx}>
+                    <div
+                      key={statIdx}
+                      className="flex flex-col justify-between"
+                    >
                       <dt className="text-sm font-semibold leading-6 text-gray-600">
                         {stat.name}
                       </dt>
-                      <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">
+                      <dd className="text-3xl font-bold leading-10 tracking-tight text-gray-900">
                         {stat.value}
                       </dd>
                     </div>
