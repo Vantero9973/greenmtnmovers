@@ -17,7 +17,7 @@ import {
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import FAQ from "./FAQ";
-import Cards from "./Cards";
+import Cards from "../../../components/ServiceAreasCards";
 import Navbar from "../../../components/Navbar";
 
 export const metadata = {
@@ -273,9 +273,9 @@ export default function Arvada() {
               </div>
 
               <div className="overflow-hidden bg-white mt-10 sm:mt-20">
-                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:grid-cols-2">
                   <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-                    <div className="lg:max-w-lg">
+                    <div>
                       <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Finding The Best Mover In Arvada, Colorado: Tips and
                         Tricks
@@ -445,11 +445,6 @@ export default function Arvada() {
                         next move in the Denver area.”
                       </p>
                     </blockquote>
-                    <figcaption className="mt-6 text-sm leading-6 text-gray-300">
-                      <strong className="font-semibold text-white">
-                        Google Review
-                      </strong>
-                    </figcaption>
                   </figure>
                 </div>
                 <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
@@ -470,9 +465,9 @@ export default function Arvada() {
               </div>
               <div>
                 <div className="text-base leading-7 text-gray-700">
-                  <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     Professional Arvada Moving Services
-                  </h1>
+                  </h2>
                   <div>
                     <p className="mt-6">
                       One of the most significant advantages of hiring a
