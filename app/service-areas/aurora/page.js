@@ -177,7 +177,7 @@ export default function Aurora() {
                     placeholder="blur"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gray-900/80 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gray-900/50 mix-blend-multiply" />
                   <figure className="relative isolate">
                     <svg
                       fill="none"
@@ -369,7 +369,7 @@ export default function Aurora() {
                     placeholder="blur"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gray-900/80 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gray-900/50 mix-blend-multiply" />
                   <figure className="relative isolate">
                     <svg
                       fill="none"

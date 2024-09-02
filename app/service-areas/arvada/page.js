@@ -414,7 +414,7 @@ export default function Arvada() {
                     placeholder="blur"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gray-900/80 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gray-900/60 mix-blend-multiply" />
                   <figure className="relative isolate">
                     <svg
                       fill="none"
