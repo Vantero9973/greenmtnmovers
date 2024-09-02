@@ -866,10 +866,10 @@ export default function Aurora() {
               can focus on settling into your new home. You may also be
               interested in seeing our services for the neighboring community of{" "}
               <Link
-                href="https://greenmtnmovers.com/service-areas/aurora"
+                href="https://greenmtnmovers.com/service-areas/berkley"
                 className="custom-link"
               >
-                Aurora CO
+                Berkley, CO
               </Link>
               .
             </p>

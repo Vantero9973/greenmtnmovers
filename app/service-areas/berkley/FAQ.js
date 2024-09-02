@@ -40,9 +40,9 @@ export default function FAQ() {
         <Disclosure as="div" className="pt-6">
           <dt>
             <Disclosure.Button className="group flex w-full items-start justify-between text-left text-gray-900">
-              <h2 className="text-base font-semibold leading-7">
-                What is the Average Cost of Movers Berkley?
-              </h2>
+              <h3 className="text-base font-semibold leading-7">
+                What is the Average Cost of Berkley Movers?
+              </h3>
               <span className="ml-6 flex h-7 items-center">
                 <PlusSmallIcon
                   aria-hidden="true"

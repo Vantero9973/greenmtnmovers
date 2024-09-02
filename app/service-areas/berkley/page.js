@@ -51,13 +51,13 @@ const features = [
   },
 ];
 
-export default function Aurora() {
+export default function Berkley() {
   return (
     <>
       <Navbar />
       <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
         <div className="mx-auto max-w-7xl">
-          <section id="aurora" className="mt-5 sm:mt-10 mb-10">
+          <section id="berkley" className="mt-5 sm:mt-10 mb-10">
             <div className="mx-auto max-w-4xl lg:mx-0">
               <nav aria-label="Breadcrumb" className="flex">
                 <ol className="flex items-center space-x-4">
@@ -326,9 +326,9 @@ export default function Aurora() {
             </div>
 
             <div className="mt-10 sm:mt-20">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 We Let Our Customers Speak For Our Berkley Movers
-              </h2>
+              </h3>
               <p className="mt-4 leading-6 text-gray-600">
                 Our greatest reward is our customers' satisfaction. We believe
                 that the best way to demonstrate the quality of our Berkley

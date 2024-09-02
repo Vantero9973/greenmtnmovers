@@ -17,7 +17,7 @@ import {
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import FAQ from "./FAQ";
-import Cards from "../../../components/ServiceAreasCards";
+import Cards from "./Cards";
 import Navbar from "../../../components/Navbar";
 
 export const metadata = {
@@ -191,9 +191,9 @@ export default function Arvada() {
             <div className="mt-10 sm:mt-20">
               <div className="mt-10">
                 <div>
-                  <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     Moving Company in Arvada, Colorado: Services Offered
-                  </h3>
+                  </h2>
                   <p className="mt-4 leading-6 text-gray-600">
                     Our moving services in{" "}
                     <Link
@@ -466,7 +466,7 @@ export default function Arvada() {
               <div>
                 <div className="text-base leading-7 text-gray-700">
                   <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Professional Arvada Moving Services
+                    Full-Service Moving in Arvada, CO: What to Expect
                   </h2>
                   <div>
                     <p className="mt-6">

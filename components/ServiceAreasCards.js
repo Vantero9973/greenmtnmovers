@@ -13,46 +13,34 @@ const actions = [
     description: "Expertise in navigating streets and neighborhoods with ease.",
     href: "/local-moving",
     image: truck,
-    iconForeground: "text-teal-700",
-    iconBackground: "bg-teal-50",
   },
   {
     title: "Long-Distance Moves",
     description: "Specialized handling for moves across state lines.",
     href: "/long-distance",
     image: box,
-    iconForeground: "text-purple-700",
-    iconBackground: "bg-purple-50",
   },
   {
     title: "Residential Moves",
     description: "Careful packing and transport of household items.",
     image: furniture,
-    iconForeground: "text-sky-700",
-    iconBackground: "bg-sky-50",
   },
   {
     title: "Commercial Moves",
     description: "Efficient relocation of office equipment and furniture.",
     image: muscle,
-    iconForeground: "text-yellow-700",
-    iconBackground: "bg-yellow-50",
   },
   {
     title: "Packing and Unpacking Services",
     description:
       "Professional packing to ensure the safety of your belongings.",
     image: trash,
-    iconForeground: "text-rose-700",
-    iconBackground: "bg-rose-50",
   },
   {
     title: "Specialty Item Handling",
     description:
       "Expertise in moving pianos, artwork, and other delicate items.",
     image: weight,
-    iconForeground: "text-indigo-700",
-    iconBackground: "bg-indigo-50",
   },
 ];
 
