@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import arvadaImage from "../../../public/media/movers.jpg";
+import moving from "../../../public/media/moving-6.jpg";
 import moving2 from "../../../public/media/moving-3.jpg";
+import moving3 from "../../../public/media/moving-8.jpg";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
@@ -85,7 +87,7 @@ export default function Aurora() {
               <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <Image
                   alt="movers"
-                  src={arvadaImage}
+                  src={moving}
                   placeholder="blur"
                   className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                 />
@@ -171,7 +173,7 @@ export default function Aurora() {
                 <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                   <Image
                     alt="movers doing moving things"
-                    src={moving2}
+                    src={moving3}
                     placeholder="blur"
                     className="absolute inset-0 h-full w-full object-cover"
                   />
