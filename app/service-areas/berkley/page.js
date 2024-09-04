@@ -296,7 +296,7 @@ export default function Berkley() {
                       Moving doesn't have to be stressful. Here are some tips
                       from our expert movers to <i>make your move easier</i>:
                     </p>
-                    <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                    <dl className="mt-10 space-y-8 text-base leading-7 text-gray-600">
                       {features.map((feature) => (
                         <div key={feature.name} className="relative pl-9">
                           <dt className="inline font-semibold text-gray-900">

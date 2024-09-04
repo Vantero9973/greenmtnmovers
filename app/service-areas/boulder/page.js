@@ -221,7 +221,7 @@ export default function Boulder() {
                       ourselves on delivering a transparent and trustworthy
                       service that you can count on. Here’s what sets us apart:
                     </p>
-                    <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                    <dl className="mt-10 space-y-8 text-base leading-7 text-gray-600">
                       {features.map((feature) => (
                         <div key={feature.name} className="relative pl-9">
                           <dt className="inline font-semibold text-gray-900">

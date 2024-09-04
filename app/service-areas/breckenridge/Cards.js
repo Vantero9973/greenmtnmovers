@@ -11,46 +11,46 @@ const actions = [
   {
     title: "Local Moving",
     description:
-      "Our local moving services are designed to make your in-town move as seamless as possible. We handle everything from packing and loading to unloading and unpacking, so you don't have to lift a finger.",
+      "Whether you’re moving within Breckenridge or to a nearby town, our local moving services are designed to make your transition smooth and hassle-free.",
     href: "/local-moving",
     image: truck,
   },
   {
     title: "Long-Distance Moving",
     description:
-      "Moving far from Berkley? Our long-distance moving services provide the same level of care and professionalism, ensuring your belongings arrive safely at your new home, no matter the distance.",
+      "Planning a move out of state? Our long-distance moving services ensure your belongings arrive safely and on time, no matter where you’re headed.",
     href: "/long-distance",
     image: box,
   },
   {
     title: "Furniture Assembly",
     description:
-      "Need help assembling or disassembling furniture? Our expert team can handle it, making your move even more convenient.",
+      "Moving large furniture pieces? We offer assembly and disassembly services to make sure your items are moved securely and set up correctly in your new home.",
     href: "/furniture-assembly",
     image: furniture,
   },
   {
     title: "Junk Hauling",
     description:
-      "Clearing out the clutter before your move? We offer efficient junk hauling Berkley local services to dispose of unwanted items responsibly.",
+      "Need to clear out some space before the move? Our junk hauling services help you declutter, so you only bring what you really need to your new place.",
     href: "/junk-hauling",
     image: trash,
   },
   {
     title: "Labor Only Moving Help",
     description:
-      "If you only need a helping hand, our labor-only moving services provide the skilled assistance required for loading, unloading, and other labor-intensive tasks.",
+      "Sometimes, you just need an extra pair of hands. Our labor-only services provide the manpower you need to load, unload, or rearrange your belongings.",
     image: muscle,
   },
   {
     title: "Heavy Furniture Moving",
     description:
-      "Berkley moving heavy furniture can be a daunting task. Our team is trained to handle bulky items with care, ensuring they are moved safely and securely.",
+      "Got a piano or a heavy antique? No problem. Our team is equipped to handle heavy furniture moving with care and expertise.",
     image: weight,
   },
 ];
 
-export default function ServiceAreasCards() {
+export default function Cards() {
   return (
     <div className="divide-y divide-gray-200 rounded-lg sm:grid sm:grid-cols-3 gap-6 sm:divide-y-0 mt-10">
       {actions.map((action) => (

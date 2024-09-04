@@ -291,7 +291,7 @@ export default function Arvada() {
                         can be daunting, but these tips can help you make an
                         informed decision:
                       </p>
-                      <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                      <dl className="mt-10 space-y-8 text-base leading-7 text-gray-600">
                         {featuresTwo.map((feature) => (
                           <div key={feature.name} className="relative pl-9">
                             <dt className="inline font-semibold text-gray-900">
