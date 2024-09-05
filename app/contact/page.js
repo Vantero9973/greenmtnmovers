@@ -21,7 +21,7 @@ export default function Contact() {
   const { handleSubmit } = useForm();
 
   const onSubmit = () => {
-    send("service_rxsmi4b", "template_wylxjes", toSend, "GSu7c8HKQQ1CYrr6c")
+    send("service_vrcfz1i", "template_wylxjes", toSend, "GSu7c8HKQQ1CYrr6c")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
