@@ -349,7 +349,7 @@ export default function Boulder() {
                 Discover Boulder, CO
               </h2>
               <p className="text-base leading-7 text-gray-700 mt-6">
-                Nestled against the stunning backdrop of the Rocky Mountains,
+                Nestled against the stunning backdrop of the Rocky Mountains,{" "}
                 <Link
                   href="https://maps.app.goo.gl/Tt99DFuWadG7VrhK9"
                   target="_blank"
@@ -383,7 +383,7 @@ export default function Boulder() {
                     Pearl Street Mall
                   </dt>
                   <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                    A vibrant pedestrian shopping district in downtown Boulder,
+                    A vibrant pedestrian shopping district in downtown Boulder,{" "}
                     <Link
                       href="https://maps.app.goo.gl/WJfGZtvMhRvzLbRw6"
                       target="_blank"
@@ -481,7 +481,7 @@ export default function Boulder() {
                     Folsom Field
                   </dt>
                   <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                    Home to the University of Colorado Buffaloes football team,
+                    Home to the University of Colorado Buffaloes football team,{" "}
                     <Link
                       href="https://maps.app.goo.gl/U1AbWtDewm35VWRL9"
                       target="_blank"

@@ -1,247 +1,546 @@
-"use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import castleRockImage from "../../../public/media/movers.jpg";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import moving from "../../../public/media/moving-6.jpg";
+import moving3 from "../../../public/media/moving-8.jpg";
+import {
+  AcademicCapIcon,
+  ChevronRightIcon,
+  HeartIcon,
+  HomeIcon,
+  MapPinIcon,
+} from "@heroicons/react/20/solid";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
-import MovingTips from "../../../components/MovingTips";
-import ServiceAreasCards from "../../../components/ServiceAreasCards";
+import Cards from "./Cards";
+import FAQ from "./FAQ";
 import Navbar from "../../../components/Navbar";
 
+export const metadata = {
+  title:
+    "Movers in Castle Rock CO - Your Trusted Mover and Moving Company for Comprehensive Moving Services in Colorado",
+  description:
+    "Looking for reliable movers in Castle Rock, CO? Our expert team offers comprehensive local and long-distance moving services. Get a free quote today and enjoy a stress-free move!",
+};
+
+const features = [
+  {
+    name: "Expertise and Experience",
+    description:
+      "With years of experience under our belts, we’ve encountered just about every moving challenge you can imagine. From navigating narrow staircases to carefully packing fragile heirlooms, our team is trained to handle it all. Our movers are experts in their field, known for their precision and attention to detail. We treat your belongings as if they were our own, ensuring everything arrives safely and on time.",
+    icon: AcademicCapIcon,
+  },
+  {
+    name: "Local and Long-Distance Moves",
+    description:
+      "Whether you’re moving within Castle Rock or venturing to a new city, our services are tailored to meet your specific needs. Local moves benefit from our deep knowledge of the area, allowing us to navigate the quickest routes and avoid potential delays. For long-distance moves, we offer comprehensive planning and coordination to ensure that your belongings are in good hands every step of the way.",
+    icon: MapPinIcon,
+  },
+  {
+    name: "Customer Satisfaction",
+    description:
+      "Our customers are at the heart of everything we do. We’ve had the pleasure of helping countless families and businesses move to new locations, and their satisfaction speaks volumes. Many of our clients come to us through word-of-mouth recommendations, and we take that trust seriously. We strive to exceed expectations with every move, providing top-notch service that leaves our clients smiling.",
+    icon: HeartIcon,
+  },
+];
+
 export default function CastleRock() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
-      <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
-        <div className="mtnBorder--bottom absolute bottom-0 shadow" />
-        <header
-          className="text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white"
-          style={{
-            transform: `translateY(${scrollPosition * 0.4}px)`,
-          }}
-        >
-          Castle Rock Moving Services
-        </header>
-      </div>
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
-        <div className="flex flex-col items-center justify-center max-w-screen-xl">
-          <section id="castlerock" className="my-10">
-            <h2 className="text-2xl font-semibold md:hidden">
-              Expert Moving Services in Castle Rock, Colorado
-            </h2>
-            <div className="flex max-md:flex-col-reverse items-stretch justify-between gap-5 md:gap-10 my-5">
-              <div className="flex flex-col justify-start gap-3 w-full md:w-2/4 lg:w-3/5">
-                <h2 className="text-2xl font-semibold max-md:hidden">
-                  Trusted Castle Rock Moving Company - Local & Long-Distance
-                  Moves
-                </h2>
-                <p className="text-gray-700">
-                  Welcome to Green Mountain Movers, your trusted Castle Rock, CO
-                  moving company. We are dedicated to providing top-notch moving
-                  services to the picturesque city of Castle Rock and its
-                  surrounding areas. Whether you're planning a local or
-                  long-distance move, our team of licensed and insured
-                  professionals is here to ensure a smooth and hassle-free
-                  transition for you and your belongings.
-                </p>
-                <p className="text-gray-700">
-                  Castle Rock is known for its stunning scenery, outdoor
-                  recreational opportunities, and friendly community. Our Castle
-                  Rock moving services are designed to cater to the specific
-                  needs of this beautiful city.
-                </p>
-                <p className="text-gray-700">
-                  At Green Mountain Movers, we understand that every move is
-                  unique. Whether you're moving to or from Castle Rock, our team
-                  is committed to providing a seamless and stress-free
-                  experience. We have extensive knowledge of the local
-                  neighborhoods and can navigate the city's streets with ease.
-                </p>
-              </div>
-              <div className="flex items-start w-full md:w-2/4 lg:w-2/5">
-                <Image
-                  src={castleRockImage}
-                  alt="Castle Rock"
-                  className="object-cover h-full rounded-2xl"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col justify-center gap-3">
-              <h3 className="text-2xl font-semibold mt-8">
-                Comprehensive Moving Services in Castle Rock, CO
-              </h3>
-              <ServiceAreasCards />
+      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
+        <div className="mx-auto max-w-7xl">
+          <section id="castle-rock" className="mt-5 sm:mt-10 mb-10">
+            <div className="mx-auto max-w-4xl lg:mx-0">
+              <nav aria-label="Breadcrumb" className="flex">
+                <ol className="flex items-center space-x-4">
+                  <li>
+                    <div>
+                      <Link
+                        href="/"
+                        className="text-gray-500 hover:text-gray-600"
+                      >
+                        <HomeIcon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-shrink-0"
+                        />
+                        <span className="sr-only">Home</span>
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-shrink-0 text-gray-500"
+                      />
+                      <Link
+                        href="/service-areas"
+                        className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                      >
+                        Service Areas
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-shrink-0 text-gray-500"
+                      />
+                      <Link
+                        href="/service-areas/castle-rock"
+                        className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                      >
+                        Castle Rock
+                      </Link>
+                    </div>
+                  </li>
+                </ol>
+              </nav>
+              <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Movers in Castle Rock CO - Your Trusted Mover and Moving Company
+                for Comprehensive Moving Services in Colorado
+              </h1>
             </div>
 
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pr-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Castle Rock, Colorado Zip Codes We Serve
-                </h3>
-                <p className="text-gray-700">
-                  Our service area covers a wide range of Castle Rock zip codes,
-                  including 80104, 80108, 80109, and more. If you're in the
-                  Castle Rock area, Green Mountain Movers has you covered.
-                </p>
+            <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
+              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                <Image
+                  alt="movers"
+                  src={moving}
+                  placeholder="blur"
+                  className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                />
               </div>
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pl-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Residential and Commercial Moving Solutions in Castle Rock
-                </h3>
-                <p className="text-gray-700">
-                  Welcome to Green Mountain Movers, your trusted partner for
-                  seamless residential and commercial moves in the scenic city
-                  of Castle Rock, Colorado. Whether you're relocating your home
-                  or office, we take pride in offering tailored moving solutions
-                  that cater to your unique needs.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pr-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Castle Rock Residential Moving Services
-                </h3>
-                <p className="text-gray-700">
-                  Our Castle Rock residential moving services are designed to
-                  make your transition to a new home a stress-free experience.
-                  Our dedicated team understands the sentimental value of your
-                  belongings, and we handle them with utmost care. From packing
-                  and loading to transportation and unpacking, we ensure every
-                  step of your residential move is executed flawlessly. Our
-                  services are backed by years of experience and a commitment to
-                  customer satisfaction.
-                </p>
-              </div>
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pl-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Commercial Moving Expertise in Castle Rock
-                </h3>
-                <p className="text-gray-700">
-                  At Green Mountain Movers, we recognize the importance of
-                  minimizing downtime during office relocations. Our commercial
-                  moving expertise is geared towards ensuring your business can
-                  resume operations as quickly as possible. We specialize in
-                  handling valuable equipment and sensitive documents, making
-                  your office relocation in Castle Rock secure and efficient.
-                  Trust us to handle your commercial move with precision,
-                  allowing you to focus on what matters most - your business.
-                </p>
+              <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8">
+                <div className="lg:pr-4">
+                  <div className="lg:pr-4">
+                    <div className="lg:max-w-lg">
+                      <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Introduction to Castle Rock Movers
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="text-base leading-7 text-gray-700 lg:max-w-lg mt-6">
+                    <p>
+                      Moving can be one of life’s most stressful events, but it
+                      doesn’t have to be. Imagine this: you’re standing in your
+                      new living room, surrounded by neatly stacked boxes, the
+                      afternoon sunlight filtering through the windows.
+                      Everything you own has arrived safely, just as you left
+                      it. You take a deep breath and feel a wave of relief. This
+                      isn’t just any move—this is your fresh start, and you
+                      didn’t have to lift a finger.
+                    </p>
+                    <p className="mt-6">
+                      That’s why we’ve made it our mission to turn what could be
+                      a stressful day into a smooth, hassle-free experience.
+                      Picture this: it's moving day, and instead of feeling
+                      overwhelmed, you're sipping your coffee, watching the
+                      sunrise over the Rockies, while our professional team
+                      takes care of everything. From carefully packing your most
+                      treasured belongings to ensuring that everything arrives
+                      at your new home safe and sound, we handle it all with the
+                      care and attention you'd expect from a company that treats
+                      every move as if it were their own.
+                    </p>
+                    <p className="mt-6">
+                      <i>We’re here to take the weight off your shoulders</i>,
+                      literally and figuratively. Let us handle the heavy
+                      lifting so you can focus on what really matters: settling
+                      into your new space and making it feel like home.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pr-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Furniture Assembly Services in Castle Rock
-                </h3>
-                <p className="text-gray-700">
-                  In addition to our top-notch moving services, we proudly offer
-                  professional furniture assembly services in Castle Rock. Our
-                  skilled team is adept at quickly and efficiently assembling
-                  your furniture, whether it's for your new home or office. We
-                  understand that assembling furniture can be a time-consuming
-                  and frustrating task, and our goal is to save you time and
-                  hassle. With our expertise, your furniture will be ready for
-                  use in no time, ensuring a comfortable and functional living
-                  or working space.
+
+            <div className="mt-10 sm:mt-20">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Why Choose Our Castle Rock Moving Services?
+                </h2>
+                <p className="mt-4 leading-6 text-gray-600">
+                  When it comes to moving in{" "}
+                  <Link
+                    href="https://maps.app.goo.gl/aTwNNmXhtSXGvf6eA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="custom-link"
+                  >
+                    Castle Rock, Colorado
+                  </Link>
+                  , you need a team that not only understands the logistics but
+                  also the emotions involved in leaving one place and settling
+                  into another. At Green Mountain Movers, our reputation for
+                  excellence as a moving company in Castle Rock is built on our
+                  commitment to making your relocation as seamless and
+                  stress-free as possible.
                 </p>
               </div>
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pl-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Junk Hauling Services in Castle Rock
-                </h3>
-                <p className="text-gray-700">
-                  Green Mountain Movers goes beyond just moving. We also provide
-                  reliable junk hauling services in Castle Rock to help you
-                  declutter your space and dispose of unwanted items
-                  responsibly. Whether it's old furniture, appliances,
-                  electronics, or general household clutter, our team is here to
-                  assist. We take pride in eco-friendly disposal methods,
-                  ensuring that items are recycled or donated whenever possible.
-                  Let us help you regain valuable space in your home or office
-                  while contributing to a greener environment.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 w-full md:pr-5">
-                <h3 className="text-lb font-semibold mt-8">
-                  More About Castle Rock
-                </h3>
-                <p className="text-gray-700">
-                  Castle Rock, Colorado, is a charming town known for its scenic
-                  beauty and outdoor recreational opportunities. Nestled in the
-                  foothills of the Rocky Mountains, Castle Rock offers residents
-                  and visitors a unique blend of small-town charm and natural
-                  beauty. Whether you enjoy hiking in nearby parks, exploring
-                  local shops and restaurants, or simply taking in the
-                  breathtaking views, Castle Rock has something for everyone.
-                  Our experienced team is here to ensure a smooth transition for
-                  you and your family or business, so you can fully enjoy all
-                  that Castle Rock has to offer.
-                </p>
+              <div className="mt-6">
+                <dl className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-3">
+                  {features.map((feature) => (
+                    <div key={feature.name} className="flex flex-col">
+                      <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                        <feature.icon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-none text-[#0e5933]/90"
+                        />
+                        {feature.name}
+                      </dt>
+                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                        <p className="flex-auto">{feature.description}</p>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
             </div>
+
+            <div className="mt-10 sm:mt-20">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Residential & Commercial Moving Services
+              </h2>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                Whether you’re moving your home or your business, Green Mountain
+                Movers has the experience and resources to make your relocation
+                as smooth as possible.
+              </p>
+              <h3 className="text-lg font-semibold tracking-tight text-gray-900 sm:text-xl mt-6">
+                Residential Moves
+              </h3>
+              <p className="text-base leading-7 text-gray-700 mt-4">
+                Your home is your sanctuary, and we treat it as such. Our
+                residential moving services are designed to minimize disruption
+                and maximize efficiency, so you can get back to your normal
+                routine as quickly as possible. We take care of everything, from
+                packing and loading to transportation and unloading, so you
+                don’t have to lift a finger.
+              </p>
+              <h3 className="text-lg font-semibold tracking-tight text-gray-900 sm:text-xl mt-6">
+                Commercial Moves
+              </h3>
+              <p className="text-base leading-7 text-gray-700 mt-4">
+                Moving a business is no small feat, but we’re up to the
+                challenge. Our commercial moving services are tailored to meet
+                the unique needs of businesses, ensuring minimal downtime and a
+                smooth transition. Whether you’re moving a small office or a
+                large corporation, we have the expertise and equipment to handle
+                the job.
+              </p>
+            </div>
+
+            <div className="mt-10 sm:mt-20">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Comprehensive Moving Services in Castle Rock, CO
+                </h2>
+                <p className="mt-4 leading-6 text-gray-600">
+                  At Green Mountain Movers, we understand that no two
+                  relocations are alike. That’s why we offer a{" "}
+                  <i>wide range of Castle Rock moving services</i> to meet the
+                  diverse needs of our clients. Whether you need help with a
+                  simple local move or require specialized services for a
+                  complex relocation, we’ve got you covered.
+                </p>
+                <Cards />
+              </div>
+            </div>
+
+            <div className="mt-10 sm:mt-20">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Moving Tips from Castle Rock's Trusted Movers
+              </h2>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                We’ve learned a lot over the years, and we’re happy to share our
+                knowledge with you. Here are some tips to help make your move as
+                smooth as possible.
+              </p>
+              <h4 className="text-lg font-semibold tracking-tight text-gray-900 sm:text-xl mt-6">
+                Planning Your Move
+              </h4>
+              <p className="text-base leading-7 text-gray-700 mt-4">
+                Start planning your move as early as possible to avoid
+                last-minute stress. Create a moving checklist and timeline to
+                stay organized, and don’t hesitate to ask us for advice—we’re
+                here to help.
+              </p>
+              <h4 className="text-lg font-semibold tracking-tight text-gray-900 sm:text-xl mt-6">
+                Packing Essentials
+              </h4>
+              <p className="text-base leading-7 text-gray-700 mt-4">
+                Invest in high-quality packing materials to protect your
+                belongings during the move. Use sturdy boxes, packing paper,
+                bubble wrap, and packing tape. Label each box with its contents
+                and the room it belongs in to make unpacking easier.
+              </p>
+              <h4 className="text-lg font-semibold tracking-tight text-gray-900 sm:text-xl mt-6">
+                Moving Day Preparation
+              </h4>
+              <p className="text-base leading-7 text-gray-700 mt-4">
+                On moving day, make sure you have all the essentials on hand:
+                important documents, medications, and a change of clothes. Stay
+                hydrated and take breaks when needed. Our group of professionals
+                will handle the heavy lifting, but it’s important to take care
+                of yourself, too.
+              </p>
+            </div>
+
+            <FAQ />
           </section>
         </div>
       </div>
       <BookingProcess />
-      <MovingTips />
-      <div className="flex justify-center items-center pt-10 pb-20 px-5 md:px-10 z-1 relative">
-        <div className="flex flex-col items-center justify-center max-w-screen-xl">
-          <div className="flex flex-col justify-center gap-3">
-            <h3 className="text-2xl font-semibold mt-8">
-              Request a Free Moving Quote in Castle Rock, Colorado
-            </h3>
-            <p className="text-gray-700">
-              Obtaining a free moving quote from Green Mountain Movers is a
-              straightforward process. Our dedicated business representatives
-              are ready to work with you to determine the services you need,
-              providing an accurate moving estimate based on your specific
-              requirements. Whether you're moving within Castle Rock or to a new
-              location, our experienced team is here to assist you. Contact us
-              today via phone, email, or the convenient contact form on this
-              page to request your free moving quote. We look forward to
-              ensuring a successful move for you!
-            </p>
-            <div className="flex flex-wrap items-center gap-x-10 gap-y-3 text-base leading-7 text-gray-700">
-              <div className="flex gap-x-4">
-                <PhoneIcon
-                  className="h-7 w-6 text-gray-700"
-                  aria-hidden="true"
-                />
-                <a className="hover:text-gray-900" href="tel:7196801538">
-                  (719) 680-1538
-                </a>
-              </div>
-              <div className="flex gap-x-4">
-                <EnvelopeIcon
-                  className="h-7 w-6 text-gray-700"
-                  aria-hidden="true"
-                />
-                <a
-                  className="hover:text-gray-900"
-                  href="mailto:greenmtnmovers@gmail.com"
-                >
-                  greenmtnmovers@gmail.com
-                </a>
-              </div>
+
+      <div className="flex justify-center items-center pb-5 px-5 md:px-10 z-1 relative">
+        <div className="mx-auto max-w-7xl">
+          <div className="mt-10 sm:mt-20">
+            <div>
+              <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Discover Castle Rock, CO
+              </h3>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                Nestled between Denver and Colorado Springs, Castle Rock, CO, is
+                a charming town known for its stunning scenery, rich history,
+                and friendly community. Named after a prominent, castle-shaped
+                butte that overlooks the town, Castle Rock is a place where
+                natural beauty meets modern convenience.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                The area is home to a population that values both its outdoor
+                spaces and its vibrant downtown, making it a sought-after
+                location for families and businesses alike. With zip codes like
+                80104, 80108, and 80109, Castle Rock offers a range of
+                neighborhoods that cater to diverse lifestyles, all within easy
+                reach of the town's amenities and attractions.
+              </p>
             </div>
+            <h3 className="mt-10 sm:mt-20 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Top Attractions in Castle Rock, CO
+            </h3>
+            <div className="mt-6 border-t border-gray-100">
+              <dl className="divide-y divide-gray-100">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Castle Rock Outlets
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    A premier shopping destination, the{" "}
+                    <Link
+                      href="https://www.outletsatcastlerock.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Outlets at Castle Rock
+                    </Link>{" "}
+                    offer over 100 brand-name stores and eateries. It's a
+                    must-visit for both residents and visitors looking for great
+                    deals in a beautiful outdoor setting.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Rock Park
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    For those who love hiking and panoramic views,{" "}
+                    <Link
+                      href="https://maps.app.goo.gl/d1fMP4daH4tfhXWLA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Rock Park
+                    </Link>{" "}
+                    offers a scenic trail leading to the base of the iconic
+                    Castle Rock. It’s a short but rewarding hike with stunning
+                    views of the town and surrounding areas.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Castle Rock Historical Museum
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Learn about the rich history of the town at the{" "}
+                    <Link
+                      href="https://www.castlerockmuseum.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Castle Rock Historical Museum
+                    </Link>
+                    , located in the town’s original train depot. The museum
+                    offers a glimpse into Castle Rock’s past with exhibits and
+                    artifacts from the late 1800s.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Cherokee Ranch & Castle
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Step back in time with a visit to the{" "}
+                    <Link
+                      href="https://cherokeeranch.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Cherokee Ranch & Castle
+                    </Link>
+                    , a stunning Scottish-style castle perched on a hilltop. The
+                    property offers tours, cultural events, and breathtaking
+                    views of the surrounding countryside.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Castle Rock Zip Line Tours
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    For a bit of adventure,{" "}
+                    <Link
+                      href="https://www.castlerockziplinetours.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Castle Rock Zip Line Tours
+                    </Link>{" "}
+                    provides a thrilling experience with over 10 ziplines that
+                    stretch across the town’s scenic landscape. It’s a fun
+                    activity for all ages.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Red Hawk Ridge Golf Course
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Golf enthusiasts will enjoy a round at the{" "}
+                    <Link
+                      href="https://www.redhawkridge.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Red Hawk Ridge Golf Course
+                    </Link>
+                    , known for its challenging layout and beautiful mountain
+                    views. The course is a favorite among locals and visitors
+                    alike.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    The Barn at Castle Rock
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Shop for unique antiques, gifts, and home decor at{" "}
+                    <Link
+                      href="https://thebarncastlerock.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      The Barn at Castle Rock
+                    </Link>
+                    , a local treasure housed in a historic building. It’s the
+                    perfect place to find one-of-a-kind items.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Douglas County Fairgrounds
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Home to the annual{" "}
+                    <Link
+                      href="https://www.douglascountyfairandrodeo.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Douglas County Fair & Rodeo
+                    </Link>
+                    , the fairgrounds host various events throughout the year,
+                    including rodeos, concerts, and community festivals.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    The Castle Pines Golf Club
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Another excellent golf venue,{" "}
+                    <Link
+                      href="https://maps.app.goo.gl/3MW7UHMafzF1tWbv5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      The Castle Pines Golf Club
+                    </Link>
+                    , offers an exclusive golfing experience with a course
+                    designed by Jack Nicklaus. It’s a top-tier destination for
+                    serious golfers.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <div className="mt-10 sm:mt-20">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                How Our Moving Services Benefit Castle Rock Residents
+              </h2>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                Living in Castle Rock comes with the advantage of being close to
+                both urban centers and outdoor adventures. Whether you're moving
+                into one of the town’s family-friendly neighborhoods, relocating
+                your business to a bustling commercial area, or downsizing to a
+                smaller home, our moving services are tailored to meet your
+                needs.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                We understand the unique layout of Castle Rock, from its scenic
+                hills to its historic downtown, and we're equipped to handle the
+                specific challenges that come with moving in this area. Our
+                local expertise ensures that your move is efficient, smooth, and
+                stress-free, allowing you to quickly settle into your new Castle
+                Rock home or office.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                We also work with families in the{" "}
+                <Link
+                  href="https://greenmtnmovers.com/service-areas/centennial"
+                  className="custom-link"
+                >
+                  Centennial
+                </Link>{" "}
+                area.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 sm:mt-20">
+            <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Contact Green Mountain Movers for a Reliable Team of Movers in
+              Castle Rock
+            </h3>
+            <p className="text-base leading-7 text-gray-700 mt-4">
+              Ready to make your move? Contact Green Mountain Movers today for a
+              free, no-obligation quote. Whether you’re moving across town or
+              across the country, our team is here to provide you with the
+              top-notch service you deserve.{" "}
+              <i>
+                Let us handle the logistics so you can focus on what matters
+                most—enjoying your new home.
+              </i>
+            </p>
             <ContactForm />
           </div>
         </div>

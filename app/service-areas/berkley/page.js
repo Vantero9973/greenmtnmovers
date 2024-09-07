@@ -534,7 +534,7 @@ export default function Berkley() {
                   <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                     This historic venue has been a cultural hub since its
                     opening in 1891. It hosts a variety of performances and
-                    events, contributing to Berkley's rich cultural scene. Visit
+                    events, contributing to Berkley's rich cultural scene. Visit{" "}
                     <Link
                       href="https://historicelitchtheatre.org"
                       target="_blank"

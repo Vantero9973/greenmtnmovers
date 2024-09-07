@@ -435,7 +435,7 @@ export default function Breckenridge() {
                     Breckenridge Ski Resort
                   </dt>
                   <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                    As one of the most popular ski destinations in Colorado,
+                    As one of the most popular ski destinations in Colorado,{" "}
                     <Link
                       href="https://www.breckenridge.com/"
                       target="_blank"
@@ -513,7 +513,7 @@ export default function Breckenridge() {
                     Breckenridge Nordic Center
                   </dt>
                   <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                    If you’re into cross-country skiing or snowshoeing, the
+                    If you’re into cross-country skiing or snowshoeing, the{" "}
                     <Link
                       href="https://www.breckenridgenordic.com/"
                       target="_blank"
