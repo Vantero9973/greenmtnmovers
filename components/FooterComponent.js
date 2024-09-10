@@ -46,12 +46,12 @@ export default function FooterComponent() {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Service Areas" as="h4" />
+              <Footer.Title title="Areas Served" as="h4" />
               <Footer.LinkGroup col>
                 {cities.slice(0, 24).map((city) => {
                   return (
                     <Footer.Link
-                      href={`/service-areas/${formattedCityName(city)}`}
+                      href={`/areas-served/${formattedCityName(city)}`}
                       key={city}
                     >
                       {city}
@@ -62,7 +62,7 @@ export default function FooterComponent() {
             </div>
             <div>
               <Footer.Title
-                title="Service Areas"
+                title="Areas Served"
                 className="text-[transparent]"
                 as="h4"
               />
@@ -70,7 +70,7 @@ export default function FooterComponent() {
                 {cities.slice(24, 48).map((city) => {
                   return (
                     <Footer.Link
-                      href={`/service-areas/${formattedCityName(city)}`}
+                      href={`/areas-served/${formattedCityName(city)}`}
                       key={city}
                     >
                       {city}

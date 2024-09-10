@@ -112,7 +112,7 @@ export default function Navbar() {
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-1 lg:px-3 py-2 text-sm">
-                  Service Areas
+                  Areas Served
                   <ChevronDownIcon
                     className="-mr-1 h-5 w-5 text-gray-400"
                     aria-hidden="true"
@@ -134,7 +134,7 @@ export default function Navbar() {
                     {cities.map((city) => (
                       <Menu.Item key={city}>
                         <a
-                          href={`/service-areas/${formattedCityName(city)}`}
+                          href={`/areas-served/${formattedCityName(city)}`}
                           className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                         >
                           {city}
@@ -334,14 +334,14 @@ export default function Navbar() {
                               )}
                               aria-hidden="true"
                             />
-                            Service Areas
+                            Areas Served
                           </Disclosure.Button>
                           <Disclosure.Panel as="ul" className="mt-1 px-2">
                             {cities.map((city) => (
                               <li key={city}>
                                 <Disclosure.Button
                                   as="a"
-                                  href={`/service-areas/${formattedCityName(
+                                  href={`/areas-served/${formattedCityName(
                                     city
                                   )}`}
                                   className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
