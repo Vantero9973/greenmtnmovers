@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import FooterComponent from "../components/FooterComponent";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,26 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-T6XSHG53ZC"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-T6XSHG53ZC');
-            `,
-          }}
-        />
-      </head>
       <body className={inter.className}>
         {children}
         <FooterComponent />
       </body>
+      <GoogleAnalytics gaId="G-T6XSHG53ZC" />
     </html>
   );
 }

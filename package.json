@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "^2.0.18",
     "@mui/icons-material": "^5.14.7",
+    "@next/third-parties": "^14.2.9",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.15",
     "emailjs-com": "^3.2.0",
