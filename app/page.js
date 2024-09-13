@@ -21,12 +21,12 @@ export default function Home() {
       <NavbarAbsolute />
       <Header />
       <div className="responsive-padding">
-        <HeaderServicesInfo />
         <Cards />
         <Testimonials />
         <FaqComponent />
         <Stats />
         <Contact />
+        <HeaderServicesInfo />
         <HeaderInfo />
       </div>
     </>

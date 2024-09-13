@@ -22,8 +22,6 @@ export default function FooterComponent() {
               <Footer.Title title="Company" as="h4" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/contact">Contact</Footer.Link>
-                <Footer.Link href="/careers">Careers</Footer.Link>
-                <Footer.Link href="/blog">Blog</Footer.Link>
                 <Footer.Link href="/moving-checklist">
                   Moving Checklist
                 </Footer.Link>

@@ -190,22 +190,6 @@ export default function Navbar() {
                     </Menu.Item>
                     <Menu.Item>
                       <a
-                        href="/blog"
-                        className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
-                      >
-                        Blog
-                      </a>
-                    </Menu.Item>
-                    {/* <Menu.Item>
-                      <a
-                        href="/careers"
-                        className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
-                      >
-                        Careers
-                      </a>
-                    </Menu.Item> */}
-                    <Menu.Item>
-                      <a
                         href="/moving-checklist"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
@@ -372,24 +356,6 @@ export default function Navbar() {
                             Resources
                           </Disclosure.Button>
                           <Disclosure.Panel as="ul" className="mt-1 px-2">
-                            <li>
-                              <Disclosure.Button
-                                as="a"
-                                href="/blog"
-                                className="text-gray-700 hover:text-gray-900 block pr-22 pl-9 py-2 text-sm"
-                              >
-                                Blog
-                              </Disclosure.Button>
-                            </li>
-                            {/* <li>
-                              <Disclosure.Button
-                                as="a"
-                                href="/careers"
-                                className="block rounded-md py-1 pr-2 pl-9 text-sm leading-6 text-gray-700"
-                              >
-                                Careers
-                              </Disclosure.Button>
-                            </li> */}
                             <li>
                               <Disclosure.Button
                                 as="a"
