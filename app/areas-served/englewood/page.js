@@ -75,6 +75,7 @@ export default function Englewood() {
                 <Image
                   src={englewoodImage}
                   alt="Englewood"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

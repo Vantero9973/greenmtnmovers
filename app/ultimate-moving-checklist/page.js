@@ -30,16 +30,19 @@ export default function UltimateMovingChecklist() {
           <Image
             src={image}
             alt="movers moving couch"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg"
           />
           <Image
             src={imageTwo}
             alt="one mover moving couch"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
           />
           <Image
             src={imageThree}
             alt="movers carrying boxes"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
           />
         </div>
@@ -249,6 +252,7 @@ export default function UltimateMovingChecklist() {
           <Image
             src={imageTwo}
             alt="one mover moving couch"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
@@ -375,6 +379,7 @@ export default function UltimateMovingChecklist() {
           <Image
             src={imageThree}
             alt="movers carrying boxes"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>

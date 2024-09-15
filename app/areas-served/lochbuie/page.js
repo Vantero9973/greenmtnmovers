@@ -75,6 +75,7 @@ export default function Lochbuie() {
                 <Image
                   src={lochbuieImage}
                   alt="Lochbuie"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

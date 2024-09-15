@@ -75,6 +75,7 @@ export default function Welby() {
                 <Image
                   src={welbyImage}
                   alt="Welby"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

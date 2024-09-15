@@ -76,6 +76,7 @@ export default function Greeley() {
                 <Image
                   src={greeleyImage}
                   alt="Greeley"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

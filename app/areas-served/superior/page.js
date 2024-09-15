@@ -75,6 +75,7 @@ export default function Superior() {
                 <Image
                   src={superiorImage}
                   alt="Superior"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

@@ -79,6 +79,7 @@ export default function Georgetown() {
                 <Image
                   src={georgetownImage}
                   alt="Georgetown"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

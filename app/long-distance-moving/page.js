@@ -40,6 +40,7 @@ export default function LongDistanceMoving() {
               <Image
                 src={longDistanceMovers}
                 alt="Long Distance Movers"
+                placeholder="blur"
                 className="w-full h-full max-h-[400px] object-cover mt-10 rounded-lg object-[center_75%]"
               />
 
@@ -87,6 +88,7 @@ export default function LongDistanceMoving() {
                     <Image
                       src={truckBlack}
                       alt="black long-distance moving truck icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">
@@ -110,6 +112,7 @@ export default function LongDistanceMoving() {
                     <Image
                       src={apartmentBlack}
                       alt="black moving box long-distance moving icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">
@@ -132,6 +135,7 @@ export default function LongDistanceMoving() {
                     <Image
                       src={officeBlack}
                       alt="black office moving icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">
@@ -155,6 +159,7 @@ export default function LongDistanceMoving() {
                     <Image
                       src={boxBlack}
                       alt="black packing services icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">PACKING SERVICES</h2>
@@ -175,6 +180,7 @@ export default function LongDistanceMoving() {
                     <Image
                       src={muscleBlack}
                       alt="black labor-only moving help icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">LABOR-ONLY MOVING HELP</h2>
@@ -194,6 +200,7 @@ export default function LongDistanceMoving() {
                     <Image
                       src={deliveryBlack}
                       alt="black long-distance delivery icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">
@@ -516,6 +523,7 @@ export default function LongDistanceMoving() {
               <Image
                 src={movers}
                 alt="Movers"
+                placeholder="blur"
                 className="rounded-2xl object-cover"
               />
             </div>

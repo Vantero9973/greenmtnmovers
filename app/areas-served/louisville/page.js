@@ -76,6 +76,7 @@ export default function Louisville() {
                 <Image
                   src={louisvilleImage}
                   alt="Louisville"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

@@ -76,6 +76,7 @@ export default function Longmont() {
                 <Image
                   src={longmontImage}
                   alt="Longmont"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

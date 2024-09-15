@@ -78,6 +78,7 @@ export default function Frisco() {
                 <Image
                   src={friscoImage}
                   alt="Frisco"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

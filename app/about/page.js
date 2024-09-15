@@ -34,6 +34,7 @@ export default function Example() {
                 <Image
                   src={aboutImg}
                   alt=""
+                  placeholder="blur"
                   className="shadow-lg shadow-[#0e5933]/25 mt-10 aspect-[6/5] w-full object-cover max-w-lg rounded-2xl sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
                 />
               </div>
@@ -77,6 +78,7 @@ export default function Example() {
                   className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                   src=""
                   alt="Yellowpages"
+                  placeholder="blur"
                   width={158}
                   height={48}
                 />{" "}
@@ -84,6 +86,7 @@ export default function Example() {
                   className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
                   src=""
                   alt="Something else idk"
+                  placeholder="blur"
                   width={158}
                   height={48}
                 />

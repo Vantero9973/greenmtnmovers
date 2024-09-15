@@ -75,6 +75,7 @@ export default function Glendale() {
                 <Image
                   src={glendaleImage}
                   alt="Glendale"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

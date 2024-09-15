@@ -152,6 +152,7 @@ export default function Example() {
               <Image
                 className="h-10 w-10 flex-none rounded-full bg-gray-50"
                 src={kd}
+                placeholder="blur"
                 alt="Featured Review User Profile"
               />
               <div className="flex flex-col justify-center">
@@ -193,6 +194,7 @@ export default function Example() {
                           className="h-10 w-10 rounded-full bg-gray-50"
                           src={testimonial.author.imageUrl}
                           alt=""
+                          placeholder="blur"
                         />
                         <div>
                           <div className="font-semibold">

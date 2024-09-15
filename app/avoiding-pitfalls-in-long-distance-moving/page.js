@@ -26,16 +26,19 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
           <Image
             src={image}
             alt="movers carrying bins"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg h-full"
           />
           <Image
             src={imageTwo}
             alt="movers lifting box"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
           <Image
             src={imageThree}
             alt="mover taping box closed"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
         </div>
@@ -191,6 +194,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
           <Image
             src={imageThree}
             alt="mover taping box shut"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
@@ -308,6 +312,7 @@ export default function AvoidingPitfallsInLongDistanceMoving() {
           <Image
             src={imageTwo}
             alt="movers lifting box"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>

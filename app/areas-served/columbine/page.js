@@ -76,6 +76,7 @@ export default function Columbine() {
                 <Image
                   src={columbineImage}
                   alt="Columbine"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

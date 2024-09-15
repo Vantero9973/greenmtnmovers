@@ -77,6 +77,7 @@ export default function WheatRidge() {
                 <Image
                   src={wheatRidgeImage}
                   alt="Wheat Ridge"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

@@ -79,6 +79,7 @@ export default function FederalHeights() {
                 <Image
                   src={federalHeightsImage}
                   alt="Federal Heights"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

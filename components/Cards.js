@@ -19,6 +19,7 @@ export default function Cards() {
               <Image
                 src={truckBlack}
                 alt="black local moving truck icon"
+                placeholder="blur"
                 className="cardsImage"
               />
               <h2 className="card-title">LOCAL MOVING</h2>
@@ -38,6 +39,7 @@ export default function Cards() {
               <Image
                 src={boxBlack}
                 alt="black moving box long distance moving icon"
+                placeholder="blur"
                 className="cardsImage"
               />
               <h2 className="card-title">LONG-DISTANCE MOVING</h2>
@@ -57,6 +59,7 @@ export default function Cards() {
               <Image
                 src={furnitureBlack}
                 alt="black furniture assembly icon"
+                placeholder="blur"
                 className="cardsImage"
               />
               <h2 className="card-title">FURNITURE ASSEMBLY</h2>
@@ -76,6 +79,7 @@ export default function Cards() {
               <Image
                 src={trashBlack}
                 alt="black junk removal and hauling icon"
+                placeholder="blur"
                 className="cardsImage"
               />
               <h2 className="card-title">JUNK HAULING</h2>

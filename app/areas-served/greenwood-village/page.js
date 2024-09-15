@@ -77,6 +77,7 @@ export default function GreenwoodVillage() {
                 <Image
                   src={greenwoodVillageImage}
                   alt="Greenwood Village"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

@@ -76,6 +76,7 @@ export default function Northglenn() {
                 <Image
                   src={northglennImage}
                   alt="Northglenn"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

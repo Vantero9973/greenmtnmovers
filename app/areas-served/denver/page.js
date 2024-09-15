@@ -76,6 +76,7 @@ export default function Denver() {
                 <Image
                   src={denverImage}
                   alt="Denver"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

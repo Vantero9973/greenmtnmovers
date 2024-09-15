@@ -76,6 +76,7 @@ export default function FortCollins() {
                 <Image
                   src={fortCollinsImage}
                   alt="Fort Collins"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

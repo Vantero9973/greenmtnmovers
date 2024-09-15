@@ -182,6 +182,7 @@ export default function FurnitureAssembly() {
               <Image
                 src={assemblyImage}
                 alt="Furniture Assembly"
+                placeholder="blur"
                 className="rounded-2xl object-cover"
               />
             </div>

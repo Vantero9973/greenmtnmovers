@@ -76,6 +76,7 @@ export default function LoneTree() {
                 <Image
                   src={lonetreeImage}
                   alt="Lone Tree"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

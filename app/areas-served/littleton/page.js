@@ -76,6 +76,7 @@ export default function Littleton() {
                 <Image
                   src={littletonImage}
                   alt="Littleton"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

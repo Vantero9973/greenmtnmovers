@@ -78,6 +78,7 @@ export default function IdahoSprings() {
                 <Image
                   src={idahoSpringsImage}
                   alt="Idaho Springs"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

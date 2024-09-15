@@ -28,6 +28,7 @@ export default function Navbar() {
             <Image
               src={logo}
               alt="Green Mountain Movers Logo"
+              placeholder="blur"
               className="h-8 w-auto"
             />
           </a>
@@ -230,6 +231,7 @@ export default function Navbar() {
               <Image
                 src={logo}
                 alt="Green Mountain Movers Logo"
+                placeholder="blur"
                 className="h-8 w-auto"
               />
             </a>

@@ -75,6 +75,7 @@ export default function KenCaryl() {
                 <Image
                   src={kenCarylImage}
                   alt="Ken Caryl"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

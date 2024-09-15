@@ -77,6 +77,7 @@ export default function Westminster() {
                 <Image
                   src={westminsterImage}
                   alt="Westminster"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

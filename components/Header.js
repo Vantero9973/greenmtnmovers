@@ -82,6 +82,7 @@ export default function Header() {
                       <Image
                         src={headerImg}
                         alt="Back of moving truck"
+                        placeholder="blur"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -92,6 +93,7 @@ export default function Header() {
                       <Image
                         src={headerImg4}
                         alt="Two movers moving a couch"
+                        placeholder="blur"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -100,6 +102,7 @@ export default function Header() {
                       <Image
                         src={headerImg3}
                         alt="One mover moving a couch"
+                        placeholder="blur"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -110,6 +113,7 @@ export default function Header() {
                       <Image
                         src={headerImg2}
                         alt="Other mover moving a couch"
+                        placeholder="blur"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -118,6 +122,7 @@ export default function Header() {
                       <Image
                         src={headerImg5}
                         alt="Two movers holding moving boxes"
+                        placeholder="blur"
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />

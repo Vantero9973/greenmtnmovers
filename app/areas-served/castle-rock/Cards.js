@@ -63,6 +63,7 @@ export default function Cards() {
             <Image
               src={action.image}
               alt="black local moving truck icon"
+              placeholder="blur"
               className="h-20 w-20 z-[100] ml-8"
             />
           </div>

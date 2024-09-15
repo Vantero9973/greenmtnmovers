@@ -75,6 +75,7 @@ export default function Morrison() {
                 <Image
                   src={morrisonImage}
                   alt="Morrison"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

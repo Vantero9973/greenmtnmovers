@@ -76,6 +76,7 @@ export default function CommerceCity() {
                 <Image
                   src={commerceCityImage}
                   alt="Commerce City"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

@@ -26,16 +26,19 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
           <Image
             src={image}
             alt="movers labeling and packing boxes"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg h-full"
           />
           <Image
             src={imageTwo}
             alt="movers walking with boxes"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
           <Image
             src={imageThree}
             alt="satisfied client moved in"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden h-full"
           />
         </div>
@@ -243,6 +246,7 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
           <Image
             src={imageTwo}
             alt="movers walking with boxes"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>
@@ -297,6 +301,7 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
           <Image
             src={imageThree}
             alt="satisfied client moved in"
+            placeholder="blur"
             className="object-cover w-full max-h-[400px] rounded-lg md:hidden"
           />
         </div>

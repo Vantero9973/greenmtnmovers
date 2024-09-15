@@ -62,6 +62,7 @@ export default function JunkHauling() {
                     <Image
                       src={truckBlack}
                       alt="black sofa junk hauling icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">FURNITURE HAULING</h2>
@@ -84,6 +85,7 @@ export default function JunkHauling() {
                     <Image
                       src={truckBlack}
                       alt="black fridge junk hauling icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">APPLIANCE REMOVAL</h2>
@@ -105,6 +107,7 @@ export default function JunkHauling() {
                     <Image
                       src={truckBlack}
                       alt="black mattress junk hauling icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">MATTRESS DISPOSAL</h2>
@@ -125,6 +128,7 @@ export default function JunkHauling() {
                     <Image
                       src={truckBlack}
                       alt="black electronics recycling icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">ELECTRONICS RECYCLING</h2>
@@ -145,6 +149,7 @@ export default function JunkHauling() {
                     <Image
                       src={truckBlack}
                       alt="black debris removal icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">DEBRIS REMOVAL</h2>
@@ -165,6 +170,7 @@ export default function JunkHauling() {
                     <Image
                       src={truckBlack}
                       alt="black junk hauling truck icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">SCHEDULE A PICKUP</h2>
@@ -240,6 +246,7 @@ export default function JunkHauling() {
               <Image
                 src={junkHauling}
                 alt="Junk Hauling"
+                placeholder="blur"
                 className="rounded-2xl object-cover"
               />
             </div>

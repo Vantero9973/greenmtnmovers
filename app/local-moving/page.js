@@ -39,6 +39,7 @@ export default function LocalMoving() {
               <Image
                 src={movingStock}
                 alt="Movers Packing Boxes"
+                placeholder="blur"
                 className="max-h-[400px] object-cover rounded-xl mb-10"
               />
               <h4 className="text-xl font-semibold mb-2">
@@ -115,6 +116,7 @@ export default function LocalMoving() {
                     <Image
                       src={truckBlack}
                       alt="black local moving truck icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">RESIDENTIAL MOVING SERVICES</h2>
@@ -135,6 +137,7 @@ export default function LocalMoving() {
                     <Image
                       src={apartmentBlack}
                       alt="black moving box long distance moving icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">
@@ -157,6 +160,7 @@ export default function LocalMoving() {
                     <Image
                       src={officeBlack}
                       alt="black furniture assembly icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">LOCAL OFFICE MOVING SERVICES</h2>
@@ -178,6 +182,7 @@ export default function LocalMoving() {
                     <Image
                       src={boxBlack}
                       alt="black moving box long distance moving icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">LOCAL PACKING SERVICES</h2>
@@ -206,6 +211,7 @@ export default function LocalMoving() {
                     <Image
                       src={muscleBlack}
                       alt="black labor only moving help icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">LOCAL LABOR-ONLY MOVING HELP</h2>
@@ -225,6 +231,7 @@ export default function LocalMoving() {
                     <Image
                       src={deliveryBlack}
                       alt="black heavy furniture moving icon"
+                      placeholder="blur"
                       className="cardsImage"
                     />
                     <h2 className="card-title">LOCAL DELIVERY SERVICES</h2>
@@ -298,6 +305,7 @@ export default function LocalMoving() {
               <Image
                 src={movers}
                 alt="Movers"
+                placeholder="blur"
                 className="rounded-2xl object-cover"
               />
             </div>

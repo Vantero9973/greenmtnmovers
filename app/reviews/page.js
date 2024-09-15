@@ -49,6 +49,7 @@ export default function Reviews() {
                         <Image
                           src={stars}
                           alt="Google Reviews Stars"
+                          placeholder="blur"
                           className="h-8 w-auto object-cover"
                         />
                       </div>

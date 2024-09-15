@@ -75,6 +75,7 @@ export default function Evergreen() {
                 <Image
                   src={evergreenImage}
                   alt="Evergreen"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

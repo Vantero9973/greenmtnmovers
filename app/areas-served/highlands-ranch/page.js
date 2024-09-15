@@ -77,6 +77,7 @@ export default function HighlandsRanch() {
                 <Image
                   src={highlandsRanchImage}
                   alt="Highlands Ranch"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

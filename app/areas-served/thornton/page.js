@@ -75,6 +75,7 @@ export default function Thornton() {
                 <Image
                   src={thorntonImage}
                   alt="Thornton"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>

@@ -77,6 +77,7 @@ export default function Sherrelwood() {
                 <Image
                   src={sherrelwoodImage}
                   alt="Sherrelwood"
+                  placeholder="blur"
                   className="object-cover h-full rounded-2xl"
                 />
               </div>
