@@ -136,9 +136,9 @@ export default function Contact() {
                   <dd>
                     <a
                       className="hover:text-gray-900"
-                      href="mailto:greenmtnmovers@gmail.com"
+                      href="mailto:aaron@greenmtnmovers.com"
                     >
-                      greenmtnmovers@gmail.com
+                      aaron@greenmtnmovers.com
                     </a>
                   </dd>
                 </div>
