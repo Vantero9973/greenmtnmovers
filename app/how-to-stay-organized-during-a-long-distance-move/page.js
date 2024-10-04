@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavbarAbsolute";
+import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +17,7 @@ export default function HowToStayOrganizedDuringALongDistanceMove() {
   return (
     <>
       <Navbar />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-20 mt-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-20">
         <h1 className="font-bold text-4xl">
           How to Stay Organized During a Long Distance Move: Long-Distance &
           Cross-Country Moving Tips for Organization

@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavbarAbsolute";
+import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function UltimateMovingChecklist() {
         />
       </Head>
       <Navbar />
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-20 mt-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-20">
         <h1 className="font-bold text-4xl">
           Ultimate Moving Checklist Tips: The Ultimate Checklist for Your
           Upcoming Move
