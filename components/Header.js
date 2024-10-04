@@ -68,7 +68,7 @@ export default function Hero() {
           layout="fill"
           objectFit="cover"
           placeholder="blur"
-          className="absolute inset-0 object-cover object-right"
+          className="absolute inset-0 object-cover object-right-bottom"
         />
         <div className="absolute inset-0 max-sm:bg-gray-900 sm:bg-gradient-to-r sm:from-gray-900 sm:to-transparent opacity-50 sm:opacity-40" />
       </div>
@@ -112,8 +112,8 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
-                  <div className="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
-                    <div className="px-6 py-8 sm:px-10">
+                  <div className="sm:bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
+                    <div className="px-6 sm:py-8 sm:px-10">
                       <div>
                         <form
                           onSubmit={handleSubmit(onSubmit)}
