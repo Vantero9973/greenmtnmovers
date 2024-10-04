@@ -68,9 +68,9 @@ export default function Hero() {
           layout="fill"
           objectFit="cover"
           placeholder="blur"
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 object-cover object-right"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent opacity-40" />
+        <div className="absolute inset-0 max-sm:bg-gray-900 sm:bg-gradient-to-r sm:from-gray-900 sm:to-transparent opacity-50 sm:opacity-40" />
       </div>
 
       <div className="relative overflow-hidden sm:py-10">
@@ -85,10 +85,10 @@ export default function Hero() {
               <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div className="px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
                   <div>
-                    <h2 className="mt-6 text-shadow OPTIBank text-[28px] font-semibold text-white sm:text-4xl xl:text-[54px] !leading-[1.1]">
+                    <h2 className="mt-6 sm:text-shadow OPTIBank text-[32px] font-semibold text-white sm:text-4xl xl:text-[54px] !leading-[1.1]">
                       A Seamless Moving Experience
                     </h2>
-                    <p className="mt-3 text-shadow-sm text-base text-zinc-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                    <p className="mt-3 sm:text-shadow-sm text-base text-zinc-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                       Green Mountain Movers is locally owned and operated. We're
                       here to help make your move as stress-free as possible and
                       take great pride in serving our customers with a genuine
