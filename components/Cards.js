@@ -38,7 +38,7 @@ const actions = [
 
 export default function Cards() {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 lg:pt-32 pb-10">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-10">
       <div className="mx-auto max-w-xl text-center">
         <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
           Moving Services
