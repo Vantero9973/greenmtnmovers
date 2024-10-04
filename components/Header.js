@@ -210,6 +210,7 @@ export default function Hero() {
                               id="date"
                               name="date"
                               type="date"
+                              placeholder="Requested Date"
                               required
                               value={toSend.date}
                               onChange={handleChange}
