@@ -380,3 +380,11 @@ html {
 .custom-link:visited {
   color: #551a8b;
 }
+
+.text-shadow {
+  text-shadow: 1px 1px 1px black;
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 0px black;
+}

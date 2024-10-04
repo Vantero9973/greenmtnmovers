@@ -1,6 +1,7 @@
 "use client";
 import { Fragment, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Dialog, Menu, Transition, Disclosure } from "@headlessui/react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -23,15 +24,18 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Green Mountain Movers</span>
             <Image
               src={logo}
               alt="Green Mountain Movers Logo"
-              placeholder="blur"
-              className="h-8 w-auto"
+              placeholder="empty"
+              className="mx-auto h-8 w-auto"
             />
-          </a>
+            <h1 className="max-lg:hidden OPTIBank my-auto font-bold text-[#0e5933]">
+              Green Mountain Movers
+            </h1>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -231,7 +235,7 @@ export default function Navbar() {
               <Image
                 src={logo}
                 alt="Green Mountain Movers Logo"
-                placeholder="blur"
+                placeholder="empty"
                 className="h-8 w-auto"
               />
             </a>
