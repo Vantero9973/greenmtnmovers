@@ -44,7 +44,7 @@ export default function Cards() {
           Moving Services
         </h2>
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Trusted by countless clients for smooth and reliable moves
+          Providing seamless moving and hauling services you can rely on.
         </p>
       </div>
       <div className="divide-y divide-gray-200 rounded-lg sm:grid sm:grid-cols-4 gap-6 sm:divide-y-0 mt-16">

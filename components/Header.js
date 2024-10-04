@@ -73,7 +73,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent opacity-40" />
       </div>
 
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden sm:py-10">
         <div className="max-md:hidden mtnBorder--bottom absolute bottom-0 shadow" />
         <div
           aria-hidden="true"
@@ -103,7 +103,7 @@ export default function Hero() {
                         Get started
                       </Link>
                       <Link
-                        href="areas-served"
+                        href="/areas-served"
                         className="text-sm font-semibold leading-6 text-white"
                       >
                         See our service areas <span aria-hidden="true">→</span>
