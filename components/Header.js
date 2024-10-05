@@ -204,7 +204,7 @@ export default function Hero() {
 
                           <div className="col-span-2">
                             <label htmlFor="date" className="sr-only">
-                              Requested Date
+                              Date
                             </label>
                             <input
                               id="date"
@@ -213,8 +213,6 @@ export default function Hero() {
                               placeholder="Requested Date"
                               required
                               value={toSend.date}
-                              onFocus={(e) => (e.target.type = "date")}
-                              onBlur={(e) => (e.target.type = "text")}
                               onChange={handleChange}
                               className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                             />
