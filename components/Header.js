@@ -70,7 +70,7 @@ export default function Hero() {
           placeholder="blur"
           className="absolute inset-0 object-cover object-right-bottom"
         />
-        <div className="absolute inset-0 bg-gradient-to-b sm:bg-gradient-to-r from-gray-900 to-transparent opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-b sm:bg-gradient-to-r from-gray-900 via-gray-900/70 to-transparent opacity-40" />
       </div>
 
       <div className="relative overflow-hidden sm:py-10">
@@ -204,15 +204,17 @@ export default function Hero() {
 
                           <div className="col-span-2">
                             <label htmlFor="date" className="sr-only">
-                              Date
+                              Requested Date
                             </label>
                             <input
                               id="date"
                               name="date"
-                              type="date"
+                              type="text"
                               placeholder="Requested Date"
                               required
                               value={toSend.date}
+                              onFocus={(e) => (e.target.type = "date")}
+                              onBlur={(e) => (e.target.type = "text")}
                               onChange={handleChange}
                               className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                             />
