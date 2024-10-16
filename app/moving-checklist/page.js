@@ -37,13 +37,14 @@ export default function MovingChecklist() {
           </ol>
         </nav>
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Reviews
+          Moving Checklist
         </h1>
         <p className="text-base leading-7 text-gray-700 mt-4">
-          Read through the reviews from our satisfied customers who have
-          experienced our professional moving services. We take pride in
-          delivering exceptional service and making every move a stress-free
-          experience. If you've moved with us, feel free to share your feedback!
+          Prepare for your move with this comprehensive moving checklist. From
+          organizing your documents to scheduling your movers, these steps will
+          ensure a smooth and stress-free move. Stay on track with these
+          recommended tasks, starting weeks in advance and continuing right up
+          to moving day.
         </p>
         <div className="mt-10">
           <dl className="divide-y divide-gray-100">
