@@ -11,12 +11,17 @@ export default function FooterComponent() {
     <Footer className="bg-[#f7f7f7]">
       <div className="w-full">
         <div className="flex justify-center items-center">
-          <div className="max-w-screen-xl grid w-full grid-cols-2 gap-8 px-6 pt-8 pb-16 md:grid-cols-5">
+          <div className="max-w-screen-xl grid w-full grid-cols-2 gap-8 px-6 py-16 md:grid-cols-5">
             <div className="max-md:col-span-2 text-[#6b7280] text-sm leading-5">
               <Footer.Title title="Contact" as="h4" />
-              <h3>Green Mountain Movers</h3>
-              <p>Lakewood, CO</p>
-              <a href="tel:7196801538">(719) 680-1538</a>
+              <div className="flex flex-col gap-y-4">
+                <h3>Green Mountain Movers</h3>
+                <p>Lakewood, CO</p>
+                <a href="tel:7196801538">(719) 680-1538</a>
+                <a href="mailto:aaron@greenmtnmovers.com">
+                  aaron@greenmtnmovers.com
+                </a>
+              </div>
             </div>
             <div>
               <Footer.Title title="Company" as="h4" />

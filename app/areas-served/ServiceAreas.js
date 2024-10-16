@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import { cities } from "../data/cities";
+import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
 export const metadata = {
   title:
@@ -16,7 +17,36 @@ export default function AreasServed() {
   return (
     <>
       <Navbar />
-      <div className="mx-auto max-w-screen-xl w-full gap-8 px-6 pt-10 pb-16">
+      <div className="mx-auto max-w-7xl w-full gap-8 px-6 pt-10 pb-16">
+        <nav aria-label="Breadcrumb" className="flex mt-5">
+          <ol className="flex items-center space-x-4">
+            <li>
+              <div>
+                <Link href="/" className="text-gray-500 hover:text-gray-600">
+                  <HomeIcon
+                    aria-hidden="true"
+                    className="h-5 w-5 flex-shrink-0"
+                  />
+                  <span className="sr-only">Home</span>
+                </Link>
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center">
+                <ChevronRightIcon
+                  aria-hidden="true"
+                  className="h-5 w-5 flex-shrink-0 text-gray-500"
+                />
+                <Link
+                  href="/areas-served"
+                  className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                >
+                  Areas Served
+                </Link>
+              </div>
+            </li>
+          </ol>
+        </nav>
         <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           Areas We Serve - Green Mountain Movers | Local & Regional Moving
           Services

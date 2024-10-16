@@ -62,7 +62,7 @@ export default function ServiceAreasCards() {
             <div className="bg-[rgba(14,89,51,0.6)] h-20 w-20 rounded-full absolute transition ease-in-out duration-500" />
             <Image
               src={action.image}
-              placeholder="blur"
+              placeholder="empty"
               alt="black local moving truck icon"
               className="h-20 w-20 z-[100] ml-8"
             />

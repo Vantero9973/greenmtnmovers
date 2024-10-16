@@ -32,7 +32,7 @@ export default function Navbar() {
               placeholder="empty"
               className="mx-auto h-8 w-auto"
             />
-            <h1 className="max-lg:hidden OPTIBank my-auto font-bold text-[#0e5933]">
+            <h1 className="max-lg:hidden OPTIBank text-sm my-auto font-bold text-[#0e5933]">
               Green Mountain Movers
             </h1>
           </Link>
