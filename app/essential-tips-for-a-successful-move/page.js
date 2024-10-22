@@ -3,9 +3,9 @@ import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-import image from "../../public/media/header-img2.jpg";
-import imageTwo from "../../public/media/header-img3.jpg";
-import imageThree from "../../public/media/header-img5.jpg";
+import image from "../../public/media/moving-7.jpg";
+import imageTwo from "../../public/media/moving-3.jpg";
+import imageThree from "../../public/media/moving-6.jpg";
 
 export default function EssentialTips() {
   return (
@@ -26,24 +26,12 @@ export default function EssentialTips() {
           10 Essential Tips for a Successful Move - Best Moving Tips & Good
           Practices
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+        <div className="mt-10">
           <Image
             src={image}
             alt="movers moving couch"
             placeholder="blur"
-            className="object-cover w-full max-h-[400px] rounded-lg"
-          />
-          <Image
-            src={imageTwo}
-            alt="one mover moving couch"
-            placeholder="blur"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
-          />
-          <Image
-            src={imageThree}
-            alt="movers carrying boxes"
-            placeholder="blur"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            className="object-cover w-full max-h-[400px] h-full rounded-lg"
           />
         </div>
         <div className="flex flex-col gap-5 mt-10">

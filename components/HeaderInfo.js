@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function HeaderInfo() {
   return (
     <>
@@ -151,21 +149,6 @@ export default function HeaderInfo() {
             chosen movers and company that doesn't just move your items but
             cares for the entirety of your relocation experience.
           </p>
-        </div>
-        <div className="flex flex-col gap-3">
-          <h3 className="text-2xl font-semibold">Suggested Reading</h3>
-          <Link
-            href="/essential-tips-for-a-successful-move"
-            className="custom-link underline"
-          >
-            Essential Tips for a Successful Move
-          </Link>
-          <Link
-            href="/ultimate-moving-checklist"
-            className="custom-link underline"
-          >
-            Ultimate Moving Checklist
-          </Link>
         </div>
       </div>
       <div>

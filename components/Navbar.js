@@ -47,10 +47,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 h-[70px]">
-          <a
-            href="#"
-            className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
-          >
+          <div className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-1 lg:px-3 py-2 text-sm">
@@ -74,46 +71,43 @@ export default function Navbar() {
                 <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/local-moving"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Local Moving
-                      </a>
+                      </Link>
                     </Menu.Item>
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/long-distance-moving"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Long Distance Moving
-                      </a>
+                      </Link>
                     </Menu.Item>
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/furniture-assembly"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Furniture Assembly
-                      </a>
+                      </Link>
                     </Menu.Item>
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/junk-hauling"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Junk Hauling
-                      </a>
+                      </Link>
                     </Menu.Item>
                   </div>
                 </Menu.Items>
               </Transition>
             </Menu>
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
-          >
+          </div>
+          <div className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-1 lg:px-3 py-2 text-sm">
@@ -138,23 +132,20 @@ export default function Navbar() {
                   <div className="py-1 max-h-[66vh] overflow-scroll">
                     {cities.map((city) => (
                       <Menu.Item key={city}>
-                        <a
+                        <Link
                           href={`/areas-served/${formattedCityName(city)}`}
                           className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                         >
                           {city}
-                        </a>
+                        </Link>
                       </Menu.Item>
                     ))}
                   </div>
                 </Menu.Items>
               </Transition>
             </Menu>
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
-          >
+          </div>
+          <div className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-1 lg:px-3 py-2 text-sm">
@@ -178,46 +169,40 @@ export default function Navbar() {
                 <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/faq"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         FAQ
-                      </a>
+                      </Link>
                     </Menu.Item>
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/reviews"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Reviews
-                      </a>
+                      </Link>
                     </Menu.Item>
                     <Menu.Item>
-                      <a
+                      <Link
                         href="/moving-checklist"
                         className="hover:bg-gray-100 text-gray-700 hover:text-gray-900 block px-4 py-2 text-sm"
                       >
                         Moving Checklist
-                      </a>
+                      </Link>
                     </Menu.Item>
                   </div>
                 </Menu.Items>
               </Transition>
             </Menu>
-          </a>
-          {/* <a
-            href="/about"
-            className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
-          >
-            <button className="px-1 lg:px-3 py-2">About</button>
-          </a> */}
-          <a
+          </div>
+          <Link
             href="/contact"
             className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-700 hover:border-[#0e5933] hover:text-gray-900"
           >
             <button className="px-1 lg:px-3 py-2">Contact</button>
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -230,7 +215,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Green Mountain Movers</span>
               <Image
                 src={logo}
@@ -238,7 +223,7 @@ export default function Navbar() {
                 placeholder="empty"
                 className="h-8 w-auto"
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -249,9 +234,9 @@ export default function Navbar() {
             </button>
           </div>
           <nav className="flex flex-1 flex-col py-5">
-            <ul role="list" className="flex flex-1 flex-col gap-y-7">
+            <ul className="flex flex-1 flex-col gap-y-7">
               <li>
-                <ul role="list" className="-mx-2 space-y-1">
+                <ul className="-mx-2 space-y-1">
                   <li>
                     <Disclosure as="div">
                       {({ open }) => (
@@ -394,21 +379,13 @@ export default function Navbar() {
                       )}
                     </Disclosure>
                   </li>
-                  {/* <li>
-                    <a
-                      href="/about"
-                      className="block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-700"
-                    >
-                      About
-                    </a>
-                  </li> */}
                   <li>
-                    <a
+                    <Link
                       href="/contact"
                       className="block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-700"
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

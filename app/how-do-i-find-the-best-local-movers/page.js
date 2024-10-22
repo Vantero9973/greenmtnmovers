@@ -5,7 +5,7 @@ import Link from "next/link";
 import image from "../../public/media/header-img2.jpg";
 import imageTwo from "../../public/media/header-img3.jpg";
 import imageThree from "../../public/media/header-img5.jpg";
-import BestLocalMoversFAQ from "../../components/BestLocalMoversFAQ";
+import FAQ from "./FAQ";
 
 export const metadata = {
   title:
@@ -410,7 +410,7 @@ export default function BestLocalMovers() {
           </p>
         </div>
 
-        <BestLocalMoversFAQ />
+        <FAQ />
 
         <div className="flex flex-col gap-5 mt-10">
           <h4 className="font-semibold text-2xl">

@@ -7,6 +7,7 @@ import FaqComponent from "../components/FaqComponent";
 import Stats from "../components/Stats";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
+import Blog from "../components/Blog";
 
 export const metadata = {
   title:
@@ -22,10 +23,11 @@ export default function Home() {
       <Header />
       <div>
         <Cards />
-        <Testimonials />
         <FaqComponent />
+        <Testimonials />
         <Stats />
         <Contact />
+        <Blog />
         <HeaderServicesInfo />
         <HeaderInfo />
       </div>

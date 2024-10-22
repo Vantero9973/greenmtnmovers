@@ -1,15 +1,4 @@
-import Image from "next/image";
-import bl from "../public/media/review1.png";
-import av from "../public/media/review2.png";
-import ek from "../public/media/review3.png";
-import lg from "../public/media/review4.png";
-import ss from "../public/media/review5.png";
-import sm from "../public/media/review6.png";
-import jh from "../public/media/review7.png";
-import rb from "../public/media/review8.png";
-import kd from "../public/media/review9.png";
-import es from "../public/media/review10.png";
-import mp from "../public/media/review11.png";
+import Link from "next/link";
 
 const testimonials = [
   [
@@ -17,22 +6,25 @@ const testimonials = [
       {
         body: "Green Mountain Movers did an incredible job unloading our moving truck at the end of a cross country drive. We had a weather delay on the drive and they were very accommodating with our schedule. They took great care of our belongings and made our moving day stress free. Couldn't recommend this company more!",
         author: {
-          name: "Blake Lattier",
-          imageUrl: bl,
+          name: "Blake L.",
+          initial: "B",
+          bgColor: "bg-orange-700",
         },
       },
       {
         body: "Aaron and his team were fantastic! Got us moved in two hours and made sure everything went where we needed it. Highly recommend!!!",
         author: {
-          name: "Samantha Miller",
-          imageUrl: sm,
+          name: "Samantha M.",
+          initial: "S",
+          bgColor: "bg-blue-700",
         },
       },
       {
         body: "I have worked with Green Mountain movers several times. Always very punctual and prepared with the proper equipment to ensure that everything is moved safely with out damage or injury. Too notch company!",
         author: {
-          name: "Ross Baldwin",
-          imageUrl: rb,
+          name: "Ross B.",
+          initial: "R",
+          bgColor: "bg-gray-700",
         },
       },
     ],
@@ -40,15 +32,17 @@ const testimonials = [
       {
         body: "Green Mountain Movers were great to work with — communicative, professional, punctual, helpful, and got the job done quickly and perfectly. Would use them again in a heartbeat.",
         author: {
-          name: "Eileen Kiernan-Johnson",
-          imageUrl: ek,
+          name: "Eileen K.",
+          initial: "E",
+          bgColor: "bg-cyan-700",
         },
       },
       {
         body: "Aaron was SO professional and did such a great job communicating with me and the other parties involved with this furniture move. Very trustworthy and hardworking! Would recommend to anyone!",
         author: {
-          name: "Megan Peters",
-          imageUrl: mp,
+          name: "Megan P.",
+          initial: "M",
+          bgColor: "bg-purple-500",
         },
       },
     ],
@@ -58,15 +52,17 @@ const testimonials = [
       {
         body: "Professional, timely, friendly. Aaron has the equipment to get the job done. Moved us with nothing lost or broken. Definitely recommend them and would use them again",
         author: {
-          name: "Lisa Georgetown",
-          imageUrl: lg,
+          name: "Lisa G.",
+          initial: "L",
+          bgColor: "bg-teal-600",
         },
       },
       {
         body: "Very efficient, took care of our things and moved everything out and in with precision and care for the property and belongings. They are the guys. They rock. 😎🤘🏼",
         author: {
-          name: "Ella Solberg",
-          imageUrl: es,
+          name: "Ella S.",
+          initial: "E",
+          bgColor: "bg-lime-600",
         },
       },
     ],
@@ -74,22 +70,25 @@ const testimonials = [
       {
         body: "My experience with Green Mountain Movers was phenomenal. They came prepared and were efficient, professional, detail oriented, careful and respectful. They took the stress out of my moving day. 10/10 recommend.",
         author: {
-          name: "Sophia M. Shanley",
-          imageUrl: ss,
+          name: "Sophia M.",
+          initial: "S",
+          bgColor: "bg-red-700",
         },
       },
       {
         body: "Super professional, communication is on par!! Had everything needed overall. All equipment and supplies needed!! Wonderful experience !!! Would highly recommend, Green Mountain Movers !!",
         author: {
-          name: "Jason Hancock",
-          imageUrl: jh,
+          name: "Jason H.",
+          initial: "J",
+          bgColor: "bg-green-900",
         },
       },
       {
         body: "Green Mountain Movers is the best moving company I've ever used! They arrived on time and got everything packed and loaded up quickly. They even went above and beyond to help me assemble and rearrange furniture in my new home. Highly recommended!",
         author: {
-          name: "Alex Van Vleet",
-          imageUrl: av,
+          name: "Alex V.",
+          initial: "A",
+          bgColor: "bg-blue-900",
         },
       },
     ],
@@ -102,17 +101,27 @@ function classNames(...classes) {
 
 export default function Testimonials() {
   return (
-    <div className="relative isolate bg-white pb-32 pt-24">
+    <div className="relative isolate bg-white pb-10 pt-20">
       <div className="mx-auto max-w-screen-xl px-6 lg:px-8">
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
-            Testimonials
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            We have worked with thousands of amazing people
-          </p>
+        <div className="flex justify-between">
+          <div className="max-w-xl">
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
+              Testimonials
+            </h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              We have worked with thousands of amazing people
+            </p>
+          </div>
+          <div className="flex items-end">
+            <Link
+              href="/reviews"
+              className="text-sm font-semibold leading-6 text-[#0e5933]"
+            >
+              See all reviews <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
-        <div className="mx-auto mt-16 grid grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-flow-col lg:grid-cols-4">
+        <div className="mx-auto mt-10 sm:mt-16 grid grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-flow-col lg:grid-cols-4">
           <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 lg:col-start-2 lg:row-end-1">
             <blockquote className="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
               <p>
@@ -125,18 +134,12 @@ export default function Testimonials() {
               </p>
             </blockquote>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-              <Image
-                className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                src={kd}
-                placeholder="blur"
-                alt="Featured Review User Profile"
-              />
+              <div className="h-10 w-10 flex justify-center items-center rounded-full text-white text-bold text-lg bg-[#0e5933]">
+                K
+              </div>
               <div className="flex flex-col justify-center">
-                <div className="font-semibold text-md">Kai Davis</div>
-                <div className="text-gray-700 text-sm">
-                  <span className="font-semibold">Positive:</span>{" "}
-                  Professionalism, Quality, Responsiveness, Value
-                </div>
+                <div className="font-semibold text-md">Kai D.</div>
+                <div className="text-gray-700 text-xs">Google Review</div>
               </div>
             </figcaption>
           </figure>
@@ -159,22 +162,24 @@ export default function Testimonials() {
                 >
                   {column.map((testimonial) => (
                     <figure
-                      key={testimonial.author}
+                      key={testimonial.author.name}
                       className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
                     >
                       <blockquote className="text-gray-900">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <Image
-                          className="h-10 w-10 rounded-full bg-gray-50"
-                          src={testimonial.author.imageUrl}
-                          alt=""
-                          placeholder="blur"
-                        />
+                        <div
+                          className={`h-10 w-10 flex justify-center items-center rounded-full text-white text-bold text-lg ${testimonial.author.bgColor}`}
+                        >
+                          {testimonial.author.initial}
+                        </div>
                         <div>
                           <div className="font-semibold">
                             {testimonial.author.name}
+                          </div>
+                          <div className="text-gray-700 text-xs">
+                            Google Review
                           </div>
                         </div>
                       </figcaption>
@@ -189,172 +194,3 @@ export default function Testimonials() {
     </div>
   );
 }
-
-// import Image from "next/image";
-// import google_reviews from "../public/media/google_reviews.png";
-// import Reviews from "./Reviews";
-// import CarouselComponent from "./CarouselComponent";
-
-// export default function Testimonials() {
-//   return (
-//     <div className="flex flex-col justify-center items-center">
-//       <div
-//         className="reviewsContainer max-w-screen-xl px-5 md:px-10 pt-20 pb-10"
-//         id="reviews"
-//       >
-//         <div style={{ display: "flex", flexDirection: "column", gap: "2vh" }}>
-//           <h1 className="reviewsTitleDesktop">
-//             <span
-//               className="flex flex-wrap gap-x-2.5 text-[32px] font-bold w-full"
-//               data-aos="fade-up"
-//               data-aos-once="true"
-//               data-aos-easing="ease-in-out"
-//               data-aos-duration="1000"
-//             >
-//               Read Our
-//               <span style={{ position: "relative", zIndex: "1" }}>
-//                 <p className="underline">Awesome</p>
-//               </span>
-//               Reviews
-//             </span>
-//           </h1>
-//           <h1 className="reviewsTitleMobile">
-//             <div className="reviewsTitle">
-//               Read Our
-//               <span style={{ position: "relative", zIndex: "1" }}>
-//                 <p className="underline">Awesome</p>
-//               </span>
-//               Reviews
-//             </div>
-//           </h1>
-//           <h2 className="testimonialsBody">
-//             Discover what our customers have to say about their moving
-//             experiences with us. Our reviews and testimonials section showcases
-//             honest feedback from satisfied clients who have used our moving
-//             services. We take pride in offering top-quality, reliable, and
-//             personalized moving solutions to meet your specific needs
-//           </h2>
-//         </div>
-//         <div className="reviewsDesktop">
-//           <Reviews />
-//         </div>
-//         <div className="reviewsMobile">
-//           <CarouselComponent />
-//         </div>
-//         <a
-//           href="https://www.google.com/maps/place/Green+Mountain+Movers/@39.6577034,-105.448454,9.81z/data=!4m8!3m7!1s0xa9d50c0a7bbc9c15:0x2227dd3fdd89cee0!8m2!3d39.3801284!4d-105.984378!9m1!1b1!16s%2Fg%2F11s5g2ckvt"
-//           target="_blank"
-//           rel="noreferrer"
-//           className="z-index"
-//           style={{ width: "fit-content" }}
-//         >
-//           <button className="reviewsButton">
-//             Read All
-//             <img
-//               src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png"
-//               alt="google logo"
-//               style={{ height: "25px", width: "25px" }}
-//             />
-//             Reviews
-//           </button>
-//         </a>
-//       </div>
-//       <div className="flex flex-col items-center gap-[1vh] py-10 px-5 md:px-10">
-//         <p
-//           style={{
-//             textAlign: "center",
-//             fontSize: "clamp(16px, 1.5vw, 20px)",
-//           }}
-//         >
-//           WE WOULD LOVE TO HEAR FROM YOU.
-//           <br />
-//           TAP HERE TO LEAVE US A REVIEW ON GOOGLE!
-//         </p>
-//         <Image
-//           src={google_reviews}
-//           alt="google reviews icon"
-//           style={{ width: "300px" }}
-//         />
-//         <a
-//           href="https://g.page/r/CeDOid0_3SciEBM/review"
-//           target="_blank"
-//           rel="noreferrer"
-//         >
-//           <button className="headerButton">Leave a Review</button>
-//         </a>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default function Example() {
-//   return (
-//     <section className="bg-white py-24 sm:py-32">
-//       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-//         <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-//           <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-//             <img
-//               alt=""
-//               src="https://tailwindui.com/plus/img/logos/tuple-logo-gray-900.svg"
-//               className="h-12 self-start"
-//             />
-//             <figure className="mt-10 flex flex-auto flex-col justify-between">
-//               <blockquote className="text-lg leading-8 text-gray-900">
-//                 <p>
-//                   “Amet amet eget scelerisque tellus sit neque faucibus non
-//                   eleifend. Integer eu praesent at a. Ornare arcu gravida
-//                   natoque erat et cursus tortor consequat at. Vulputate gravida
-//                   sociis enim nullam ultricies habitant malesuada lorem ac.
-//                   Tincidunt urna dui pellentesque sagittis.”
-//                 </p>
-//               </blockquote>
-//               <figcaption className="mt-10 flex items-center gap-x-6">
-//                 <img
-//                   alt=""
-//                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-//                   className="h-14 w-14 rounded-full bg-gray-50"
-//                 />
-//                 <div className="text-base">
-//                   <div className="font-semibold text-gray-900">
-//                     Judith Black
-//                   </div>
-//                   <div className="mt-1 text-gray-500">CEO of Tuple</div>
-//                 </div>
-//               </figcaption>
-//             </figure>
-//           </div>
-//           <div className="flex flex-col border-t border-gray-900/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
-//             <img
-//               alt=""
-//               src="https://tailwindui.com/plus/img/logos/reform-logo-gray-900.svg"
-//               className="h-12 self-start"
-//             />
-//             <figure className="mt-10 flex flex-auto flex-col justify-between">
-//               <blockquote className="text-lg leading-8 text-gray-900">
-//                 <p>
-//                   “Excepteur veniam labore ullamco eiusmod. Pariatur consequat
-//                   proident duis dolore nulla veniam reprehenderit nisi officia
-//                   voluptate incididunt exercitation exercitation elit. Nostrud
-//                   veniam sint dolor nisi ullamco.”
-//                 </p>
-//               </blockquote>
-//               <figcaption className="mt-10 flex items-center gap-x-6">
-//                 <img
-//                   alt=""
-//                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-//                   className="h-14 w-14 rounded-full bg-gray-50"
-//                 />
-//                 <div className="text-base">
-//                   <div className="font-semibold text-gray-900">
-//                     Joseph Rodriguez
-//                   </div>
-//                   <div className="mt-1 text-gray-500">CEO of Reform</div>
-//                 </div>
-//               </figcaption>
-//             </figure>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }

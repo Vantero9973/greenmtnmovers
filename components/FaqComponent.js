@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
@@ -110,38 +111,24 @@ const faqs = [
 export default function Example() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-screen-xl w-full px-6 py-10 lg:px-8">
-        <div
-          className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
-          aria-hidden="true"
-        >
-          <div
-            className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-white to-[#0e5933]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-        <div
-          className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
-          aria-hidden="true"
-        >
-          <div
-            className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-white to-[#0e5933] xl:ml-0 xl:mr-[calc(50%-12rem)]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
-            Frequently Asked Questions (FAQ)
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Your Questions, Answered
-          </p>
+      <div className="mx-auto max-w-screen-xl w-full px-6 pt-20 pb-10 lg:px-8">
+        <div className="flex justify-between">
+          <div className="max-w-xl">
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
+              Frequently Asked Questions (FAQ)
+            </h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Your Questions, Answered
+            </p>
+          </div>
+          <div className="flex items-end">
+            <Link
+              href="/faq"
+              className="text-sm font-semibold leading-6 text-[#0e5933]"
+            >
+              See all FAQs <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
         <div className="mx-auto divide-y divide-gray-900/10">
           <dl className="w-full mt-10 space-y-6 divide-y divide-gray-900/10">

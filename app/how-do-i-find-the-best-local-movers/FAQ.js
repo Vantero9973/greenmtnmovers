@@ -2,7 +2,7 @@
 import { Disclosure } from "@headlessui/react";
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
-export default function BestLocalMoversFAQ() {
+export default function FAQ() {
   return (
     <div className="divide-y divide-zinc-900/10 py-10">
       <h2 className="text-2xl font-semibold leading-10 tracking-tight text-zinc-900">
