@@ -2,9 +2,9 @@ import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
-import image from "../../public/media/header-img2.jpg";
-import imageTwo from "../../public/media/header-img3.jpg";
-import imageThree from "../../public/media/header-img5.jpg";
+import image from "../../public/media/movers.jpg";
+import imageTwo from "../../public/media/moving-5.jpg";
+import imageThree from "../../public/media/moving-3.jpg";
 import FAQ from "./FAQ";
 
 export const metadata = {
@@ -28,19 +28,19 @@ export default function BestLocalMovers() {
             src={image}
             alt="movers moving couch"
             placeholder="blur"
-            className="object-cover w-full max-h-[400px] rounded-lg"
+            className="object-cover w-full max-h-[400px] h-full rounded-lg"
           />
           <Image
             src={imageTwo}
             alt="one mover moving couch"
             placeholder="blur"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            className="object-cover w-full max-h-[400px] h-full rounded-lg max-md:hidden"
           />
           <Image
             src={imageThree}
             alt="movers carrying boxes"
             placeholder="blur"
-            className="object-cover w-full max-h-[400px] rounded-lg max-md:hidden"
+            className="object-cover w-full max-h-[400px] h-full rounded-lg max-md:hidden"
           />
         </div>
         <div className="flex flex-col gap-5 mt-10">
