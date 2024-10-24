@@ -18,9 +18,9 @@ export default function Navbar() {
   }
 
   return (
-    <header className="flex justify-center items-center z-50 bg-white h-[70px]">
+    <header className="flex justify-center items-center z-50 bg-white h-[70px] px-4 sm:px-6 lg:px-8">
       <nav
-        className="flex max-w-7xl w-full  items-center justify-between px-6 lg:px-8"
+        className="flex max-w-7xl w-full  items-center justify-between"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">

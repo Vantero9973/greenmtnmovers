@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import Link from "next/link";
 import welbyImage from "../../../public/media/movers.jpg";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import MovingTips from "../../../components/MovingTips";
@@ -10,41 +11,64 @@ import ServiceAreasCards from "../../../components/ServiceAreasCards";
 import Navbar from "../../../components/Navbar";
 
 export default function Welby() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
-      <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
-        <div className="mtnBorder--bottom absolute bottom-0 shadow" />
-        <header
-          className="text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white"
-          style={{
-            transform: `translateY(${scrollPosition * 0.4}px)`,
-          }}
-        >
-          Welby Moving Services
-        </header>
-      </div>
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
-        <div className="flex flex-col items-center justify-center max-w-screen-xl">
+      <div className="flex justify-center items-center py-5 px-4 sm:px-6 lg:px-8 z-1 relative">
+        <div className="mx-auto max-w-7xl">
           <section id="welby" className="my-10">
-            <h2 className="text-2xl font-semibold md:hidden">
-              Expert Moving Services in Welby, Colorado
-            </h2>
-            <div className="flex max-md:flex-col-reverse items-stretch justify-between gap-5 md:gap-10 my-5">
+            <div className="mx-auto max-w-4xl lg:mx-0">
+              <nav aria-label="Breadcrumb" className="flex">
+                <ol className="flex items-center space-x-4">
+                  <li>
+                    <div>
+                      <Link
+                        href="/"
+                        className="text-gray-500 hover:text-gray-600"
+                      >
+                        <HomeIcon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-shrink-0"
+                        />
+                        <span className="sr-only">Home</span>
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-shrink-0 text-gray-500"
+                      />
+                      <Link
+                        href="/areas-served"
+                        className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                      >
+                        Areas Served
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-shrink-0 text-gray-500"
+                      />
+                      <Link
+                        href="/areas-served/welby"
+                        className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                      >
+                        Welby
+                      </Link>
+                    </div>
+                  </li>
+                </ol>
+              </nav>
+              <h2 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Expert Moving Services in Welby, Colorado
+              </h2>
+            </div>
+            <div className="flex max-md:flex-col-reverse items-stretch justify-between gap-5 md:gap-10 mb-5 mt-10 sm:mt-20">
               <div className="flex flex-col justify-start gap-3 w-full md:w-2/4 lg:w-3/5">
                 <h2 className="text-2xl font-semibold max-md:hidden">
                   Trusted Welby Moving Company - Local & Long-Distance Moves
