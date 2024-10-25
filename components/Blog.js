@@ -38,7 +38,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="pt-20 pb-40">
+    <div className="pt-10 pb-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
