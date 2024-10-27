@@ -56,7 +56,7 @@ export default function JunkHaulingCards() {
           <div className="flex items-center">
             <div className="bg-[rgba(14,89,51,0.6)] h-20 w-20 rounded-full absolute transition ease-in-out duration-500" />
             <action.icon
-              className="h-16 w-16 text-gray-700 z-[100] ml-8"
+              className="h-16 w-16 text-zinc-900 z-[100] ml-8"
               aria-hidden="true"
             />
           </div>
