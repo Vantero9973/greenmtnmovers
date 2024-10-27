@@ -84,13 +84,13 @@ const featuresThree = [
   },
 ];
 
-export default function Centennial() {
+export default function ColoradoSprings() {
   return (
     <>
       <Navbar />
       <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
         <div className="mx-auto max-w-7xl">
-          <section id="centennial" className="mt-5 sm:mt-10 mb-10">
+          <section id="colorado-springs" className="mt-5 sm:mt-10 mb-10">
             <div className="mx-auto max-w-4xl lg:mx-0">
               <nav aria-label="Breadcrumb" className="flex">
                 <ol className="flex items-center space-x-4">

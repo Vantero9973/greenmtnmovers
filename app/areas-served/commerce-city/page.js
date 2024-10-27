@@ -1,246 +1,609 @@
-"use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import commerceCityImage from "../../../public/media/movers.jpg";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import moving from "../../../public/media/moving-6.jpg";
+import {
+  AdjustmentsHorizontalIcon,
+  ChevronRightIcon,
+  ClipboardDocumentCheckIcon,
+  ClockIcon,
+  CubeIcon,
+  CurrencyDollarIcon,
+  FaceSmileIcon,
+  HandThumbUpIcon,
+  HeartIcon,
+  HomeIcon,
+  ShieldCheckIcon,
+  TruckIcon,
+  UserGroupIcon,
+  WrenchScrewdriverIcon,
+} from "@heroicons/react/20/solid";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
-import MovingTips from "../../../components/MovingTips";
-import ServiceAreasCards from "../../../components/ServiceAreasCards";
+import Cards from "./Cards";
+import FAQ from "./FAQ";
 import Navbar from "../../../components/Navbar";
 
-export default function CommerceCity() {
-  const [scrollPosition, setScrollPosition] = useState(0);
+export const metadata = {
+  title:
+    "Movers in Commerce City CO – Trusted Moving Company and Moving Services from Expert Commerce City Movers",
+  description:
+    "Looking for reliable movers in Commerce City CO? Our professional moving services ensure a stress-free experience, offering local and long-distance moves, packing, furniture assembly, and more. Call today for a free quote!",
+};
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
+const features = [
+  {
+    name: "Expertise in Every Type of Move",
+    description:
+      "From small apartments to large office relocations, we handle all types of moves with ease and efficiency.",
+    icon: TruckIcon,
+  },
+  {
+    name: "Personalized Moving Plans",
+    description:
+      "Every move is different, and we take the time to create a plan that fits your schedule, budget, and requirements.",
+    icon: ClipboardDocumentCheckIcon,
+  },
+  {
+    name: "Careful Handling of Belongings",
+    description:
+      "Our movers treat your items like they’re our own, ensuring everything is packed, transported, and delivered safely.",
+    icon: CubeIcon,
+  },
+  {
+    name: "Friendly and Reliable Service",
+    description:
+      "We know how stressful moving can be, so we’re here to make your experience as pleasant as possible with our friendly and professional team.",
+    icon: HandThumbUpIcon,
+  },
+  {
+    name: "Transparent Pricing",
+    description:
+      "With Green Mountain Movers, there are no hidden fees. You’ll know exactly what to expect from the start.",
+    icon: CurrencyDollarIcon,
+  },
+];
 
-    window.addEventListener("scroll", handleScroll);
+const featuresTwo = [
+  {
+    name: "Safety and Care",
+    description:
+      "Moving can be risky, especially when it comes to heavy or fragile items. Our team is trained to handle your belongings with care, reducing the risk of damage during the move.",
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: "Efficiency and Time-Saving",
+    description:
+      "With professional movers, your move is completed faster and more efficiently than if you were to do it on your own. We handle everything from start to finish, allowing you to focus on settling into your new space.",
+    icon: ClockIcon,
+  },
+  {
+    name: "Stress-Free Experience",
+    description:
+      "Moving can be stressful, but it doesn’t have to be. With Green Mountain Movers, you can relax knowing that every detail is being taken care of by experienced professionals.",
+    icon: FaceSmileIcon,
+  },
+  {
+    name: "Professional Equipment and Expertise",
+    description:
+      "We have all the right tools and equipment to ensure a smooth move, from dollies to moving blankets. Plus, our team is trained in the best practices for safe and efficient moving.",
+    icon: WrenchScrewdriverIcon,
+  },
+];
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+const featuresThree = [
+  {
+    name: "Experienced Team",
+    description:
+      "Our movers have years of experience and are trained to handle any type of move with care and professionalism.",
+    icon: UserGroupIcon,
+  },
+  {
+    name: "Personalized Approach",
+    description:
+      "We take the time to understand your unique needs and customize our services to meet them.",
+    icon: AdjustmentsHorizontalIcon,
+  },
+  {
+    name: "Commitment to Customer Satisfaction",
+    description:
+      "We’re not happy until you’re happy. From start to finish, we make sure every aspect of your move goes smoothly.",
+    icon: HeartIcon,
+  },
+];
 
+export default function Columbine() {
   return (
     <>
       <Navbar />
-      <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
-        <div className="mtnBorder--bottom absolute bottom-0 shadow" />
-        <header
-          className="text-5xl font-semibold h-max w-full absolute p-10 text-center mb-10 drop-shadow-3xl opacity-90 text-white"
-          style={{
-            transform: `translateY(${scrollPosition * 0.4}px)`,
-          }}
-        >
-          Commerce City Moving Services
-        </header>
-      </div>
-      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
-        <div className="flex flex-col items-center justify-center max-w-screen-xl">
-          <section id="commerce-city" className="my-10">
-            <h2 className="text-2xl font-semibold md:hidden">
-              Expert Moving Services in Commerce City, Colorado
-            </h2>
-            <div className="flex max-md:flex-col-reverse items-stretch justify-between gap-5 md:gap-10 my-5">
-              <div className="flex flex-col justify-start gap-3 w-full md:w-2/4 lg:w-3/5">
-                <h2 className="text-2xl font-semibold max-md:hidden">
-                  Trusted Commerce City Moving Company - Local & Long-Distance
-                  Moves
-                </h2>
-                <p className="text-gray-700">
-                  Welcome to Green Mountain Movers, your trusted Commerce City,
-                  CO moving company. We are dedicated to providing top-notch
-                  moving services to the bustling city of Commerce City and its
-                  surrounding areas. Whether you're planning a local or
-                  long-distance move, our team of licensed and insured
-                  professionals is here to ensure a smooth and hassle-free
-                  transition for you and your belongings.
-                </p>
-                <p className="text-gray-700">
-                  Commerce City is known for its dynamic atmosphere and growing
-                  communities. Our Commerce City moving services are designed to
-                  cater to the specific needs of this vibrant city.
-                </p>
-                <p className="text-gray-700">
-                  At Green Mountain Movers, we understand that every move is
-                  unique. Whether you're moving to or from Commerce City, our
-                  team is committed to providing a seamless and stress-free
-                  experience. We have extensive knowledge of the local
-                  neighborhoods and can navigate the city's streets with ease.
-                </p>
-              </div>
-              <div className="flex items-start w-full md:w-2/4 lg:w-2/5">
-                <Image
-                  src={commerceCityImage}
-                  alt="Commerce City"
-                  placeholder="blur"
-                  className="object-cover h-full rounded-2xl"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col justify-center gap-3">
-              <h3 className="text-2xl font-semibold mt-8">
-                Comprehensive Moving Services in Commerce City, CO
-              </h3>
-              <ServiceAreasCards />
+      <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
+        <div className="mx-auto max-w-7xl">
+          <section id="columbine" className="mt-5 sm:mt-10 mb-10">
+            <div className="mx-auto max-w-4xl lg:mx-0">
+              <nav aria-label="Breadcrumb" className="flex">
+                <ol className="flex items-center space-x-4">
+                  <li>
+                    <div>
+                      <Link
+                        href="/"
+                        className="text-gray-500 hover:text-gray-600"
+                      >
+                        <HomeIcon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-shrink-0"
+                        />
+                        <span className="sr-only">Home</span>
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-shrink-0 text-gray-500"
+                      />
+                      <Link
+                        href="/areas-served"
+                        className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                      >
+                        Areas Served
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      <ChevronRightIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-shrink-0 text-gray-500"
+                      />
+                      <Link
+                        href="/areas-served/commerce-city"
+                        className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                      >
+                        Commerce City
+                      </Link>
+                    </div>
+                  </li>
+                </ol>
+              </nav>
+              <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                Movers in Commerce City CO – Trusted Moving Company and Moving
+                Services from Expert Commerce City Movers
+              </h1>
             </div>
 
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pr-5">
-                <h3 className="text-xl font-semibold mt-8">
-                  Commerce City, Colorado Zip Codes We Serve
-                </h3>
-                <p className="text-gray-700">
-                  Our service area covers a wide range of Commerce City zip
-                  codes, including [Add Zip Codes]. If you're in the Commerce
-                  City area, Green Mountain Movers has you covered.
-                </p>
+            <div className="mx-auto grid grid-cols-1 gap-x-8 lg:mx-0 lg:grid-cols-2 lg:items-start mt-10 sm:mt-20">
+              <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                <Image
+                  alt="movers"
+                  src={moving}
+                  placeholder="blur"
+                  className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                />
               </div>
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pl-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Residential and Commercial Moving Solutions in Commerce City
-                </h3>
-                <p className="text-gray-700">
-                  Welcome to Green Mountain Movers, your trusted partner for
-                  seamless residential and commercial moves in the bustling city
-                  of Commerce City, Colorado. Whether you're relocating your
-                  home or office, we take pride in offering tailored moving
-                  solutions that cater to your unique needs.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pr-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Commerce City Residential Moving Services
-                </h3>
-                <p className="text-gray-700">
-                  Our Commerce City residential moving services are designed to
-                  make your transition to a new home a stress-free experience.
-                  Our dedicated team understands the sentimental value of your
-                  belongings, and we handle them with utmost care. From packing
-                  and loading to transportation and unpacking, we ensure every
-                  step of your residential move is executed flawlessly. Our
-                  services are backed by years of experience and a commitment to
-                  customer satisfaction.
-                </p>
-              </div>
-              <div className="flex flex-col justify-start gap-3 md:w-2/4 md:pl-5">
-                <h3 className="text-lg font-semibold mt-8">
-                  Commercial Moving Expertise in Commerce City
-                </h3>
-                <p className="text-gray-700">
-                  At Green Mountain Movers, we recognize the importance of
-                  minimizing downtime during office relocations. Our commercial
-                  moving expertise is geared towards ensuring your business can
-                  resume operations as quickly as possible. We specialize in
-                  handling valuable equipment and sensitive documents, making
-                  your office relocation in Commerce City secure and efficient.
-                  Trust us to handle your commercial move with precision,
-                  allowing you to focus on what matters most - your business.
-                </p>
+              <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8">
+                <div className="lg:pr-4">
+                  <div className="lg:pr-4">
+                    <div className="lg:max-w-lg">
+                      <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Introduction to Commerce City Movers
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="text-base leading-7 text-gray-700 lg:max-w-lg mt-6">
+                    <p>
+                      Moving can feel overwhelming, but we’re here to make the
+                      process smooth and stress-free with Green Mountain Movers.
+                      As your trusted moving company in Commerce City, we know
+                      that every move comes with its own set of challenges,
+                      whether it’s navigating narrow streets or managing a busy
+                      schedule. That’s why we offer personalized moving services
+                      to fit your needs, ensuring that every step of your
+                      journey is handled with care. From local moves within
+                      Commerce City to long-distance relocations, our goal is to
+                      take the weight off your shoulders—literally and
+                      figuratively.
+                    </p>
+                    <p className="mt-6">
+                      Our experienced team of{" "}
+                      <Link
+                        href="https://greenmtnmovers.com/areas-served"
+                        className="custom-link"
+                      >
+                        Commerce City movers
+                      </Link>{" "}
+                      brings a personal touch to every move, treating your
+                      belongings as if they were our own. We handle everything
+                      from packing your delicate items to safely transporting
+                      your heavy furniture. With Green Mountain Movers, you can
+                      rest easy knowing that every detail is covered. Whether
+                      you’re providing residential or commercial moving needs,
+                      we’re here to make sure your transition is as seamless as
+                      possible.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 w-full md:pr-5">
-                <h3 className="text-xl font-semibold mt-8">
-                  Furniture Assembly Services in Commerce City
-                </h3>
-                <p className="text-gray-700">
-                  In addition to our top-notch moving services, we proudly offer
-                  professional furniture assembly services in Commerce City. Our
-                  skilled team is adept at quickly and efficiently assembling
-                  your furniture, whether it's for your new home or office. We
-                  understand that assembling furniture can be a time-consuming
-                  and frustrating task, and our goal is to save you time and
-                  hassle. With our expertise, your furniture will be ready for
-                  use in no time, ensuring a comfortable and functional living
-                  or working space.
+
+            <div className="mt-10 sm:mt-14">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Why Choose Our Commerce City Movers for Your Residential
+                  Moving Needs?
+                </h2>
+                <p className="mt-4 leading-6 text-gray-600">
+                  Choosing the right movers can make all the difference in your
+                  moving experience. At Green Mountain Movers, we pride
+                  ourselves on delivering exceptional service tailored to meet
+                  your needs. As a Commerce City moving company with a
+                  reputation for reliability, we offer everything from
+                  residential moving to long-distance relocations, ensuring your
+                  belongings are handled with the utmost care.
+                </p>
+                <p className="mt-4 leading-6 text-gray-600">
+                  <i>
+                    Here’s why families and businesses in Commerce City trust us
+                    with their moves:
+                  </i>
                 </p>
               </div>
-              <div className="flex flex-col justify-start gap-3 w-full md:pl-5">
-                <h3 className="text-xl font-semibold mt-8">
-                  Junk Hauling Services in Commerce City
-                </h3>
-                <p className="text-gray-700">
-                  Green Mountain Movers goes beyond just moving. We also provide
-                  reliable junk hauling services in Commerce City to help you
-                  declutter your space and dispose of unwanted items
-                  responsibly. Whether it's old furniture, appliances,
-                  electronics, or general household clutter, our team is here to
-                  assist. We take pride in eco-friendly disposal methods,
-                  ensuring that items are recycled or donated whenever possible.
-                  Let us help you regain valuable space in your home or office
-                  while contributing to a greener environment.
+              <div className="mt-6">
+                <dl className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-3">
+                  {features.map((feature) => (
+                    <div key={feature.name} className="flex flex-col">
+                      <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                        <feature.icon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-none text-[#0e5933]/90"
+                        />
+                        {feature.name}
+                      </dt>
+                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                        <p className="flex-auto">{feature.description}</p>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <p className="mt-4 leading-6 text-gray-600">
+                When you choose us,{" "}
+                <i>you’re choosing movers who care about your peace of mind</i>.
+                From the first box we pack to the last piece of furniture we
+                unload, your satisfaction is our top priority.
+              </p>
+            </div>
+
+            <div className="mt-10 sm:mt-20">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Our Comprehensive Moving Services in Commerce City Colorado
+                </h2>
+                <p className="mt-4 leading-6 text-gray-600">
+                  At Green Mountain Movers, we offer a full range of moving
+                  services designed to make your move as efficient and
+                  stress-free as possible. Here’s what we provide:
                 </p>
+                <Cards />
               </div>
             </div>
-            <div className="flex flex-wrap justify-center items-stretch">
-              <div className="flex flex-col justify-start gap-3 w-full md:pr-5">
-                <h3 className="text-xl font-semibold mt-8">
-                  More About Commerce City, Colorado
-                </h3>
-                <p className="text-gray-700">
-                  Commerce City, Colorado, is a vibrant city with a strong sense
-                  of community. Known for its recreational opportunities,
-                  including parks, trails, and sports facilities, Commerce City
-                  offers residents a high quality of life. As you settle into
-                  your new life in Commerce City, you'll have the chance to
-                  explore the local culture, enjoy outdoor activities, and
-                  create lasting memories. Whether you're moving to or from
-                  Commerce City, our experienced team is here to ensure a smooth
-                  transition for you and your family or business.
+
+            <div className="mt-10 sm:mt-14">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Benefits of Hiring Our Commerce City Moving Company
+                </h2>
+                <p className="mt-4 leading-6 text-gray-600">
+                  Hiring professional movers isn’t just about convenience—it’s
+                  about peace of mind. Here are some key benefits of choosing
+                  Green Mountain Movers:
                 </p>
               </div>
+              <div className="mt-6">
+                <dl className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
+                  {featuresTwo.map((feature) => (
+                    <div key={feature.name} className="flex flex-col">
+                      <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                        <feature.icon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-none text-[#0e5933]/90"
+                        />
+                        {feature.name}
+                      </dt>
+                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                        <p className="flex-auto">{feature.description}</p>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <p className="mt-4 leading-6 text-gray-600">
+                When you hire Green Mountain Movers, you’re not just hiring a
+                moving company—you’re hiring peace of mind.
+              </p>
             </div>
+
+            <div className="mt-10 sm:mt-20">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Tailored Moving Solutions for Every Need
+              </h2>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                At Green Mountain Movers, we believe that no two moves are
+                alike. That’s why we offer tailored moving solutions to meet
+                your specific needs. Whether you’re moving a small apartment or
+                a large office, we create a personalized plan that works for
+                you.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-4">
+                For some, that might mean full-service packing and unpacking.
+                For others, it’s simply labor help with the heavy lifting. No
+                matter what you need, we have the flexibility to accommodate.
+                And with our attention to detail, you can trust that everything
+                will go according to plan.
+              </p>
+            </div>
+
+            <div className="mt-10 sm:mt-14">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  What Makes Our Movers in Commerce City Unique?
+                </h2>
+                <p className="mt-4 leading-6 text-gray-600">
+                  Our commitment to personalized service and customer
+                  satisfaction sets us apart from other moving companies in
+                  Commerce City. We understand that moving can be one of the
+                  most stressful life events, and our goal is to take the stress
+                  out of it. Here’s what makes us different:
+                </p>
+              </div>
+              <div className="mt-6">
+                <dl className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-3">
+                  {featuresThree.map((feature) => (
+                    <div key={feature.name} className="flex flex-col">
+                      <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                        <feature.icon
+                          aria-hidden="true"
+                          className="h-5 w-5 flex-none text-[#0e5933]/90"
+                        />
+                        {feature.name}
+                      </dt>
+                      <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                        <p className="flex-auto">{feature.description}</p>
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+              <p className="mt-4 leading-6 text-gray-600">
+                With Green Mountain Movers, you’re not just another
+                customer—you’re part of our community.
+              </p>
+            </div>
+
+            <div className="mt-10 sm:mt-20">
+              <h3 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Learn More About Commerce City, CO
+              </h3>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                Commerce City, CO, is a thriving community located just
+                northeast of downtown Denver, known for its blend of suburban
+                charm and industrial roots. As one of Colorado’s fastest-growing
+                cities, it offers a dynamic environment for both residents and
+                businesses. With a population of over 60,000 people, Commerce
+                City is home to multiple parks, recreational centers, and a rich
+                cultural history.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                The city primarily serves the zip codes 80022 and 80037, making
+                it an ideal place for those looking for both convenience and
+                community. Whether you’re moving within the city or relocating
+                from outside, the ease of access to major highways like I-270
+                and I-76 ensures that moving to or from Commerce City is
+                hassle-free.
+              </p>
+            </div>
+
+            <FAQ />
           </section>
         </div>
       </div>
       <BookingProcess />
-      <MovingTips />
-      <div className="flex justify-center items-center pt-10 pb-20 px-5 md:px-10 z-1 relative">
-        <div className="flex flex-col items-center justify-center max-w-screen-xl">
-          <div className="flex flex-col justify-center gap-3">
-            <h3 className="text-2xl font-semibold mt-8">
-              Request a Free Moving Quote in Commerce City, Colorado
-            </h3>
-            <p className="text-gray-700">
-              Obtaining a free moving quote from Green Mountain Movers is a
-              straightforward process. Our dedicated business representatives
-              are ready to work with you to determine the services you need,
-              providing an accurate moving estimate based on your specific
-              requirements. Whether you're moving within Commerce City or to a
-              new location, our experienced team is here to assist you. Contact
-              us today via phone, email, or the convenient contact form on this
-              page to request your free moving quote. We look forward to
-              ensuring a successful move for you!
-            </p>
-            <div className="flex flex-wrap items-center gap-x-10 gap-y-3 text-base leading-7 text-gray-700">
-              <div className="flex gap-x-4">
-                <PhoneIcon
-                  className="h-7 w-6 text-gray-700"
-                  aria-hidden="true"
-                />
-                <a className="hover:text-gray-900" href="tel:7196801538">
-                  (719) 680-1538
-                </a>
-              </div>
-              <div className="flex gap-x-4">
-                <EnvelopeIcon
-                  className="h-7 w-6 text-gray-700"
-                  aria-hidden="true"
-                />
-                <a
-                  className="hover:text-gray-900"
-                  href="mailto:greenmtnmovers@gmail.com"
+
+      <div className="flex justify-center items-center pb-5 px-5 md:px-10 z-1 relative">
+        <div className="mx-auto max-w-7xl">
+          <div className="mt-10 sm:mt-20">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                How Local Residents Can Benefit from Our Services
+              </h2>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                With Commerce City’s rapid growth, many residents are taking
+                advantage of the expanding job market, new housing developments,
+                and local amenities. Whether you're upgrading to a larger home
+                or downsizing for a more minimalist lifestyle, moving can be an
+                overwhelming process. That’s where our movers in Commerce City
+                CO come in.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                We provide customized moving solutions that cater to the
+                specific needs of local residents, ensuring your transition is
+                as seamless as possible. Whether you're moving a family,
+                relocating your business, or even moving closer to one of
+                Commerce City's many parks or attractions, we’ve got you
+                covered.
+              </p>
+              <p className="text-base leading-7 text-gray-700 mt-6">
+                We also work with families in the{" "}
+                <Link
+                  href="https://www.greenmtnmovers.com/areas-served/denver"
+                  className="custom-link"
                 >
-                  greenmtnmovers@gmail.com
-                </a>
-              </div>
+                  Denver
+                </Link>{" "}
+                area.
+              </p>
             </div>
+            <h3 className="mt-10 sm:mt-20 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Top Attractions in Commerce City, CO
+            </h3>
+            <p className="text-base leading-7 text-gray-700 mt-6">
+              Commerce City offers a variety of attractions that make it an
+              exciting place to live and explore. Here are some of the top spots
+              you’ll want to visit:
+            </p>
+            <div className="mt-6 border-t border-gray-100">
+              <dl className="divide-y divide-gray-100">
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Dick's Sporting Goods Park
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Home to the Colorado Rapids, this massive stadium is a
+                    hotspot for soccer fans and concertgoers alike. With a
+                    seating capacity of over 18,000, it’s a hub for major
+                    sporting events and entertainment. Learn more about{" "}
+                    <Link
+                      href="https://www.dickssportinggoodspark.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Dick's Sporting Goods Park
+                    </Link>
+                    .
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Rocky Mountain Arsenal National Wildlife Refuge
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Once a chemical weapons manufacturing site, this area has
+                    been transformed into a 15,000-acre wildlife refuge. It’s
+                    home to bison, deer, and a variety of bird species, offering
+                    an oasis of nature right in the middle of Commerce City.
+                    Find out more about the{" "}
+                    <Link
+                      href="https://maps.app.goo.gl/yWt8mVdN6YU8Eiti7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Rocky Mountain Arsenal National Wildlife Refuge
+                    </Link>
+                    .
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Buffalo Run Golf Course
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    If you’re a golf enthusiast, you’ll enjoy this stunning
+                    18-hole championship course.{" "}
+                    <Link
+                      href="https://www.buffalorungolfcourse.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Buffalo Run
+                    </Link>{" "}
+                    offers scenic views and challenging play for golfers of all
+                    levels.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Commerce City Civic Center
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    The heart of local government, the{" "}
+                    <Link
+                      href="https://www.c3gov.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Civic Center
+                    </Link>{" "}
+                    is where you’ll find city offices, public services, and
+                    community events. It’s a great place to learn more about the
+                    city’s initiatives and development projects.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Pioneer Park
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    <Link
+                      href="https://maps.app.goo.gl/jRemtHSC3dhUCXf28"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Pioneer Park
+                    </Link>{" "}
+                    is the perfect spot for family outings and outdoor
+                    activities. The park features playgrounds, sports fields,
+                    and a splash pad during the summer months. Explore more
+                    about Pioneer Park.
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Bison Grill
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Located within the Buffalo Run Golf Course, this restaurant
+                    is highly rated for its American cuisine, making it a
+                    popular spot for both golfers and non-golfers alike. Enjoy a
+                    delicious meal at the{" "}
+                    <Link
+                      href="https://maps.app.goo.gl/nbqE1LW59jrTHirV9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Bison Grill
+                    </Link>
+                    .
+                  </dd>
+                </div>
+                <div className="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                  <dt className="text-sm font-medium leading-6 text-gray-900">
+                    Colorado Air and Space Port
+                  </dt>
+                  <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    Located just outside Commerce City, this facility is
+                    dedicated to aerospace innovation and is a must-visit for
+                    those interested in the future of space travel. Learn more
+                    about the{" "}
+                    <Link
+                      href="https://www.coloradoairandspaceport.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="custom-link"
+                    >
+                      Colorado Air and Space Port
+                    </Link>
+                    .
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div className="mt-10 sm:mt-20">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Schedule Your Move with Trusted Commerce City Movers Today
+            </h2>
+            <p className="text-base leading-7 text-gray-700 mt-4">
+              If you’re ready to make your move within Commerce City Colorado or
+              across the country, Green Mountain Movers is here to help. Contact
+              us today to get a free quote from a trusted Commerce City moving
+              company and ensure your move is seamless.
+            </p>
             <ContactForm />
           </div>
         </div>
