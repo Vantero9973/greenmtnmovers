@@ -150,10 +150,10 @@ export default function HeaderInfo() {
                 relocation experience, with comprehensive services that include
                 professional furniture assembly and responsible junk hauling.
                 For more information about the specific areas we serve, visit
-                our
+                our{" "}
                 <Link href="/areas-served" className="custom-link">
                   Areas Served
-                </Link>
+                </Link>{" "}
                 page. Contact us today for a free moving quote and see why we're
                 Lakewood's top choice for moving services.
               </p>
@@ -180,7 +180,7 @@ export default function HeaderInfo() {
                 team that embodies a steadfast commitment to excellence with
                 every move. Our moving services are carefully curated to meet
                 the unique needs of each home we assist. Whether you're in need
-                of comprehensive local movers for an efficient transition within
+                of comprehensive local movers for an efficient transition within{" "}
                 <a
                   href="https://www.denver.org/"
                   target="_blank"
