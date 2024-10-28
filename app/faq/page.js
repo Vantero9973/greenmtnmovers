@@ -10,8 +10,8 @@ export default function FAQ() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center items-center">
-        <div className="max-w-screen-xl w-full mx-auto px-6 pt-16 pb-32 lg:px-8">
+      <div className="mx-auto max-w-7xl">
+        <div className="px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 pb-32">
           <nav aria-label="Breadcrumb" className="flex mt-5">
             <ol className="flex items-center space-x-4">
               <li>

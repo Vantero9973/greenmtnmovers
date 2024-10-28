@@ -121,7 +121,7 @@ export default function Example() {
               Your Questions, Answered
             </p>
           </div>
-          <div className="flex items-end">
+          <div className="flex items-end max-md:hidden">
             <Link
               href="/faq"
               className="text-sm font-semibold leading-6 text-[#0e5933]"
@@ -166,6 +166,14 @@ export default function Example() {
               </Disclosure>
             ))}
           </dl>
+        </div>
+        <div className="mt-10 md:hidden">
+          <Link
+            href="/faq"
+            className="text-sm font-semibold leading-6 text-[#0e5933]"
+          >
+            See all FAQs <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </div>

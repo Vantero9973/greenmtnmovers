@@ -40,7 +40,7 @@ export default function Blog() {
   return (
     <div className="pt-10 pb-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-xl text-center">
+        <div>
           <h2 className="text-lg font-semibold leading-8 tracking-tight text-[#0e5933]">
             Suggested Reading
           </h2>
@@ -48,7 +48,7 @@ export default function Blog() {
             Insights and tips to simplify your moving journey.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
@@ -62,7 +62,7 @@ export default function Blog() {
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="max-w-xl">
+              <div>
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
                   <time dateTime={post.datetime} className="text-gray-500">
                     {post.date}

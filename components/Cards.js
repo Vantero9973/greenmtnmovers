@@ -47,7 +47,7 @@ export default function Cards() {
           Providing seamless moving and hauling services you can rely on.
         </p>
       </div>
-      <div className="divide-y divide-gray-200 rounded-lg sm:grid sm:grid-cols-4 gap-6 sm:divide-y-0 mt-16">
+      <div className="divide-y divide-gray-200 rounded-lg sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:divide-y-0 mt-16">
         {actions.map((action) => (
           <div
             key={action.title}

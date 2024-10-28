@@ -58,8 +58,8 @@ export default function ContactForm() {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="mx-auto max-w-7xl w-full relative isolate bg-white px-6 pt-20 pb-10 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+      <div className="mx-auto max-w-7xl w-full relative isolate bg-white px-6 pt-10 pb-10 lg:px-8">
+        <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
@@ -232,7 +232,7 @@ export default function ContactForm() {
               </div>
             </div>
           </div>
-          <div className="mt-10">
+          <div className="flex justify-end w-full mt-10">
             <button
               type="submit"
               className="rounded-md bg-[#0e5933] bg-opacity-90 px-10 py-2.5 text-center font-semibold text-white shadow-sm hover:bg-opacity-100"

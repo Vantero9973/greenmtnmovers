@@ -11,7 +11,7 @@ export default function Reviews() {
   return (
     <>
       <Navbar />
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
         <nav aria-label="Breadcrumb" className="flex mt-5">
           <ol className="flex items-center space-x-4">
             <li>

@@ -9,7 +9,7 @@ export default function Stats() {
   return (
     <div className="flex justify-center items-center">
       <div className="max-w-screen-xl w-full px-6 lg:px-8 py-20">
-        <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <dl className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((item) => (
             <div
               key={item.name}
