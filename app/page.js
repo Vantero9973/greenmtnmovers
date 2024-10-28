@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import HeaderServicesInfo from "../components/HeaderServicesInfo";
 import HeaderInfo from "../components/HeaderInfo";
 import Cards from "../components/Cards";
 import Testimonials from "../components/Testimonials";
@@ -28,7 +27,6 @@ export default function Home() {
         <Stats />
         <Contact />
         <Blog />
-        <HeaderServicesInfo />
         <HeaderInfo />
       </div>
     </>
