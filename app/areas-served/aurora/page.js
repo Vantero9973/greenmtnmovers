@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import arvadaImage from "../../../public/media/movers.jpg";
-import moving from "../../../public/media/moving-6.jpg";
+import moving from "../../../public/media/stock3.jpg";
 import moving2 from "../../../public/media/moving-3.jpg";
 import moving3 from "../../../public/media/moving-8.jpg";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";

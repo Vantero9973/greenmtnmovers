@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import moving from "../../../public/media/moving-6.jpg";
+import moving from "../../../public/media/stock6.jpg";
+import moving2 from "../../../public/media/moving-1.jpg";
 import moving3 from "../../../public/media/moving-8.jpg";
 import {
   AdjustmentsHorizontalIcon,
@@ -308,7 +309,7 @@ export default function CastlePines() {
                 <div className="flex items-start justify-end lg:order-first">
                   <Image
                     alt="movers moving things"
-                    src={moving3}
+                    src={moving2}
                     placeholder="blur"
                     width={2432}
                     height={1442}

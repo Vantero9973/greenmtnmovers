@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import arvadaImage from "../../../public/media/movers.jpg";
-import moving1 from "../../../public/media/moving-4.jpg";
-import moving2 from "../../../public/media/moving-3.jpg";
-import moving3 from "../../../public/media/moving-6.jpg";
+import arvadaImage from "../../../public/media/moving-6.jpg";
+import moving1 from "../../../public/media/stock6.jpg";
+import moving2 from "../../../public/media/stock.jpg";
+import moving3 from "../../../public/media/moving-2.jpg";
 import {
   BriefcaseIcon,
   ChatBubbleBottomCenterTextIcon,

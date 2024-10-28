@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import moving from "../../../public/media/moving-6.jpg";
+import moving from "../../../public/media/stock3.jpg";
 import {
   AdjustmentsHorizontalIcon,
   ChevronRightIcon,

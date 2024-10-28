@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import moving from "../../public/media/moving-9.jpg";
+import moving from "../../public/media/furniture-assembly.jpg";
 import {
   CheckCircleIcon,
   ChevronRightIcon,
