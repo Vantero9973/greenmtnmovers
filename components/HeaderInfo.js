@@ -45,8 +45,8 @@ export default function HeaderInfo() {
 
         <div className="mt-16 space-y-16">
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Seamless Moving Process with Expert Moving Service"
                   src={stock}
@@ -80,8 +80,8 @@ export default function HeaderInfo() {
           </div>
 
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-8 xl:col-start-9 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-8 xl:col-start-9 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Professional Furniture Assembly and Junk Hauling for Your Move"
                   src={stock2}
@@ -125,8 +125,8 @@ export default function HeaderInfo() {
           </div>
 
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Lakewood's Trusted Movers"
                   src={stock3}
@@ -161,8 +161,8 @@ export default function HeaderInfo() {
           </div>
 
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-8 xl:col-start-9 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-8 xl:col-start-9 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Moving With Our Team: A Commitment to Excellence in Every Move"
                   src={stock4}
@@ -200,8 +200,8 @@ export default function HeaderInfo() {
           </div>
 
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Debris Removal Service"
                   src={stock5}
@@ -248,8 +248,8 @@ export default function HeaderInfo() {
 
         <div className="mt-16 space-y-16">
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Comprehensive Moving Services for Your Relocation Needs"
                   src={moving}
@@ -291,8 +291,8 @@ export default function HeaderInfo() {
           </div>
 
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-8 xl:col-start-9 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-8 xl:col-start-9 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Efficient Local Moving Services by Denver's Top Movers"
                   src={moving2}
@@ -331,8 +331,8 @@ export default function HeaderInfo() {
           </div>
 
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
-            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 h-full">
-              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 h-full">
+            <div className="mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4 lg:col-start-1 lg:h-full">
+              <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100 lg:h-full">
                 <Image
                   alt="Long-Distance Moving: Your Reliable Interstate Moving Company"
                   src={moving3}
