@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +19,6 @@ export default function EssentialTips() {
           content="Discover top moving tips with Green Mountain Movers' essential guide for a successful move. Learn best practices and insider advice for a stress-free relocation. Stay prepared."
         />
       </Head>
-      <Navbar />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-20">
         <h1 className="font-bold text-4xl">
           10 Essential Tips for a Successful Move - Best Moving Tips & Good

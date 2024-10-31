@@ -7,12 +7,10 @@ import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import MovingTips from "../../../components/MovingTips";
 import ServiceAreasCards from "../../../components/ServiceAreasCards";
-import Navbar from "../../../components/Navbar";
 
 export default function Westminster() {
   return (
     <>
-      <Navbar />
       <div className="flex justify-center items-center py-5 px-4 sm:px-6 lg:px-8 z-1 relative">
         <div className="mx-auto max-w-7xl">
           <section id="westminster" className="my-10">

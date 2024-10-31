@@ -7,7 +7,6 @@ import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import MovingTips from "../../../components/MovingTips";
 import ServiceAreasCards from "../../../components/ServiceAreasCards";
-import Navbar from "../../../components/Navbar";
 
 export default function Lakewood() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -26,7 +25,6 @@ export default function Lakewood() {
 
   return (
     <>
-      <Navbar />
       <div className="service-areas-clippath-bg flex justify-center items-center relative h-[200px] max-md:hidden">
         <div className="mtnBorder--bottom absolute bottom-0 shadow" />
         <header

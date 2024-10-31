@@ -3,95 +3,90 @@
 import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
-import Navbar from "../../components/Navbar";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
 export default function FAQ() {
   return (
-    <>
-      <Navbar />
-      <div className="mx-auto max-w-7xl">
-        <div className="px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 pb-32">
-          <nav aria-label="Breadcrumb" className="flex mt-5">
-            <ol className="flex items-center space-x-4">
-              <li>
-                <div>
-                  <Link href="/" className="text-gray-500 hover:text-gray-600">
-                    <HomeIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 flex-shrink-0"
-                    />
-                    <span className="sr-only">Home</span>
-                  </Link>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center">
-                  <ChevronRightIcon
+    <div className="mx-auto max-w-7xl">
+      <div className="px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 pb-32">
+        <nav aria-label="Breadcrumb" className="flex mt-5">
+          <ol className="flex items-center space-x-4">
+            <li>
+              <div>
+                <Link href="/" className="text-gray-500 hover:text-gray-600">
+                  <HomeIcon
                     aria-hidden="true"
-                    className="h-5 w-5 flex-shrink-0 text-gray-500"
+                    className="h-5 w-5 flex-shrink-0"
                   />
-                  <Link
-                    href="/faq"
-                    className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
-                  >
-                    FAQ
-                  </Link>
-                </div>
-              </li>
-            </ol>
-          </nav>
-          <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-base leading-7 text-gray-700 mt-4">
-            Welcome to our FAQ section! We’ve gathered answers to the most
-            common questions to help you understand our moving process,
-            services, and what to expect. Whether you need information on
-            scheduling, insurance, or special items like pianos, we’ve got you
-            covered. If you have more questions, don’t hesitate to reach out to
-            our team.
-          </p>
-          <div className="mx-auto divide-y divide-gray-900/10">
-            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
-              {faqs.map((faq) => (
-                <Disclosure as="div" key={faq.title} className="pt-6">
-                  {({ open }) => (
-                    <>
-                      <dt>
-                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                          <span className="text-base font-semibold leading-7">
-                            {faq.title}
-                          </span>
-                          <span className="ml-6 flex h-7 items-center">
-                            {open ? (
-                              <MinusSmallIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            ) : (
-                              <PlusSmallIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            )}
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600">
-                          {faq.content}
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              ))}
-            </dl>
-          </div>
+                  <span className="sr-only">Home</span>
+                </Link>
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center">
+                <ChevronRightIcon
+                  aria-hidden="true"
+                  className="h-5 w-5 flex-shrink-0 text-gray-500"
+                />
+                <Link
+                  href="/faq"
+                  className="ml-4 text-sm font-medium text-gray-600 hover:text-gray-700"
+                >
+                  FAQ
+                </Link>
+              </div>
+            </li>
+          </ol>
+        </nav>
+        <h1 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          Frequently Asked Questions
+        </h1>
+        <p className="text-base leading-7 text-gray-700 mt-4">
+          Welcome to our FAQ section! We’ve gathered answers to the most common
+          questions to help you understand our moving process, services, and
+          what to expect. Whether you need information on scheduling, insurance,
+          or special items like pianos, we’ve got you covered. If you have more
+          questions, don’t hesitate to reach out to our team.
+        </p>
+        <div className="mx-auto divide-y divide-gray-900/10">
+          <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+            {faqs.map((faq) => (
+              <Disclosure as="div" key={faq.title} className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                        <span className="text-base font-semibold leading-7">
+                          {faq.title}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <PlusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-base leading-7 text-gray-600">
+                        {faq.content}
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
+          </dl>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

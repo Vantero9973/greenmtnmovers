@@ -13,7 +13,7 @@ export const cities = [
   "Columbine",
   "Commerce City",
   "Denver",
-  "Eagle/Vail",
+  "Eagle-Vail",
   "Edgewater",
   "Englewood",
   "Evergreen",

@@ -7,12 +7,10 @@ import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import MovingTips from "../../../components/MovingTips";
 import ServiceAreasCards from "../../../components/ServiceAreasCards";
-import Navbar from "../../../components/Navbar";
 
 export default function Thornton() {
   return (
     <>
-      <Navbar />
       <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative">
         <div className="mx-auto max-w-7xl">
           <section id="thornton" className="my-10">

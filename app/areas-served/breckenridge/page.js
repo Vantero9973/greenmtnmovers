@@ -13,7 +13,6 @@ import {
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import Cards from "../../../components/ServiceAreasCards";
-import Navbar from "../../../components/Navbar";
 
 export const metadata = {
   title:
@@ -171,7 +170,6 @@ const featuresTwo = [
 export default function Breckenridge() {
   return (
     <>
-      <Navbar />
       <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
         <div className="mx-auto max-w-7xl">
           <section id="breckenridge" className="mt-5 sm:mt-10 mb-10">

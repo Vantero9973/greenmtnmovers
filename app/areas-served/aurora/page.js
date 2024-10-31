@@ -8,7 +8,6 @@ import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import Cards from "../../../components/ServiceAreasCards";
-import Navbar from "../../../components/Navbar";
 
 export const metadata = {
   title: "Movers in Aurora CO | Top Moving Company Near Denver Colorado",
@@ -26,7 +25,6 @@ const stats = [
 export default function Aurora() {
   return (
     <>
-      <Navbar />
       <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
         <div className="mx-auto max-w-7xl">
           <section id="aurora" className="mt-5 sm:mt-10 mb-10">

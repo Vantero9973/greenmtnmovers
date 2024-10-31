@@ -5,7 +5,6 @@ import Testimonials from "../components/Testimonials";
 import FaqComponent from "../components/FaqComponent";
 import Stats from "../components/Stats";
 import Contact from "../components/Contact";
-import Navbar from "../components/Navbar";
 import Blog from "../components/Blog";
 
 export const metadata = {
@@ -18,7 +17,6 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Header />
       <div>
         <Cards />

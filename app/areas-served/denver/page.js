@@ -20,7 +20,6 @@ import ContactForm from "../../../components/ContactForm";
 import BookingProcess from "../../../components/BookingProcess";
 import Cards from "./Cards";
 import FAQ from "./FAQ";
-import Navbar from "../../../components/Navbar";
 
 export const metadata = {
   title: "Movers in Denver CO - Trusted Moving Company in Denver, Colorado",
@@ -67,58 +66,9 @@ const features = [
   },
 ];
 
-const featuresTwo = [
-  {
-    name: "Safety and Care",
-    description:
-      "Moving can be risky, especially when it comes to heavy or fragile items. Our team is trained to handle your belongings with care, reducing the risk of damage during the move.",
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: "Efficiency and Time-Saving",
-    description:
-      "With professional movers, your move is completed faster and more efficiently than if you were to do it on your own. We handle everything from start to finish, allowing you to focus on settling into your new space.",
-    icon: ClockIcon,
-  },
-  {
-    name: "Stress-Free Experience",
-    description:
-      "Moving can be stressful, but it doesn’t have to be. With Green Mountain Movers, you can relax knowing that every detail is being taken care of by experienced professionals.",
-    icon: FaceSmileIcon,
-  },
-  {
-    name: "Professional Equipment and Expertise",
-    description:
-      "We have all the right tools and equipment to ensure a smooth move, from dollies to moving blankets. Plus, our team is trained in the best practices for safe and efficient moving.",
-    icon: WrenchScrewdriverIcon,
-  },
-];
-
-const featuresThree = [
-  {
-    name: "Experienced Team",
-    description:
-      "Our movers have years of experience and are trained to handle any type of move with care and professionalism.",
-    icon: UserGroupIcon,
-  },
-  {
-    name: "Personalized Approach",
-    description:
-      "We take the time to understand your unique needs and customize our services to meet them.",
-    icon: AdjustmentsHorizontalIcon,
-  },
-  {
-    name: "Commitment to Customer Satisfaction",
-    description:
-      "We’re not happy until you’re happy. From start to finish, we make sure every aspect of your move goes smoothly.",
-    icon: HeartIcon,
-  },
-];
-
-export default function Columbine() {
+export default function Denver() {
   return (
     <>
-      <Navbar />
       <div className="flex justify-center items-center py-5 px-5 md:px-10 z-1 relative max-lg:overflow-hidden">
         <div className="mx-auto max-w-7xl">
           <section id="denver" className="mt-5 sm:mt-10 mb-10">
@@ -372,7 +322,7 @@ export default function Columbine() {
               <p className="text-base leading-7 text-gray-700 mt-6">
                 We also work with families in the{" "}
                 <Link
-                  href="https://www.greenmtnmovers.com/areas-served/eagle/vail"
+                  href="https://www.greenmtnmovers.com/areas-served/eagle-vail"
                   className="custom-link"
                 >
                   Eagle Vail

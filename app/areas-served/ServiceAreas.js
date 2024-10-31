@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import { cities } from "../data/cities";
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
@@ -16,7 +15,6 @@ export default function AreasServed() {
 
   return (
     <>
-      <Navbar />
       <div className="mx-auto max-w-7xl w-full gap-8 px-6 pt-10 pb-16">
         <nav aria-label="Breadcrumb" className="flex mt-5">
           <ol className="flex items-center space-x-4">

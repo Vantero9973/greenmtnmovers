@@ -1,12 +1,10 @@
-import Navbar from "../../components/Navbar";
 import ContactForm from "../../components/ContactForm";
 import Image from "next/image";
 import Link from "next/link";
 import image from "../../public/media/moving-stock-photo.jpg";
 import imageTwo from "../../public/media/moving-5.jpg";
 import imageThree from "../../public/media/moving-3.jpg";
-import PlanLocalMoveFAQ from "../../components/PlanLocalMoveFAQ";
-
+import FAQ from "./FAQ";
 export const metadata = {
   title:
     "Local Moving Guide: How Do You Plan a Local Move? | Denver Movers & Moving Checklist",
@@ -17,7 +15,6 @@ export const metadata = {
 export default function PlanLocalMove() {
   return (
     <>
-      <Navbar />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 md:pt-20">
         <h1 className="font-bold text-4xl">
           Local Moving Guide: How Do You Plan a Local Move? | Denver Movers &
@@ -363,7 +360,7 @@ export default function PlanLocalMove() {
           </p>
         </div>
 
-        <PlanLocalMoveFAQ />
+        <FAQ />
 
         <div className="flex flex-col gap-5 mt-10">
           <h4 className="font-semibold text-2xl">

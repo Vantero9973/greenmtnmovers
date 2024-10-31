@@ -5,7 +5,6 @@ import { useState } from "react";
 import { send } from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "../../components/Navbar";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import contact from "../../public/media/contact.jpg";
 
@@ -59,7 +58,6 @@ export default function Contact() {
     });
   return (
     <>
-      <Navbar />
       <ToastContainer
         position="bottom-center"
         autoClose={5000}
